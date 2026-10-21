@@ -1,0 +1,571 @@
+model,layer,group,name,unit,modelDir,intervalMinutes,minuteResolution,minuteFolder,fields,validFrom,validTo,updated
+rtofs,temperature-water,Temperature,Sea-surface temperature,°C,rtofs,360,0,0,teplota_voda,2021-06-28T00:00:00.000Z,2026-10-28T00:00:00.000Z,2026-10-20T00:00:00.000Z
+gfs,temperature-5cm,Temperature,Temperature at 5 cm,°C,gfs,180,0,0,teplota_surface,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,temperature-5cm,Temperature,Temperature at 5 cm,°C,ecmwf_hres,180,0,0,teplota_surface,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-5cm,Temperature,Temperature at 5 cm,°C,icon,180,0,0,teplota_surface,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,temperature-5cm,Temperature,Temperature at 5 cm,°C,hrrr,60,0,0,teplota_surface,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,temperature-5cm,Temperature,Temperature at 5 cm,°C,rrfs,60,0,0,teplota_surface,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,temperature-5cm,Temperature,Temperature at 5 cm,°C,rrfs_hawai,60,0,0,teplota_surface,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_eu,temperature-5cm,Temperature,Temperature at 5 cm,°C,icon_eu,180,0,0,teplota_surface,2018-02-10T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,temperature-5cm,Temperature,Temperature at 5 cm,°C,icon_de,60,0,0,teplota_surface,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,temperature-5cm,Temperature,Temperature at 5 cm,°C,icon_ch,60,0,0,teplota_surface,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,temperature-5cm,Temperature,Temperature at 5 cm,°C,icon_it,60,0,0,teplota_surface,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,temperature-2m,Temperature,Temperature at 2 m,°C,gfs,180,0,0,teplota_2_m,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-2m,Temperature,Temperature at 2 m,°C,gem,180,0,0,teplota_2_m,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-2m,Temperature,Temperature at 2 m,°C,ecmwf_mres,180,0,0,teplota_2_m,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-2m,Temperature,Temperature at 2 m,°C,ecmwf_hres,180,0,0,teplota_2_m,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,temperature-2m,Temperature,Temperature at 2 m,°C,kma_um,180,0,0,teplota_2_m,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,temperature-2m,Temperature,Temperature at 2 m,°C,icon,180,0,0,teplota_2_m,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,temperature-2m,Temperature,Temperature at 2 m,°C,hrrr,60,0,0,teplota_2_m,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,temperature-2m,Temperature,Temperature at 2 m,°C,rrfs,60,0,0,teplota_2_m,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,temperature-2m,Temperature,Temperature at 2 m,°C,rrfs_hawai,60,0,0,teplota_2_m,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,temperature-2m,Temperature,Temperature at 2 m,°C,nbm,60,0,0,teplota_2_m,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,temperature-2m,Temperature,Temperature at 2 m,°C,harmonie_car,60,0,0,teplota_2_m,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,temperature-2m,Temperature,Temperature at 2 m,°C,harmonie_eu,60,0,0,teplota_2_m,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,temperature-2m,Temperature,Temperature at 2 m,°C,icon_eu,180,0,0,teplota_2_m,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,temperature-2m,Temperature,Temperature at 2 m,°C,icon_de,60,0,0,teplota_2_m,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,temperature-2m,Temperature,Temperature at 2 m,°C,icon_ch,60,0,0,teplota_2_m,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,temperature-2m,Temperature,Temperature at 2 m,°C,icon_it,60,0,0,teplota_2_m,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,temperature-2m,Temperature,Temperature at 2 m,°C,aladin,60,0,0,teplota_2_m,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,temperature-2m,Temperature,Temperature at 2 m,°C,arome,60,0,0,teplota_2_m,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,temperature-2m,Temperature,Temperature at 2 m,°C,meps,60,0,0,teplota_2_m,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,temperature-2m,Temperature,Temperature at 2 m,°C,ukmo_uk,60,0,0,teplota_2_m,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+ecmwf,temperature-2m,Temperature,Temperature at 2 m,°C,ecmwf,180,0,0,teplota_2_m,1979-06-01T00:00:00.000Z,2020-10-31T21:00:00.000Z,2021-01-29T00:00:00.000Z
+gfs,temperature-anomaly-2m,Temperature,Temperature anomaly at 2 m,°C,gfs,180,0,0,teplota_odchylka_2_m,2021-05-27T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-950hpa,Temperature,Temperature at 950 hPa,°C,gfs,180,0,0,teplota_95000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-950hpa,Temperature,Temperature at 950 hPa,°C,gem,180,0,0,teplota_95000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,temperature-950hpa,Temperature,Temperature at 950 hPa,°C,icon,180,0,0,teplota_95000_pa,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-925hpa,Temperature,Temperature at 925 hPa,°C,gfs,180,0,0,teplota_92500_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-925hpa,Temperature,Temperature at 925 hPa,°C,gem,180,0,0,teplota_92500_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-925hpa,Temperature,Temperature at 925 hPa,°C,ecmwf_mres,180,0,0,teplota_92500_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-925hpa,Temperature,Temperature at 925 hPa,°C,ecmwf_mres,180,0,0,teplota_92500_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-900hpa,Temperature,Temperature at 900 hPa,°C,gfs,180,0,0,teplota_90000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-900hpa,Temperature,Temperature at 900 hPa,°C,gem,180,0,0,teplota_90000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,temperature-900hpa,Temperature,Temperature at 900 hPa,°C,icon,180,0,0,teplota_90000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-850hpa,Temperature,Temperature at 850 hPa,°C,gfs,180,0,0,teplota_85000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-850hpa,Temperature,Temperature at 850 hPa,°C,gem,180,0,0,teplota_85000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-850hpa,Temperature,Temperature at 850 hPa,°C,ecmwf_mres,180,0,0,teplota_85000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-850hpa,Temperature,Temperature at 850 hPa,°C,ecmwf_mres,180,0,0,teplota_85000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-850hpa,Temperature,Temperature at 850 hPa,°C,icon,180,0,0,teplota_85000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-800hpa,Temperature,Temperature at 800 hPa,°C,gfs,180,0,0,teplota_80000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-800hpa,Temperature,Temperature at 800 hPa,°C,gem,180,0,0,teplota_80000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,temperature-800hpa,Temperature,Temperature at 800 hPa,°C,icon,180,0,0,teplota_80000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-750hpa,Temperature,Temperature at 750 hPa,°C,gfs,180,0,0,teplota_75000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-750hpa,Temperature,Temperature at 750 hPa,°C,gem,180,0,0,teplota_75000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+gfs,temperature-700hpa,Temperature,Temperature at 700 hPa,°C,gfs,180,0,0,teplota_70000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-700hpa,Temperature,Temperature at 700 hPa,°C,gem,180,0,0,teplota_70000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-700hpa,Temperature,Temperature at 700 hPa,°C,ecmwf_mres,180,0,0,teplota_70000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-700hpa,Temperature,Temperature at 700 hPa,°C,ecmwf_mres,180,0,0,teplota_70000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-700hpa,Temperature,Temperature at 700 hPa,°C,icon,180,0,0,teplota_70000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-650hpa,Temperature,Temperature at 650 hPa,°C,gfs,180,0,0,teplota_65000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-600hpa,Temperature,Temperature at 600 hPa,°C,gfs,180,0,0,teplota_60000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-600hpa,Temperature,Temperature at 600 hPa,°C,gem,180,0,0,teplota_60000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,temperature-600hpa,Temperature,Temperature at 600 hPa,°C,icon,180,0,0,teplota_60000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-500hpa,Temperature,Temperature at 500 hPa,°C,gfs,180,0,0,teplota_50000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-500hpa,Temperature,Temperature at 500 hPa,°C,gem,180,0,0,teplota_50000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-500hpa,Temperature,Temperature at 500 hPa,°C,ecmwf_mres,180,0,0,teplota_50000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-500hpa,Temperature,Temperature at 500 hPa,°C,ecmwf_mres,180,0,0,teplota_50000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-500hpa,Temperature,Temperature at 500 hPa,°C,icon,180,0,0,teplota_50000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-400hpa,Temperature,Temperature at 400 hPa,°C,gfs,180,0,0,teplota_40000_pa,2026-06-17T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-400hpa,Temperature,Temperature at 400 hPa,°C,icon,180,0,0,teplota_40000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-300hpa,Temperature,Temperature at 300 hPa,°C,gfs,180,0,0,teplota_30000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-300hpa,Temperature,Temperature at 300 hPa,°C,gem,180,0,0,teplota_30000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,temperature-300hpa,Temperature,Temperature at 300 hPa,°C,ecmwf_mres,180,0,0,teplota_30000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,temperature-300hpa,Temperature,Temperature at 300 hPa,°C,ecmwf_mres,180,0,0,teplota_30000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,temperature-300hpa,Temperature,Temperature at 300 hPa,°C,icon,180,0,0,teplota_30000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-200hpa,Temperature,Temperature at 200 hPa,°C,gfs,180,0,0,teplota_20000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,temperature-200hpa,Temperature,Temperature at 200 hPa,°C,gem,180,0,0,teplota_20000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,temperature-200hpa,Temperature,Temperature at 200 hPa,°C,icon,180,0,0,teplota_20000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,temperature-10hpa,Temperature,Temperature at 10 hPa,°C,gfs,180,0,0,teplota_1000_pa,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,freezing,Temperature,Freezing level,m,gfs,180,0,0,nulova_izoterma,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,freezing,Temperature,Freezing level,m,icon,180,0,0,nulova_izoterma,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,freezing,Temperature,Freezing level,m,hrrr,60,0,0,nulova_izoterma,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,freezing,Temperature,Freezing level,m,rrfs,60,0,0,nulova_izoterma,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,freezing,Temperature,Freezing level,m,rrfs_hawai,60,0,0,nulova_izoterma,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_eu,freezing,Temperature,Freezing level,m,icon_eu,180,0,0,nulova_izoterma,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,freezing,Temperature,Freezing level,m,icon_de,60,0,0,nulova_izoterma,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,freezing,Temperature,Freezing level,m,icon_ch,60,0,0,nulova_izoterma,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,freezing,Temperature,Freezing level,m,icon_it,60,0,0,nulova_izoterma,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,feel,Feels like,Feels-like temperature,°C,gfs,180,0,0,teplota_pocit,2019-02-15T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,feel,Feels like,Feels-like temperature,°C,ecmwf_hres,180,0,0,teplota_pocit,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,feel,Feels like,Feels-like temperature,°C,kma_um,180,0,0,teplota_pocit,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,feel,Feels like,Feels-like temperature,°C,icon,180,0,0,teplota_pocit,2019-02-15T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,feel,Feels like,Feels-like temperature,°C,hrrr,60,0,0,teplota_pocit,2019-02-15T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,feel,Feels like,Feels-like temperature,°C,rrfs,60,0,0,teplota_pocit,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,feel,Feels like,Feels-like temperature,°C,rrfs_hawai,60,0,0,teplota_pocit,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,feel,Feels like,Feels-like temperature,°C,nbm,60,0,0,teplota_pocit,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,feel,Feels like,Feels-like temperature,°C,harmonie_car,60,0,0,teplota_pocit,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,feel,Feels like,Feels-like temperature,°C,harmonie_eu,60,0,0,teplota_pocit,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,feel,Feels like,Feels-like temperature,°C,icon_eu,180,0,0,teplota_pocit,2019-02-15T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,feel,Feels like,Feels-like temperature,°C,icon_de,60,0,0,teplota_pocit,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,feel,Feels like,Feels-like temperature,°C,icon_ch,60,0,0,teplota_pocit,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,feel,Feels like,Feels-like temperature,°C,icon_it,60,0,0,teplota_pocit,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,feel,Feels like,Feels-like temperature,°C,aladin,60,0,0,teplota_pocit,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,feel,Feels like,Feels-like temperature,°C,arome,60,0,0,teplota_pocit,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,rain-1h,Precipitation,"Precipitation, 1 hour",mm,ecmwf_hres,180,0,0,srazky_1h,2025-12-05T00:00:00.000Z,2026-10-25T00:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,rain-1h,Precipitation,"Precipitation, 1 hour",mm,icon,180,0,0,srazky_1h,2018-01-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,rain-1h,Precipitation,"Precipitation, 1 hour",mm,hrrr,60,0,0,srazky_1h,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,rain-1h,Precipitation,"Precipitation, 1 hour",mm,rrfs,60,0,0,srazky_1h,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,rain-1h,Precipitation,"Precipitation, 1 hour",mm,rrfs_hawai,60,0,0,srazky_1h,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,rain-1h,Precipitation,"Precipitation, 1 hour",mm,nbm,60,0,0,srazky_1h,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,rain-1h,Precipitation,"Precipitation, 1 hour",mm,harmonie_car,60,0,0,srazky_1h,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,rain-1h,Precipitation,"Precipitation, 1 hour",mm,harmonie_eu,60,0,0,srazky_1h,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,rain-1h,Precipitation,"Precipitation, 1 hour",mm,icon_eu,180,0,0,srazky_1h,2018-10-31T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,rain-1h,Precipitation,"Precipitation, 1 hour",mm,icon_de,60,0,0,srazky_1h,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,rain-1h,Precipitation,"Precipitation, 1 hour",mm,icon_ch,60,0,0,srazky_1h,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,rain-1h,Precipitation,"Precipitation, 1 hour",mm,icon_it,60,0,0,srazky_1h,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,rain-1h,Precipitation,"Precipitation, 1 hour",mm,aladin,60,0,0,srazky_1h,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,rain-1h,Precipitation,"Precipitation, 1 hour",mm,arome,60,0,0,srazky_1h,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,rain-1h,Precipitation,"Precipitation, 1 hour",mm,meps,60,0,0,srazky_1h,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,rain-1h,Precipitation,"Precipitation, 1 hour",mm,ukmo_uk,60,0,0,srazky_1h,2025-01-01T00:00:00.000Z,2026-10-23T09:00:00.000Z,2026-10-21T12:00:00.000Z
+eurad,rain-1h,Precipitation,"Precipitation, 1 hour",mm,eurad,60,0,0,srazky_1h,2019-01-01T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+earad,rain-1h,Precipitation,"Precipitation, 1 hour",mm,earad,60,0,0,srazky_1h,2024-05-05T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+usrad,rain-1h,Precipitation,"Precipitation, 1 hour",mm,usrad,60,0,0,srazky_1h,2019-01-01T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+gfs,rain-3h,Precipitation,"Precipitation, 3 hours",mm,gfs,180,0,0,srazky_3h,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,rain-3h,Precipitation,"Precipitation, 3 hours",mm,gem,180,0,0,srazky_3h,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,rain-3h,Precipitation,"Precipitation, 3 hours",mm,ecmwf_mres,180,0,0,srazky_3h,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,rain-3h,Precipitation,"Precipitation, 3 hours",mm,ecmwf_hres,180,0,0,srazky_3h,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,rain-3h,Precipitation,"Precipitation, 3 hours",mm,kma_um,180,0,0,srazky_3h,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,rain-3h,Precipitation,"Precipitation, 3 hours",mm,icon,180,0,0,srazky_3h,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,rain-3h,Precipitation,"Precipitation, 3 hours",mm,hrrr,180,0,0,srazky_3h,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,rain-3h,Precipitation,"Precipitation, 3 hours",mm,rrfs,180,0,0,srazky_3h,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,rain-3h,Precipitation,"Precipitation, 3 hours",mm,rrfs_hawai,180,0,0,srazky_3h,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,rain-3h,Precipitation,"Precipitation, 3 hours",mm,nbm,180,0,0,srazky_3h,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,rain-3h,Precipitation,"Precipitation, 3 hours",mm,harmonie_car,180,0,0,srazky_3h,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,rain-3h,Precipitation,"Precipitation, 3 hours",mm,harmonie_eu,180,0,0,srazky_3h,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,rain-3h,Precipitation,"Precipitation, 3 hours",mm,icon_eu,180,0,0,srazky_3h,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,rain-3h,Precipitation,"Precipitation, 3 hours",mm,icon_de,180,0,0,srazky_3h,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,rain-3h,Precipitation,"Precipitation, 3 hours",mm,icon_ch,180,0,0,srazky_3h,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,rain-3h,Precipitation,"Precipitation, 3 hours",mm,icon_it,180,0,0,srazky_3h,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,rain-3h,Precipitation,"Precipitation, 3 hours",mm,aladin,180,0,0,srazky_3h,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,rain-3h,Precipitation,"Precipitation, 3 hours",mm,arome,180,0,0,srazky_3h,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,rain-3h,Precipitation,"Precipitation, 3 hours",mm,meps,180,0,0,srazky_3h,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,rain-3h,Precipitation,"Precipitation, 3 hours",mm,ukmo_uk,180,0,0,srazky_3h,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+eurad,rain-3h,Precipitation,"Precipitation, 3 hours",mm,eurad,180,0,0,srazky_3h,2019-01-01T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+earad,rain-3h,Precipitation,"Precipitation, 3 hours",mm,earad,180,0,0,srazky_3h,2024-05-05T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+usrad,rain-3h,Precipitation,"Precipitation, 3 hours",mm,usrad,180,0,0,srazky_3h,2019-01-01T00:00:00.000Z,2026-10-21T15:00:00.000Z,2026-10-21T16:25:00.000Z
+ecmwf,rain-3h,Precipitation,"Precipitation, 3 hours",mm,ecmwf,180,0,0,srazky_3h,1979-06-01T00:00:00.000Z,2020-10-31T21:00:00.000Z,2021-01-29T00:00:00.000Z
+gfs,rain-ac,Precipitation,Accumulated precipitation,mm,gfs,180,0,0,srazky_ac,2026-10-21T09:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,rain-ac,Precipitation,Accumulated precipitation,mm,gem,180,0,0,srazky_ac,2026-10-21T03:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,rain-ac,Precipitation,Accumulated precipitation,mm,ecmwf_mres,180,0,0,srazky_ac,2026-10-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,rain-ac,Precipitation,Accumulated precipitation,mm,ecmwf_hres,180,0,0,srazky_ac,2026-10-21T06:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,rain-ac,Precipitation,Accumulated precipitation,mm,kma_um,180,0,0,srazky_ac,2026-03-31T12:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,rain-ac,Precipitation,Accumulated precipitation,mm,icon,180,0,0,srazky_ac,2026-10-21T06:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,rain-ac,Precipitation,Accumulated precipitation,mm,hrrr,60,0,0,srazky_ac,2026-10-21T13:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,rain-ac,Precipitation,Accumulated precipitation,mm,rrfs,60,0,0,srazky_ac,2026-10-21T13:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,rain-ac,Precipitation,Accumulated precipitation,mm,rrfs_hawai,60,0,0,srazky_ac,2026-10-21T06:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,rain-ac,Precipitation,Accumulated precipitation,mm,nbm,60,0,0,srazky_ac,2026-10-21T13:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,rain-ac,Precipitation,Accumulated precipitation,mm,harmonie_car,60,0,0,srazky_ac,2026-10-21T09:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,rain-ac,Precipitation,Accumulated precipitation,mm,harmonie_eu,60,0,0,srazky_ac,2026-10-21T10:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,rain-ac,Precipitation,Accumulated precipitation,mm,icon_eu,180,0,0,srazky_ac,2026-10-21T09:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,rain-ac,Precipitation,Accumulated precipitation,mm,icon_de,60,0,0,srazky_ac,2026-10-21T12:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,rain-ac,Precipitation,Accumulated precipitation,mm,icon_ch,60,0,0,srazky_ac,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,rain-ac,Precipitation,Accumulated precipitation,mm,icon_it,60,0,0,srazky_ac,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,rain-ac,Precipitation,Accumulated precipitation,mm,aladin,60,0,0,srazky_ac,2026-10-21T06:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,rain-ac,Precipitation,Accumulated precipitation,mm,arome,60,0,0,srazky_ac,2026-10-21T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,rain-ac,Precipitation,Accumulated precipitation,mm,meps,60,0,0,srazky_ac,2026-10-21T09:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,rain-ac,Precipitation,Accumulated precipitation,mm,ukmo_uk,60,0,0,srazky_ac,2026-10-21T04:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,precipitation-anomaly,Precipitation,Precipitation anomaly,%,gfs,360,0,0,srazky_odchylka,2022-01-02T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,radar,Radar,Weather radar reflectivity,dBZ,hrrr,60,1,0,srazky_dbz,2022-05-25T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,radar,Radar,Weather radar reflectivity,dBZ,rrfs,60,1,0,srazky_dbz,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,radar,Radar,Weather radar reflectivity,dBZ,rrfs_hawai,60,1,0,srazky_dbz,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_de,radar,Radar,Weather radar reflectivity,dBZ,icon_de,60,1,0,srazky_dbz,2022-05-25T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,radar,Radar,Weather radar reflectivity,dBZ,icon_ch,60,1,0,srazky_dbz,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ukmo,radar,Radar,Weather radar reflectivity,dBZ,ukmo,60,1,0,srazky_dbz,2026-01-01T00:00:00.000Z,2026-10-22T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ukmo_uk,radar,Radar,Weather radar reflectivity,dBZ,ukmo_uk,60,1,0,srazky_dbz,2025-01-01T00:00:00.000Z,2026-10-22T06:00:00.000Z,2026-10-21T12:00:00.000Z
+worad,radar,Radar,Weather radar reflectivity,dBZ,worad,5,1,0,srazky_dbz,2019-01-01T00:00:00.000Z,2025-08-23T00:00:00.000Z,2025-08-23T08:45:00.000Z
+worad_hres,radar,Radar,Weather radar reflectivity,dBZ,worad_hres,5,1,0,srazky_dbz,2025-08-23T00:00:00.000Z,2026-10-21T16:25:00.000Z,2026-10-21T16:25:00.000Z
+eurad,radar,Radar,Weather radar reflectivity,dBZ,eurad_hres,5,1,0,srazky_dbz,2023-09-01T01:00:00.000Z,2026-10-21T16:25:00.000Z,2026-10-21T16:25:00.000Z
+earad,radar,Radar,Weather radar reflectivity,dBZ,earad,5,1,0,srazky_dbz,2024-05-05T00:00:00.000Z,2026-10-21T16:25:00.000Z,2026-10-21T16:25:00.000Z
+usrad,radar,Radar,Weather radar reflectivity,dBZ,usrad,5,1,0,srazky_dbz,2019-01-01T00:00:00.000Z,2026-10-21T16:25:00.000Z,2026-10-21T16:25:00.000Z
+goes,satellite,Satellite,Satellite cloud imagery,image,goes,10,1,1,rgba,2023-01-01T00:00:00.000Z,2026-10-21T14:40:00.000Z,2026-10-21T14:40:00.000Z
+goes16,satellite,Satellite,Satellite cloud imagery,image,goes16,10,1,1,rgba,2023-01-01T00:00:00.000Z,2026-10-21T14:40:00.000Z,2026-10-21T14:40:00.000Z
+himawari,satellite,Satellite,Satellite cloud imagery,image,himawari,10,1,1,rgba,2023-01-01T00:00:00.000Z,2026-10-21T14:40:00.000Z,2026-10-21T14:40:00.000Z
+meteosat,satellite,Satellite,Satellite cloud imagery,image,meteosat,10,1,1,rgba,2023-01-01T00:00:00.000Z,2026-10-21T14:40:00.000Z,2026-10-21T14:40:00.000Z
+meteosat_hd,satellite,Satellite,Satellite cloud imagery,image,meteosat_hd,10,1,1,rgba,2024-12-06T15:00:00.000Z,2026-10-21T14:40:00.000Z,2026-10-21T14:40:00.000Z
+gfs,clouds-total,Clouds,Total cloud cover,%,gfs,180,0,0,oblacnost,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,clouds-total,Clouds,Total cloud cover,%,gem,180,0,0,oblacnost,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,clouds-total,Clouds,Total cloud cover,%,ecmwf_hres,180,0,0,oblacnost,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,clouds-total,Clouds,Total cloud cover,%,kma_um,180,0,0,oblacnost,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,clouds-total,Clouds,Total cloud cover,%,icon,180,0,0,oblacnost,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,clouds-total,Clouds,Total cloud cover,%,hrrr,60,0,0,oblacnost,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,clouds-total,Clouds,Total cloud cover,%,rrfs,60,0,0,oblacnost,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,clouds-total,Clouds,Total cloud cover,%,rrfs_hawai,60,0,0,oblacnost,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,clouds-total,Clouds,Total cloud cover,%,nbm,60,0,0,oblacnost,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,clouds-total,Clouds,Total cloud cover,%,harmonie_car,60,0,0,oblacnost,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,clouds-total,Clouds,Total cloud cover,%,harmonie_eu,60,0,0,oblacnost,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,clouds-total,Clouds,Total cloud cover,%,icon_eu,180,0,0,oblacnost,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,clouds-total,Clouds,Total cloud cover,%,icon_de,60,0,0,oblacnost,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,clouds-total,Clouds,Total cloud cover,%,icon_ch,60,0,0,oblacnost,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,clouds-total,Clouds,Total cloud cover,%,icon_it,60,0,0,oblacnost,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,clouds-total,Clouds,Total cloud cover,%,aladin,60,0,0,oblacnost,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,clouds-total,Clouds,Total cloud cover,%,arome,60,0,0,oblacnost,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,clouds-total,Clouds,Total cloud cover,%,meps,60,0,0,oblacnost,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,clouds-total,Clouds,Total cloud cover,%,ukmo_uk,60,0,0,oblacnost,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+ecmwf_hres,clouds-fog,Clouds,Fog / low cloud,%,ecmwf_hres,180,0,0,srazky_type_1h,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,clouds-fog,Clouds,Fog / low cloud,%,kma_um,180,0,0,srazky_type_1h,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,clouds-fog,Clouds,Fog / low cloud,%,icon,180,0,0,srazky_type_1h,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,clouds-fog,Clouds,Fog / low cloud,%,hrrr,60,0,0,srazky_type_1h,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,clouds-fog,Clouds,Fog / low cloud,%,rrfs,60,0,0,srazky_type_1h,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,clouds-fog,Clouds,Fog / low cloud,%,rrfs_hawai,60,0,0,srazky_type_1h,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,clouds-fog,Clouds,Fog / low cloud,%,harmonie_car,60,0,0,srazky_type_1h,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,clouds-fog,Clouds,Fog / low cloud,%,harmonie_eu,60,0,0,srazky_type_1h,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,clouds-fog,Clouds,Fog / low cloud,%,icon_eu,180,0,0,srazky_type_1h,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,clouds-fog,Clouds,Fog / low cloud,%,icon_de,60,0,0,srazky_type_1h,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,clouds-fog,Clouds,Fog / low cloud,%,icon_ch,60,0,0,srazky_type_1h,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,clouds-fog,Clouds,Fog / low cloud,%,icon_it,60,0,0,srazky_type_1h,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,clouds-fog,Clouds,Fog / low cloud,%,aladin,60,0,0,srazky_type_1h,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,clouds-fog,Clouds,Fog / low cloud,%,arome,60,0,0,srazky_type_1h,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,clouds-fog,Clouds,Fog / low cloud,%,meps,60,0,0,srazky_type_1h,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,clouds-fog,Clouds,Fog / low cloud,%,ukmo_uk,60,0,0,srazky_type_1h,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,clouds-low,Clouds,Low cloud cover,%,gfs,180,0,0,oblacnost_low,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,clouds-low,Clouds,Low cloud cover,%,ecmwf_hres,180,0,0,oblacnost_low,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,clouds-low,Clouds,Low cloud cover,%,icon,180,0,0,oblacnost_low,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,clouds-low,Clouds,Low cloud cover,%,hrrr,60,0,0,oblacnost_low,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,clouds-low,Clouds,Low cloud cover,%,rrfs,60,0,0,oblacnost_low,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,clouds-low,Clouds,Low cloud cover,%,rrfs_hawai,60,0,0,oblacnost_low,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,clouds-low,Clouds,Low cloud cover,%,harmonie_car,60,0,0,oblacnost_low,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,clouds-low,Clouds,Low cloud cover,%,harmonie_eu,60,0,0,oblacnost_low,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,clouds-low,Clouds,Low cloud cover,%,icon_eu,180,0,0,oblacnost_low,2018-02-10T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,clouds-low,Clouds,Low cloud cover,%,icon_de,60,0,0,oblacnost_low,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,clouds-low,Clouds,Low cloud cover,%,icon_ch,60,0,0,oblacnost_low,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,clouds-low,Clouds,Low cloud cover,%,icon_it,60,0,0,oblacnost_low,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,clouds-low,Clouds,Low cloud cover,%,aladin,60,0,0,oblacnost_low,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,clouds-low,Clouds,Low cloud cover,%,arome,60,0,0,oblacnost_low,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,clouds-low,Clouds,Low cloud cover,%,meps,60,0,0,oblacnost_low,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,clouds-low,Clouds,Low cloud cover,%,ukmo_uk,60,0,0,oblacnost_low,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,clouds-middle,Clouds,Middle cloud cover,%,gfs,180,0,0,oblacnost_middle,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,clouds-middle,Clouds,Middle cloud cover,%,ecmwf_hres,180,0,0,oblacnost_middle,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,clouds-middle,Clouds,Middle cloud cover,%,icon,180,0,0,oblacnost_middle,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,clouds-middle,Clouds,Middle cloud cover,%,hrrr,60,0,0,oblacnost_middle,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,clouds-middle,Clouds,Middle cloud cover,%,rrfs,60,0,0,oblacnost_middle,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,clouds-middle,Clouds,Middle cloud cover,%,rrfs_hawai,60,0,0,oblacnost_middle,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,clouds-middle,Clouds,Middle cloud cover,%,harmonie_car,60,0,0,oblacnost_middle,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,clouds-middle,Clouds,Middle cloud cover,%,harmonie_eu,60,0,0,oblacnost_middle,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,clouds-middle,Clouds,Middle cloud cover,%,icon_eu,180,0,0,oblacnost_middle,2018-02-10T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,clouds-middle,Clouds,Middle cloud cover,%,icon_de,60,0,0,oblacnost_middle,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,clouds-middle,Clouds,Middle cloud cover,%,icon_ch,60,0,0,oblacnost_middle,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,clouds-middle,Clouds,Middle cloud cover,%,icon_it,60,0,0,oblacnost_middle,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,clouds-middle,Clouds,Middle cloud cover,%,aladin,60,0,0,oblacnost_middle,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,clouds-middle,Clouds,Middle cloud cover,%,arome,60,0,0,oblacnost_middle,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,clouds-middle,Clouds,Middle cloud cover,%,meps,60,0,0,oblacnost_middle,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,clouds-middle,Clouds,Middle cloud cover,%,ukmo_uk,60,0,0,oblacnost_middle,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,clouds-high,Clouds,High cloud cover,%,gfs,180,0,0,oblacnost_high,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,clouds-high,Clouds,High cloud cover,%,ecmwf_hres,180,0,0,oblacnost_high,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,clouds-high,Clouds,High cloud cover,%,icon,180,0,0,oblacnost_high,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,clouds-high,Clouds,High cloud cover,%,hrrr,60,0,0,oblacnost_high,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,clouds-high,Clouds,High cloud cover,%,rrfs,60,0,0,oblacnost_high,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,clouds-high,Clouds,High cloud cover,%,rrfs_hawai,60,0,0,oblacnost_high,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,clouds-high,Clouds,High cloud cover,%,harmonie_car,60,0,0,oblacnost_high,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,clouds-high,Clouds,High cloud cover,%,harmonie_eu,60,0,0,oblacnost_high,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,clouds-high,Clouds,High cloud cover,%,icon_eu,180,0,0,oblacnost_high,2018-02-10T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,clouds-high,Clouds,High cloud cover,%,icon_de,60,0,0,oblacnost_high,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,clouds-high,Clouds,High cloud cover,%,icon_ch,60,0,0,oblacnost_high,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,clouds-high,Clouds,High cloud cover,%,icon_it,60,0,0,oblacnost_high,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,clouds-high,Clouds,High cloud cover,%,aladin,60,0,0,oblacnost_high,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,clouds-high,Clouds,High cloud cover,%,arome,60,0,0,oblacnost_high,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,clouds-high,Clouds,High cloud cover,%,meps,60,0,0,oblacnost_high,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,clouds-high,Clouds,High cloud cover,%,ukmo_uk,60,0,0,oblacnost_high,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,cloud-base,Clouds,Cloud base height,m,gfs,180,0,0,cloud_base,2023-12-24T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,cloud-base,Clouds,Cloud base height,m,hrrr,60,0,0,cloud_base,2023-12-24T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,cloud-base,Clouds,Cloud base height,m,rrfs,60,0,0,cloud_base,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,cloud-base,Clouds,Cloud base height,m,rrfs_hawai,60,0,0,cloud_base,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_eu,cloud-base,Clouds,Cloud base height,m,harmonie_eu,60,0,0,cloud_base,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,cloud-base,Clouds,Cloud base height,m,icon_eu,180,0,0,cloud_base,2023-12-24T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,cloud-base,Clouds,Cloud base height,m,icon_de,60,0,0,cloud_base,2023-12-24T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,cloud-base,Clouds,Cloud base height,m,icon_ch,60,0,0,cloud_base,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,cloud-base,Clouds,Cloud base height,m,icon_it,60,0,0,cloud_base,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,visibility,Clouds,Visibility,km,gfs,180,0,0,visibility,2024-11-15T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,visibility,Clouds,Visibility,km,ecmwf_hres,180,0,0,visibility,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,visibility,Clouds,Visibility,km,hrrr,60,0,0,visibility,2024-11-15T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,visibility,Clouds,Visibility,km,rrfs,60,0,0,visibility,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,visibility,Clouds,Visibility,km,rrfs_hawai,60,0,0,visibility,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_eu,visibility,Clouds,Visibility,km,harmonie_eu,60,0,0,visibility,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,visibility,Clouds,Visibility,km,icon_eu,180,0,0,visibility,2024-11-15T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,visibility,Clouds,Visibility,km,icon_de,60,0,0,visibility,2024-11-15T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,wind-10m,Wind,Wind at 10 m,km/h,gfs,180,0,0,vitr_u_10_m|vitr_v_10_m,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-10m,Wind,Wind at 10 m,km/h,gem,180,0,0,vitr_u_10_m|vitr_v_10_m,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-10m,Wind,Wind at 10 m,km/h,ecmwf_mres,180,0,0,vitr_u_10_m|vitr_v_10_m,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-10m,Wind,Wind at 10 m,km/h,ecmwf_hres,180,0,0,vitr_u_10_m|vitr_v_10_m,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,wind-10m,Wind,Wind at 10 m,km/h,kma_um,180,0,0,vitr_u_10_m|vitr_v_10_m,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,wind-10m,Wind,Wind at 10 m,km/h,icon,180,0,0,vitr_u_10_m|vitr_v_10_m,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,wind-10m,Wind,Wind at 10 m,km/h,hrrr,60,0,0,vitr_u_10_m|vitr_v_10_m,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,wind-10m,Wind,Wind at 10 m,km/h,rrfs,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,wind-10m,Wind,Wind at 10 m,km/h,rrfs_hawai,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,wind-10m,Wind,Wind at 10 m,km/h,nbm,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,wind-10m,Wind,Wind at 10 m,km/h,harmonie_car,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,wind-10m,Wind,Wind at 10 m,km/h,harmonie_eu,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,wind-10m,Wind,Wind at 10 m,km/h,icon_eu,180,0,0,vitr_u_10_m|vitr_v_10_m,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,wind-10m,Wind,Wind at 10 m,km/h,icon_de,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,wind-10m,Wind,Wind at 10 m,km/h,icon_ch,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,wind-10m,Wind,Wind at 10 m,km/h,icon_it,60,0,0,vitr_u_10_m|vitr_v_10_m,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,wind-10m,Wind,Wind at 10 m,km/h,aladin,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,wind-10m,Wind,Wind at 10 m,km/h,arome,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,wind-10m,Wind,Wind at 10 m,km/h,meps,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,wind-10m,Wind,Wind at 10 m,km/h,ukmo_uk,60,0,0,vitr_u_10_m|vitr_v_10_m,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+ecmwf,wind-10m,Wind,Wind at 10 m,km/h,ecmwf,180,0,0,vitr_u_10_m|vitr_v_10_m,1979-06-01T00:00:00.000Z,2020-10-31T21:00:00.000Z,2021-01-29T00:00:00.000Z
+gfs,wind-100m,Wind,Wind at 100 m,km/h,gfs,180,0,0,vitr_u_100_m|vitr_v_100_m,2018-02-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,wind-100m,Wind,Wind at 100 m,km/h,ecmwf_hres,180,0,0,vitr_u_100_m|vitr_v_100_m,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-100m,Wind,Wind at 100 m,km/h,icon,180,0,0,vitr_u_100_m|vitr_v_100_m,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-250m,Wind,Wind at 250 m,km/h,icon,180,0,0,vitr_u_250_m|vitr_v_250_m,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-950hpa,Wind,Wind at 950 hPa,km/h,gfs,180,0,0,vitr_u_95000_pa|vitr_v_95000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-950hpa,Wind,Wind at 950 hPa,km/h,gem,180,0,0,vitr_u_95000_pa|vitr_v_95000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-950hpa,Wind,Wind at 950 hPa,km/h,icon,180,0,0,vitr_u_95000_pa|vitr_v_95000_pa,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-925hpa,Wind,Wind at 925 hPa,km/h,gfs,180,0,0,vitr_u_92500_pa|vitr_v_92500_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-925hpa,Wind,Wind at 925 hPa,km/h,gem,180,0,0,vitr_u_92500_pa|vitr_v_92500_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-925hpa,Wind,Wind at 925 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_92500_pa|vitr_v_92500_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-925hpa,Wind,Wind at 925 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_92500_pa|vitr_v_92500_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-900hpa,Wind,Wind at 900 hPa,km/h,gfs,180,0,0,vitr_u_90000_pa|vitr_v_90000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-900hpa,Wind,Wind at 900 hPa,km/h,gem,180,0,0,vitr_u_90000_pa|vitr_v_90000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-900hpa,Wind,Wind at 900 hPa,km/h,icon,180,0,0,vitr_u_90000_pa|vitr_v_90000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-850hpa,Wind,Wind at 850 hPa,km/h,gfs,180,0,0,vitr_u_85000_pa|vitr_v_85000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-850hpa,Wind,Wind at 850 hPa,km/h,gem,180,0,0,vitr_u_85000_pa|vitr_v_85000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-850hpa,Wind,Wind at 850 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_85000_pa|vitr_v_85000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-850hpa,Wind,Wind at 850 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_85000_pa|vitr_v_85000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-850hpa,Wind,Wind at 850 hPa,km/h,icon,180,0,0,vitr_u_85000_pa|vitr_v_85000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-800hpa,Wind,Wind at 800 hPa,km/h,gfs,180,0,0,vitr_u_80000_pa|vitr_v_80000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-800hpa,Wind,Wind at 800 hPa,km/h,gem,180,0,0,vitr_u_80000_pa|vitr_v_80000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-800hpa,Wind,Wind at 800 hPa,km/h,icon,180,0,0,vitr_u_80000_pa|vitr_v_80000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-750hpa,Wind,Wind at 750 hPa,km/h,gfs,180,0,0,vitr_u_75000_pa|vitr_v_75000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-750hpa,Wind,Wind at 750 hPa,km/h,gem,180,0,0,vitr_u_75000_pa|vitr_v_75000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+gfs,wind-700hpa,Wind,Wind at 700 hPa,km/h,gfs,180,0,0,vitr_u_70000_pa|vitr_v_70000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-700hpa,Wind,Wind at 700 hPa,km/h,gem,180,0,0,vitr_u_70000_pa|vitr_v_70000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-700hpa,Wind,Wind at 700 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_70000_pa|vitr_v_70000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-700hpa,Wind,Wind at 700 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_70000_pa|vitr_v_70000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-700hpa,Wind,Wind at 700 hPa,km/h,icon,180,0,0,vitr_u_70000_pa|vitr_v_70000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-650hpa,Wind,Wind at 650 hPa,km/h,gfs,180,0,0,vitr_u_65000_pa|vitr_v_65000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-600hpa,Wind,Wind at 600 hPa,km/h,gfs,180,0,0,vitr_u_60000_pa|vitr_v_60000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-600hpa,Wind,Wind at 600 hPa,km/h,gem,180,0,0,vitr_u_60000_pa|vitr_v_60000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-600hpa,Wind,Wind at 600 hPa,km/h,icon,180,0,0,vitr_u_60000_pa|vitr_v_60000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-500hpa,Wind,Wind at 500 hPa,km/h,gfs,180,0,0,vitr_u_50000_pa|vitr_v_50000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-500hpa,Wind,Wind at 500 hPa,km/h,gem,180,0,0,vitr_u_50000_pa|vitr_v_50000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-500hpa,Wind,Wind at 500 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_50000_pa|vitr_v_50000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-500hpa,Wind,Wind at 500 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_50000_pa|vitr_v_50000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-500hpa,Wind,Wind at 500 hPa,km/h,icon,180,0,0,vitr_u_50000_pa|vitr_v_50000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-400hpa,Wind,Wind at 400 hPa,km/h,gfs,180,0,0,vitr_u_40000_pa|vitr_v_40000_pa,2026-06-17T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-400hpa,Wind,Wind at 400 hPa,km/h,icon,180,0,0,vitr_u_40000_pa|vitr_v_40000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-300hpa,Wind,Wind at 300 hPa,km/h,gfs,180,0,0,vitr_u_30000_pa|vitr_v_30000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-300hpa,Wind,Wind at 300 hPa,km/h,gem,180,0,0,vitr_u_30000_pa|vitr_v_30000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,wind-300hpa,Wind,Wind at 300 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_30000_pa|vitr_v_30000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,wind-300hpa,Wind,Wind at 300 hPa,km/h,ecmwf_mres,180,0,0,vitr_u_30000_pa|vitr_v_30000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,wind-300hpa,Wind,Wind at 300 hPa,km/h,icon,180,0,0,vitr_u_30000_pa|vitr_v_30000_pa,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-200hpa,Wind,Wind at 200 hPa,km/h,gfs,180,0,0,vitr_u_20000_pa|vitr_v_20000_pa,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,wind-200hpa,Wind,Wind at 200 hPa,km/h,gem,180,0,0,vitr_u_20000_pa|vitr_v_20000_pa,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-200hpa,Wind,Wind at 200 hPa,km/h,icon,180,0,0,vitr_u_20000_pa|vitr_v_20000_pa,2026-06-17T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,wind-10hpa,Wind,Wind at 10 hPa,km/h,gfs,180,0,0,vitr_u_1000_pa|vitr_v_1000_pa,2018-02-19T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,gust,Wind gusts,"Wind gust, 1 hour",km/h,gfs,180,0,0,vitr_naraz,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,gust,Wind gusts,"Wind gust, 1 hour",km/h,gem,180,0,0,vitr_naraz,2022-09-04T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,gust,Wind gusts,"Wind gust, 1 hour",km/h,ecmwf_mres,180,0,0,vitr_naraz,2024-12-20T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,gust,Wind gusts,"Wind gust, 1 hour",km/h,ecmwf_hres,180,0,0,vitr_naraz,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,gust,Wind gusts,"Wind gust, 1 hour",km/h,kma_um,180,0,0,vitr_naraz,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,gust,Wind gusts,"Wind gust, 1 hour",km/h,icon,180,0,0,vitr_naraz,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,gust,Wind gusts,"Wind gust, 1 hour",km/h,hrrr,60,0,0,vitr_naraz,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,gust,Wind gusts,"Wind gust, 1 hour",km/h,rrfs,60,0,0,vitr_naraz,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,gust,Wind gusts,"Wind gust, 1 hour",km/h,rrfs_hawai,60,0,0,vitr_naraz,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,gust,Wind gusts,"Wind gust, 1 hour",km/h,nbm,60,0,0,vitr_naraz,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,gust,Wind gusts,"Wind gust, 1 hour",km/h,harmonie_car,60,0,0,vitr_naraz,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,gust,Wind gusts,"Wind gust, 1 hour",km/h,harmonie_eu,60,0,0,vitr_naraz,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,gust,Wind gusts,"Wind gust, 1 hour",km/h,icon_eu,180,0,0,vitr_naraz,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,gust,Wind gusts,"Wind gust, 1 hour",km/h,icon_de,60,0,0,vitr_naraz,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,gust,Wind gusts,"Wind gust, 1 hour",km/h,icon_ch,60,0,0,vitr_naraz,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,gust,Wind gusts,"Wind gust, 1 hour",km/h,icon_it,60,0,0,vitr_naraz,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,gust,Wind gusts,"Wind gust, 1 hour",km/h,aladin,60,0,0,vitr_naraz,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,gust,Wind gusts,"Wind gust, 1 hour",km/h,arome,60,0,0,vitr_naraz,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,gust,Wind gusts,"Wind gust, 1 hour",km/h,meps,60,0,0,vitr_naraz,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,gust,Wind gusts,"Wind gust, 1 hour",km/h,ukmo_uk,60,0,0,vitr_naraz,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+ecmwf,gust,Wind gusts,"Wind gust, 1 hour",km/h,ecmwf,180,0,0,vitr_naraz,1979-06-01T00:00:00.000Z,2020-10-31T21:00:00.000Z,2021-01-29T00:00:00.000Z
+gfs,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,gfs,180,0,0,vitr_naraz_ac,2026-10-21T09:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,gem,180,0,0,vitr_naraz_ac,2026-10-21T06:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,ecmwf_mres,180,0,0,vitr_naraz_ac,2026-10-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,ecmwf_hres,180,0,0,vitr_naraz_ac,2026-10-21T06:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,kma_um,180,0,0,vitr_naraz_ac,2026-03-31T12:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,icon,180,0,0,vitr_naraz_ac,2026-10-21T06:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,hrrr,60,0,0,vitr_naraz_ac,2026-10-21T13:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,rrfs,60,0,0,vitr_naraz_ac,2026-10-21T13:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,rrfs_hawai,60,0,0,vitr_naraz_ac,2026-10-21T06:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,nbm,60,0,0,vitr_naraz_ac,2026-10-21T13:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_car,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,harmonie_car,60,0,0,vitr_naraz_ac,2026-10-21T09:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,harmonie_eu,60,0,0,vitr_naraz_ac,2026-10-21T10:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,icon_eu,180,0,0,vitr_naraz_ac,2026-10-21T09:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,icon_de,60,0,0,vitr_naraz_ac,2026-10-21T12:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,icon_ch,60,0,0,vitr_naraz_ac,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,icon_it,60,0,0,vitr_naraz_ac,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,aladin,60,0,0,vitr_naraz_ac,2026-10-21T06:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,arome,60,0,0,vitr_naraz_ac,2026-10-21T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,meps,60,0,0,vitr_naraz_ac,2026-10-21T09:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,gust-ac,Wind gusts,"Wind gust, accumulated maximum",km/h,ukmo_uk,60,0,0,vitr_naraz_ac,2026-10-21T04:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,pressure,Air pressure,Mean sea-level pressure,hPa,gfs,180,0,0,tlak,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,pressure,Air pressure,Mean sea-level pressure,hPa,gem,180,0,0,tlak,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,pressure,Air pressure,Mean sea-level pressure,hPa,ecmwf_mres,180,0,0,tlak,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,pressure,Air pressure,Mean sea-level pressure,hPa,ecmwf_hres,180,0,0,tlak,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,pressure,Air pressure,Mean sea-level pressure,hPa,kma_um,180,0,0,tlak,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,pressure,Air pressure,Mean sea-level pressure,hPa,icon,180,0,0,tlak,2018-01-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,pressure,Air pressure,Mean sea-level pressure,hPa,hrrr,60,0,0,tlak,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,pressure,Air pressure,Mean sea-level pressure,hPa,rrfs,60,0,0,tlak,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,pressure,Air pressure,Mean sea-level pressure,hPa,rrfs_hawai,60,0,0,tlak,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,pressure,Air pressure,Mean sea-level pressure,hPa,harmonie_car,60,0,0,tlak,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,pressure,Air pressure,Mean sea-level pressure,hPa,harmonie_eu,60,0,0,tlak,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,pressure,Air pressure,Mean sea-level pressure,hPa,icon_eu,180,0,0,tlak,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+arome,pressure,Air pressure,Mean sea-level pressure,hPa,arome,60,0,0,tlak,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+gfs,geopotential-850hpa,Air pressure,"Geopotential height, 850 hPa",m,gfs,180,0,0,gph_850,2025-11-18T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,geopotential-850hpa,Air pressure,"Geopotential height, 850 hPa",m,icon,180,0,0,gph_850,2025-11-18T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,geopotential-500hpa,Air pressure,"Geopotential height, 500 hPa",m,gfs,180,0,0,gph_500,2025-11-18T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,geopotential-500hpa,Air pressure,"Geopotential height, 500 hPa",m,icon,180,0,0,gph_500,2025-11-18T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,geopotential-300hpa,Air pressure,"Geopotential height, 300 hPa",m,gfs,180,0,0,gph_300,2025-11-18T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,geopotential-300hpa,Air pressure,"Geopotential height, 300 hPa",m,icon,180,0,0,gph_300,2025-11-18T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,gfs,180,0,0,cape,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_mres,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,ecmwf_mres,180,0,0,cape,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,ecmwf_hres,180,0,0,cape,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,kma_um,180,0,0,cape,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,icon,180,0,0,cape,2025-07-04T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,hrrr,60,0,0,cape,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,rrfs,60,0,0,cape,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,rrfs_hawai,60,0,0,cape,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,harmonie_car,60,0,0,cape,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_eu,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,icon_eu,180,0,0,cape,2025-07-04T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,icon_de,60,0,0,cape,2025-07-04T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,icon_ch,60,0,0,cape,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,icon_it,60,0,0,cape,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,aladin,60,0,0,cape,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,arome,60,0,0,cape,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,meps,60,0,0,cape,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+ukmo_uk,cape,Thunderstorms,CAPE (convective available potential energy),J/kg,ukmo_uk,60,0,0,cape,2025-01-01T00:00:00.000Z,2026-10-26T03:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,cape-shear,Thunderstorms,CAPE × shear,index,gfs,180,0,0,cape_shear,2018-05-17T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_mres,cape-shear,Thunderstorms,CAPE × shear,index,ecmwf_mres,180,0,0,cape_shear,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,cape-shear,Thunderstorms,CAPE × shear,index,ecmwf_mres,180,0,0,cape_shear,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,cape-shear,Thunderstorms,CAPE × shear,index,icon,180,0,0,cape_shear,2025-07-04T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_eu,cape-shear,Thunderstorms,CAPE × shear,index,icon_eu,180,0,0,cape_shear,2025-07-04T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,cape-shear,Thunderstorms,CAPE × shear,index,icon_de,60,0,0,cape_shear,2025-07-04T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,gfs,180,0,0,shear,2018-05-17T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_mres,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,ecmwf_mres,180,0,0,shear,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,ecmwf_mres,180,0,0,shear,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,icon,180,0,0,shear,2025-07-04T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_eu,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,icon_eu,180,0,0,shear,2025-07-04T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,shear,Thunderstorms,"Wind shear, 0–6 km",m/s,icon_de,60,0,0,shear,2025-07-04T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+gfs,hail-probability,Thunderstorms,Hail probability,%,gfs,180,0,0,hail_probability,2025-06-27T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,cin,Thunderstorms,CIN (convective inhibition),J/kg,gfs,180,0,0,cin,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,cin,Thunderstorms,CIN (convective inhibition),J/kg,ecmwf_hres,180,0,0,cin,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,cin,Thunderstorms,CIN (convective inhibition),J/kg,hrrr,60,0,0,cin,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,cin,Thunderstorms,CIN (convective inhibition),J/kg,rrfs,60,0,0,cin,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,cin,Thunderstorms,CIN (convective inhibition),J/kg,rrfs_hawai,60,0,0,cin,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,li,Thunderstorms,Lifted index,°C,gfs,180,0,0,li,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,helicity,Thunderstorms,"Storm-relative helicity, 0–3 km",m²/s²,gfs,180,0,0,helicity,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,helicity,Thunderstorms,"Storm-relative helicity, 0–3 km",m²/s²,hrrr,60,0,0,helicity,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,helicity,Thunderstorms,"Storm-relative helicity, 0–3 km",m²/s²,rrfs,60,0,0,helicity,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,helicity,Thunderstorms,"Storm-relative helicity, 0–3 km",m²/s²,rrfs_hawai,60,0,0,helicity,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,humidity-2m,Humidity,Relative humidity at 2 m,%,gfs,180,0,0,vlhkost,2018-03-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,humidity-2m,Humidity,Relative humidity at 2 m,%,ecmwf_hres,180,0,0,vlhkost,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,humidity-2m,Humidity,Relative humidity at 2 m,%,hrrr,60,0,0,vlhkost,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,humidity-2m,Humidity,Relative humidity at 2 m,%,rrfs,60,0,0,vlhkost,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,humidity-2m,Humidity,Relative humidity at 2 m,%,rrfs_hawai,60,0,0,vlhkost,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+nbm,humidity-2m,Humidity,Relative humidity at 2 m,%,nbm,60,0,0,vlhkost,2026-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T13:00:00.000Z
+harmonie_eu,humidity-2m,Humidity,Relative humidity at 2 m,%,harmonie_eu,60,0,0,vlhkost,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,humidity-2m,Humidity,Relative humidity at 2 m,%,icon_eu,180,0,0,vlhkost,2018-03-01T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,humidity-2m,Humidity,Relative humidity at 2 m,%,icon_de,60,0,0,vlhkost,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_it,humidity-2m,Humidity,Relative humidity at 2 m,%,icon_it,60,0,0,vlhkost,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,humidity-2m,Humidity,Relative humidity at 2 m,%,aladin,60,0,0,vlhkost,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,humidity-2m,Humidity,Relative humidity at 2 m,%,arome,60,0,0,vlhkost,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,humidity-2m,Humidity,Relative humidity at 2 m,%,meps,60,0,0,vlhkost,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+gfs,humidity-900hpa,Humidity,Relative humidity at 900 hPa,%,gfs,180,0,0,vlhkost_90000_pa,2021-03-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,humidity-850hpa,Humidity,Relative humidity at 850 hPa,%,gfs,180,0,0,vlhkost_85000_pa,2021-03-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_mres,humidity-850hpa,Humidity,Relative humidity at 850 hPa,%,ecmwf_mres,180,0,0,vlhkost_85000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,humidity-850hpa,Humidity,Relative humidity at 850 hPa,%,ecmwf_mres,180,0,0,vlhkost_85000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,humidity-700hpa,Humidity,Relative humidity at 700 hPa,%,gfs,180,0,0,vlhkost_70000_pa,2021-03-06T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_mres,humidity-700hpa,Humidity,Relative humidity at 700 hPa,%,ecmwf_mres,180,0,0,vlhkost_70000_pa,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,humidity-700hpa,Humidity,Relative humidity at 700 hPa,%,ecmwf_mres,180,0,0,vlhkost_70000_pa,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gfs,dew,Humidity,Dew point at 2 m,°C,gfs,180,0,0,dew_point,2018-02-10T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,dew,Humidity,Dew point at 2 m,°C,gem,180,0,0,dew_point,2022-09-04T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_mres,dew,Humidity,Dew point at 2 m,°C,ecmwf_mres,180,0,0,dew_point,2024-04-21T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,dew,Humidity,Dew point at 2 m,°C,ecmwf_hres,180,0,0,dew_point,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+kma_um,dew,Humidity,Dew point at 2 m,°C,kma_um,180,0,0,dew_point,2026-01-01T00:00:00.000Z,2026-04-12T12:00:00.000Z,2026-03-31T12:00:00.000Z
+icon,dew,Humidity,Dew point at 2 m,°C,icon,180,0,0,dew_point,2018-02-10T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,dew,Humidity,Dew point at 2 m,°C,hrrr,60,0,0,dew_point,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,dew,Humidity,Dew point at 2 m,°C,rrfs,60,0,0,dew_point,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,dew,Humidity,Dew point at 2 m,°C,rrfs_hawai,60,0,0,dew_point,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,dew,Humidity,Dew point at 2 m,°C,harmonie_car,60,0,0,dew_point,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,dew,Humidity,Dew point at 2 m,°C,harmonie_eu,60,0,0,dew_point,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,dew,Humidity,Dew point at 2 m,°C,icon_eu,180,0,0,dew_point,2025-02-14T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,dew,Humidity,Dew point at 2 m,°C,icon_de,60,0,0,dew_point,2025-02-14T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,dew,Humidity,Dew point at 2 m,°C,icon_ch,60,0,0,dew_point,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,dew,Humidity,Dew point at 2 m,°C,icon_it,60,0,0,dew_point,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+aladin,dew,Humidity,Dew point at 2 m,°C,aladin,60,0,0,dew_point,2025-01-01T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T06:00:00.000Z
+arome,dew,Humidity,Dew point at 2 m,°C,arome,60,0,0,dew_point,2025-01-01T00:00:00.000Z,2026-10-23T00:00:00.000Z,2026-10-21T00:00:00.000Z
+meps,dew,Humidity,Dew point at 2 m,°C,meps,60,0,0,dew_point,2025-02-14T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+icon,wave,Sea / ocean,Significant wave height,m,icon_water,180,0,0,swh|mdww,2017-07-01T00:00:00.000Z,2024-05-30T00:00:00.000Z,2024-05-30T00:00:00.000Z
+icon_eu,wave,Sea / ocean,Significant wave height,m,icon_eu_water,180,0,0,swh|mdww,2020-02-17T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T00:00:00.000Z
+mfwam,wave,Sea / ocean,Significant wave height,m,mfwam_water,180,0,0,swh|mdww,2024-04-14T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T03:00:00.000Z
+wavewatch_no,wave,Sea / ocean,Significant wave height,m,wavewatch_no_water,180,0,0,swh|mdww,2023-05-15T00:00:00.000Z,2026-10-24T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-wave,Sea / ocean,Wind-wave height,m,icon_water,180,0,0,shww|mdww,2017-07-01T00:00:00.000Z,2024-05-30T00:00:00.000Z,2024-05-30T00:00:00.000Z
+icon_eu,wind-wave,Sea / ocean,Wind-wave height,m,icon_eu_water,180,0,0,shww|mdww,2020-02-17T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T00:00:00.000Z
+mfwam,wind-wave,Sea / ocean,Wind-wave height,m,mfwam_water,180,0,0,shww|mdww,2024-04-14T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T03:00:00.000Z
+wavewatch_no,wind-wave,Sea / ocean,Wind-wave height,m,wavewatch_no_water,180,0,0,shww|mdww,2023-05-15T00:00:00.000Z,2026-10-24T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,wind-wave-period,Sea / ocean,Wind-wave period,s,icon_water,180,0,0,mpww,2017-07-01T00:00:00.000Z,2024-05-30T00:00:00.000Z,2024-05-30T00:00:00.000Z
+icon_eu,wind-wave-period,Sea / ocean,Wind-wave period,s,icon_eu_water,180,0,0,mpww,2020-02-17T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T00:00:00.000Z
+mfwam,wind-wave-period,Sea / ocean,Wind-wave period,s,mfwam_water,180,0,0,mpww,2024-04-14T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T03:00:00.000Z
+wavewatch_no,wind-wave-period,Sea / ocean,Wind-wave period,s,wavewatch_no_water,180,0,0,mpww,2023-05-15T00:00:00.000Z,2026-10-24T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,swell,Sea / ocean,Swell wave height,m,icon_water,180,0,0,shts|mdts,2017-07-01T00:00:00.000Z,2024-05-30T00:00:00.000Z,2024-05-30T00:00:00.000Z
+icon_eu,swell,Sea / ocean,Swell wave height,m,icon_eu_water,180,0,0,shts|mdts,2020-02-17T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T00:00:00.000Z
+mfwam,swell,Sea / ocean,Swell wave height,m,mfwam_water,180,0,0,shts|mdts,2024-04-14T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T03:00:00.000Z
+wavewatch_no,swell,Sea / ocean,Swell wave height,m,wavewatch_no_water,180,0,0,shts|mdts,2023-05-15T00:00:00.000Z,2026-10-24T00:00:00.000Z,2026-10-21T00:00:00.000Z
+icon,swell-period,Sea / ocean,Swell wave period,s,icon_water,180,0,0,mpts,2017-07-01T00:00:00.000Z,2024-05-30T00:00:00.000Z,2024-05-30T00:00:00.000Z
+icon_eu,swell-period,Sea / ocean,Swell wave period,s,icon_eu_water,180,0,0,mpts,2020-02-17T00:00:00.000Z,2026-10-24T06:00:00.000Z,2026-10-21T00:00:00.000Z
+mfwam,swell-period,Sea / ocean,Swell wave period,s,mfwam_water,180,0,0,mpts,2024-04-14T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T03:00:00.000Z
+wavewatch_no,swell-period,Sea / ocean,Swell wave period,s,wavewatch_no_water,180,0,0,mpts,2023-05-15T00:00:00.000Z,2026-10-24T00:00:00.000Z,2026-10-21T00:00:00.000Z
+rtofs,currents,Sea / ocean,Ocean surface currents,km/h,rtofs,360,0,0,proud_u|proud_v,2021-06-28T00:00:00.000Z,2026-10-28T00:00:00.000Z,2026-10-20T00:00:00.000Z
+smoc,currents,Sea / ocean,Ocean surface currents,km/h,smoc,60,0,0,proud_u|proud_v,2016-05-01T12:00:00.000Z,2026-10-28T23:00:00.000Z,2026-10-21T00:00:00.000Z
+smoc,tide-currents,Sea / ocean,Tidal currents,km/h,smoc,60,0,0,tide_proud_u|tide_proud_v,2016-05-01T12:00:00.000Z,2026-10-28T23:00:00.000Z,2026-10-21T00:00:00.000Z
+stofs,tide,Sea / ocean,Tide height (MLLW datum),m,stofs,60,0,0,tide,2016-05-01T12:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-20T19:00:00.000Z
+stofs_us,tide,Sea / ocean,Tide height (MLLW datum),m,stofs_us,60,0,0,tide,2016-05-01T12:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-20T19:00:00.000Z
+stofs,tide-surge,Sea / ocean,Tide + storm surge (MLLW datum),m,stofs,60,0,0,tide_surge,2016-05-01T12:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-20T19:00:00.000Z
+stofs_us,tide-surge,Sea / ocean,Tide + storm surge (MLLW datum),m,stofs_us,60,0,0,tide_surge,2016-05-01T12:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-20T19:00:00.000Z
+gfs,snow,Snow cover,Snow cover depth,cm,gfs,180,0,0,snih,2018-01-01T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+gem,snow,Snow cover,Snow cover depth,cm,gem,180,0,0,snih,2026-01-01T00:00:00.000Z,2026-10-31T00:00:00.000Z,2026-10-21T00:00:00.000Z
+ecmwf_hres,snow,Snow cover,Snow cover depth,cm,ecmwf_hres,180,0,0,snih,2025-12-05T00:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,snow,Snow cover,Snow cover depth,cm,icon,180,0,0,snih,2017-10-01T00:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,snow,Snow cover,Snow cover depth,cm,hrrr,60,0,0,snih,2022-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,snow,Snow cover,Snow cover depth,cm,rrfs,60,0,0,snih,2026-09-28T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,snow,Snow cover,Snow cover depth,cm,rrfs_hawai,60,0,0,snih,2026-10-01T00:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,snow,Snow cover,Snow cover depth,cm,harmonie_car,60,0,0,snih,2026-01-01T00:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,snow,Snow cover,Snow cover depth,cm,harmonie_eu,60,0,0,snih,2026-01-01T00:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,snow,Snow cover,Snow cover depth,cm,icon_eu,180,0,0,snih,2018-10-31T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,snow,Snow cover,Snow cover depth,cm,icon_de,60,0,0,snih,2025-01-01T00:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,snow,Snow cover,Snow cover depth,cm,icon_ch,60,0,0,snih,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,snow,Snow cover,Snow cover depth,cm,icon_it,60,0,0,snih,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+meps,snow,Snow cover,Snow cover depth,cm,meps,60,0,0,snih,2025-01-01T00:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+gfs,snow-new-ac,Snow cover,"New snow, accumulated",cm,gfs,180,0,0,novy_snih_ac,2026-10-21T09:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+ecmwf_hres,snow-new-ac,Snow cover,"New snow, accumulated",cm,ecmwf_hres,180,0,0,novy_snih_ac,2026-10-21T06:00:00.000Z,2026-11-04T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon,snow-new-ac,Snow cover,"New snow, accumulated",cm,icon,180,0,0,novy_snih_ac,2026-10-21T06:00:00.000Z,2026-10-28T12:00:00.000Z,2026-10-21T06:00:00.000Z
+hrrr,snow-new-ac,Snow cover,"New snow, accumulated",cm,hrrr,60,0,0,novy_snih_ac,2026-10-21T13:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs,snow-new-ac,Snow cover,"New snow, accumulated",cm,rrfs,60,0,0,novy_snih_ac,2026-10-21T13:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T13:00:00.000Z
+rrfs_hawai,snow-new-ac,Snow cover,"New snow, accumulated",cm,rrfs_hawai,60,0,0,novy_snih_ac,2026-10-21T06:00:00.000Z,2026-10-24T18:00:00.000Z,2026-10-21T06:00:00.000Z
+harmonie_car,snow-new-ac,Snow cover,"New snow, accumulated",cm,harmonie_car,60,0,0,novy_snih_ac,2026-10-21T09:00:00.000Z,2026-10-23T21:00:00.000Z,2026-10-21T09:00:00.000Z
+harmonie_eu,snow-new-ac,Snow cover,"New snow, accumulated",cm,harmonie_eu,60,0,0,novy_snih_ac,2026-10-21T10:00:00.000Z,2026-10-23T22:00:00.000Z,2026-10-21T10:00:00.000Z
+icon_eu,snow-new-ac,Snow cover,"New snow, accumulated",cm,icon_eu,180,0,0,novy_snih_ac,2026-10-21T09:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T09:00:00.000Z
+icon_de,snow-new-ac,Snow cover,"New snow, accumulated",cm,icon_de,60,0,0,novy_snih_ac,2026-10-21T12:00:00.000Z,2026-10-23T12:00:00.000Z,2026-10-21T12:00:00.000Z
+icon_ch,snow-new-ac,Snow cover,"New snow, accumulated",cm,icon_ch,60,0,0,novy_snih_ac,2025-06-25T00:00:00.000Z,2026-10-26T06:00:00.000Z,2026-10-21T06:00:00.000Z
+icon_it,snow-new-ac,Snow cover,"New snow, accumulated",cm,icon_it,60,0,0,novy_snih_ac,2026-10-01T00:00:00.000Z,2026-10-24T12:00:00.000Z,2026-10-21T12:00:00.000Z
+meps,snow-new-ac,Snow cover,"New snow, accumulated",cm,meps,60,0,0,novy_snih_ac,2026-10-21T09:00:00.000Z,2026-10-24T03:00:00.000Z,2026-10-21T09:00:00.000Z
+silam,pm25,Air quality,PM2.5,µg/m³,silam,180,0,0,pm25,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,pm25,Air quality,PM2.5,µg/m³,silam_eu,180,0,0,pm25,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,pm25,Air quality,PM2.5,µg/m³,cams,180,0,0,pm25,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,pm10,Air quality,PM10,µg/m³,silam,180,0,0,pm10,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,pm10,Air quality,PM10,µg/m³,silam_eu,180,0,0,pm10,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,pm10,Air quality,PM10,µg/m³,cams,180,0,0,pm10,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,no2,Air quality,NO₂,µg/m³,silam,180,0,0,no2,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,no2,Air quality,NO₂,µg/m³,silam_eu,180,0,0,no2,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,no2,Air quality,NO₂,µg/m³,cams,180,0,0,no2,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,so2,Air quality,SO₂,µg/m³,silam,180,0,0,so2,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,so2,Air quality,SO₂,µg/m³,silam_eu,180,0,0,so2,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,so2,Air quality,SO₂,µg/m³,cams,180,0,0,so2,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,o3,Air quality,O₃,µg/m³,silam,180,0,0,o3,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,o3,Air quality,O₃,µg/m³,silam_eu,180,0,0,o3,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,o3,Air quality,O₃,µg/m³,cams,180,0,0,o3,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,dust,Air quality,Dust,µg/m³,silam,180,0,0,dust,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,dust,Air quality,Dust,µg/m³,silam_eu,180,0,0,dust,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+silam,co,Air quality,CO,µg/m³,silam,180,0,0,co,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,co,Air quality,CO,µg/m³,silam_eu,180,0,0,co,2020-02-15T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,co,Air quality,CO,µg/m³,cams,180,0,0,co,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+silam,aqi,Air quality,Air Quality Index,index,silam,180,0,0,aqi,2021-06-11T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T00:00:00.000Z
+silam_eu,aqi,Air quality,Air Quality Index,index,silam_eu,180,0,0,aqi,2021-06-11T00:00:00.000Z,2026-10-26T00:00:00.000Z,2026-10-21T03:00:00.000Z
+cams,aqi,Air quality,Air Quality Index,index,cams,180,0,0,aqi,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z
+cams,uv,Air quality,UV index,index,cams,180,0,0,uv,2025-05-15T00:00:00.000Z,2026-10-25T11:00:00.000Z,2026-10-20T12:00:00.000Z

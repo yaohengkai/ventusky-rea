@@ -1,0 +1,13 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+p.on('request', r=>{const u=r.url(); if(/style|script-en|\.css|\.js/.test(u)) console.log('REQ',r.resourceType(),u.slice(0,180))});
+p.on('response', r=>{const u=r.url(); if(/style|script-en|\.css|\.js/.test(u)) console.log('RES',r.status(),r.headers()['content-type'],u.slice(0,180))});
+p.on('requestfailed', r=>{const u=r.url(); if(/style|script-en|\.css|\.js/.test(u)) console.log('FAIL',r.failure()?.errorText,u.slice(0,180))});
+await p.goto('http://127.0.0.1:8787/',{waitUntil:'commit',timeout:20000});
+await p.waitForTimeout(10000);
+console.log('TITLE',await p.title());
+console.log('SHEETS', await p.evaluate(()=>[...document.styleSheets].map(s=>({href:s.href,rules:(()=>{try{return s.cssRules.length}catch(e){return 'ERR'}})()}))));
+console.log('SCRIPTS', await p.evaluate(()=>[...document.scripts].map(s=>s.src)));
+await b.close();

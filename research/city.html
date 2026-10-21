@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="dns-prefetch" href="https://static.ventusky.com">
+	<link rel="dns-prefetch" href="https://data.ventusky.com">
+	<link rel="dns-prefetch" href="https://api.ventusky.com">
+	<link rel="dns-prefetch" href="https://webcams.ventusky.com">
+    <link rel="dns-prefetch" href="https://map.ventusky.com">
+        
+    <link rel=stylesheet href="https://static.ventusky.com/media/style.css?1791624780">
+
+
+    <title>Weather - Los Angeles - 14-Day Forecast & Rain | Ventusky</title>
+
+    
+    <meta name="keywords" content="weather, forecast, maps, wind, temperature, precipitation, rain, cloud, pressure, CAPE">
+    <meta name="application-name" content="Ventusky">        
+    <meta name="mobile-web-app-capable" content="yes">    
+    <meta name="theme-color" content="#222e63">
+    <meta name="apple-itunes-app" content="app-id=1280984498">
+    <link rel="manifest" href="https://www.ventusky.com/manifest.json">
+
+    <meta name="description" content="Los Angeles - Weather forecast for 14 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this place" />
+<meta property="og:title" content="Weather - Los Angeles - 14-Day Forecast & Rain"/>
+<meta property="twitter:title" content="Weather - Los Angeles - 14-Day Forecast & Rain"/>
+<meta property="og:description" content="See the weather like never before – live weather maps powered by the most accurate models."/>
+<meta property="twitter:description" content="See the weather like never before – live weather maps powered by the most accurate models."/>
+<meta property="og:image" content="https://static.ventusky.com/images_v2/ventusky-share.jpg"/>
+<meta property="twitter:image" content="https://static.ventusky.com/images_v2/ventusky-share.jpg"/>
+   
+        		       
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Ventuskycom">
+   	 
+    <link rel="canonical" href="https://www.ventusky.com/los-angeles">	<link rel="shortcut icon" href="https://static.ventusky.com/images_v2/favicon.ico">
+    <link rel="apple-touch-icon" href="https://static.ventusky.com/images_v2/apple-touch-icon-152x152.png">    
+    
+	
+    
+    <!-- usa -->
+
+</head>
+<body>
+    <form id="header">
+        <h1><a href="https://www.ventusky.com/">Ventusky</a></h1>
+        <label>
+            <input name="q">
+        </label>
+        <ul>
+            <li class="progress"></li>
+        </ul>
+    </form>
+	<menu>
+		<li>
+			<a href="https://my.ventusky.com/login/?map" id="menu-login" class="button">Login</a>
+		</li>
+        <li>
+			<a href="https://my.ventusky.com/premium/" id="menu-premium" class="button">Premium</a>
+		</li>
+		<li>
+			<a href="https://my.ventusky.com/" id="menu-my" class="button">myVentusky</a>
+		</li>
+		<li>
+			<a href="https://www.ventusky.com//forecast/" id="menu-forecast" class="button">Forecast</a>
+        </li>
+    </menu>
+
+    <div id="no-js">
+     <ul>
+        <li>Temperature</li>
+	    <li>Feels like temperature</li>
+        <li>Precipitation</li>
+	    <li>Radar</li>
+	    <li>Satellite</li>
+        <li>Wind speed</li>
+        <li>Wind gusts</li>
+        <li>Clouds</li>
+        <li>Air pressure</li>
+        <li>CAPE</li>
+        <li>Snow cover</li>
+        <li>Humidity</li>
+	    <li>Sea</li>
+	    <li>Air quality</li>
+     </ul>
+     
+     Wind Animation <br>
+     ECMWF, GFS, ICON, GEM
+	 
+	 
+	</div>
+	
+	<div id="news" data-news="news-44" style="width: 280px;">
+      <a href="https://my.ventusky.com/guide/news/two-new-high-resolution-weather-models-on-ventusky-rrfs-and-icon-it-84/">
+	    <strong>Two New High-Resolution Weather Models on Ventusky</strong>
+	    <img src="https://static.ventusky.com/images/promo/rrfs.png" alt="Model">        
+      </a>
+    </div>
+
+
+    <script>
+var MapOptions = {
+  "root": "https://www.ventusky.com/",
+  "lang": "en",
+  "lat": 34.0726,
+  "lon": -118.261,
+  "zoom": 5,
+  "model": "auto",
+    "now":               Date.UTC(2026, 9, 21, 15, 0),
+  "camTilesUpdated": 1791911487,
+
+  "icon-deTimelineStart": Date.UTC(2025, 0, 1, 0),
+"icon-deTimelineEnd": Date.UTC(2026, 9, 23, 12),
+"icon-deUpdated": Date.UTC(2026, 9, 21, 12, 0),
+"icon-deAccumulationStart": Date.UTC(2026, 9, 21, 12),
+
+"icon-waterTimelineStart": Date.UTC(2017, 6, 1, 0),
+"icon-waterTimelineEnd": Date.UTC(2024, 4, 30, 0),
+"icon-waterUpdated": Date.UTC(2024, 4, 30, 0, 0),
+
+"icon-eu-waterTimelineStart": Date.UTC(2020, 1, 17, 0),
+"icon-eu-waterTimelineEnd": Date.UTC(2026, 9, 24, 6),
+"icon-eu-waterUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"gfsTimelineStart": Date.UTC(2018, 0, 1, 0),
+"gfsTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"gfsUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"gfsAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"gemTimelineStart": Date.UTC(2026, 0, 1, 0),
+"gemTimelineEnd": Date.UTC(2026, 9, 31, 0),
+"gemUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"gemAccumulationStart": Date.UTC(2026, 9, 21, 3),
+
+"hrrrTimelineStart": Date.UTC(2022, 0, 1, 0),
+"hrrrTimelineEnd": Date.UTC(2026, 9, 23, 12),
+"hrrrUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"hrrrAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"rrfsTimelineStart": Date.UTC(2026, 8, 28, 0),
+"rrfsTimelineEnd": Date.UTC(2026, 9, 24, 18),
+"rrfsUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"rrfsAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"rrfs_hawaiTimelineStart": Date.UTC(2026, 9, 1, 0),
+"rrfs_hawaiTimelineEnd": Date.UTC(2026, 9, 24, 18),
+"rrfs_hawaiUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"rrfs_hawaiAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"nbmTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nbmTimelineEnd": Date.UTC(2026, 9, 23, 0),
+"nbmUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"nbmAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"euradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"euradTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"euradUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"eurad_hresTimelineStart": Date.UTC(2023, 7, 27, 0),
+"eurad_hresTimelineEnd": Date.UTC(2026, 9, 21, 14),
+"eurad_hresUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"usradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"usradTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"usradUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"earadTimelineStart": Date.UTC(2024, 4, 5, 0),
+"earadTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"earadUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"woradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"woradTimelineEnd": Date.UTC(2026, 9, 21, 14),
+"woradUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"worad_hresTimelineStart": Date.UTC(2025, 7, 23, 0),
+"worad_hresTimelineEnd": Date.UTC(2026, 9, 21, 16),
+"worad_hresUpdated": Date.UTC(2026, 9, 21, 16, 25),
+
+"silamTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silamTimelineEnd": Date.UTC(2026, 9, 26, 0),
+"silamUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"silam-euTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silam-euTimelineEnd": Date.UTC(2026, 9, 26, 0),
+"silam-euUpdated": Date.UTC(2026, 9, 21, 3, 0),
+
+"goesTimelineStart": Date.UTC(2023, 0, 1, 0),
+"goesTimelineEnd": Date.UTC(2026, 9, 21, 14),
+"goesUpdated": Date.UTC(2026, 9, 21, 14, 40),
+
+"rtofsTimelineStart": Date.UTC(2021, 5, 28, 0),
+"rtofsTimelineEnd": Date.UTC(2026, 9, 28, 0),
+"rtofsUpdated": Date.UTC(2026, 9, 20, 0, 0),
+
+"ovationTimelineStart": Date.UTC(2021, 3, 1, 0),
+"ovationTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"ovationUpdated": Date.UTC(2026, 9, 21, 15, 0),
+
+"aromeTimelineStart": Date.UTC(2025, 0, 1, 0),
+"aromeTimelineEnd": Date.UTC(2026, 9, 23, 0),
+"aromeUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"aromeAccumulationStart": Date.UTC(2026, 9, 21, 0),
+
+"ukmoTimelineStart": Date.UTC(2026, 0, 1, 0),
+"ukmoTimelineEnd": Date.UTC(2026, 9, 22, 6),
+"ukmoUpdated": Date.UTC(2026, 9, 21, 6, 0),
+
+"ukmo-ukTimelineStart": Date.UTC(2025, 0, 1, 0),
+"ukmo-ukUpdated": Date.UTC(2026, 9, 21, 4, 0),
+"ukmo-uk3hStart": Date.UTC(2026, 9, 23, 9),
+"ukmo-ukTimelineEnd": Date.UTC(2026, 9, 26, 3),
+"ukmo-ukAccumulationStart": Date.UTC(2026, 9, 21, 4),
+
+"iconTimelineStart": Date.UTC(2018, 0, 1, 0),
+"iconUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"icon3hStart": Date.UTC(2026, 9, 24, 12),
+"iconTimelineEnd": Date.UTC(2026, 9, 28, 12),
+"iconAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"icon-euTimelineStart": Date.UTC(2018, 10, 0, 0),
+"icon-euUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"icon-eu3hStart": Date.UTC(2026, 9, 24, 12),
+"icon-euTimelineEnd": Date.UTC(2026, 9, 26, 6),
+"icon-euAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"mepsTimelineStart": Date.UTC(2025, 0, 1, 0),
+"mepsTimelineEnd": Date.UTC(2026, 9, 24, 3),
+"mepsUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"mepsAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"wavewatch-noTimelineStart": Date.UTC(2023, 4, 15, 0),
+"wavewatch-noTimelineEnd": Date.UTC(2026, 9, 24, 0),
+"wavewatch-noUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"stofsTimelineStart": Date.UTC(2016, 4, 1, 12),
+"stofsTimelineEnd": Date.UTC(2026, 9, 28, 12),
+"stofsUpdated": Date.UTC(2026, 9, 20, 19, 0),
+
+"smocTimelineStart": Date.UTC(2016, 4, 1, 12),
+"smocTimelineEnd": Date.UTC(2026, 9, 28, 23),
+"smocUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"mfwamTimelineStart": Date.UTC(2024, 3, 14, 0),
+"mfwamTimelineEnd": Date.UTC(2026, 9, 31, 0),
+"mfwamUpdated": Date.UTC(2026, 9, 21, 3, 0),
+
+"ecmwf-mresTimelineStart": Date.UTC(2024, 3, 21, 0),
+"ecmwf-mresUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"ecmwf-mres6hStart": Date.UTC(2026, 9, 27, 0),
+"ecmwf-mresTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"ecmwf-mresAccumulationStart": Date.UTC(2026, 9, 21, 0),
+
+"ecmwf-hresTimelineStart": Date.UTC(2025, 11, 5, 0),
+"ecmwf-hresUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"ecmwf-hres3hStart": Date.UTC(2026, 9, 25, 0),
+"ecmwf-hres6hStart": Date.UTC(2026, 9, 27, 6),
+"ecmwf-hresTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"ecmwf-hresAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"aladinTimelineStart": Date.UTC(2025, 0, 1, 0),
+"aladinTimelineEnd": Date.UTC(2026, 9, 24, 6),
+"aladinUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"aladinAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"kma_umTimelineStart": Date.UTC(2026, 0, 1, 0),
+"kma_umUpdated": Date.UTC(2026, 2, 31, 12, 0),
+"kma_um6hStart": Date.UTC(2026, 3, 4, 0),
+"kma_umTimelineEnd": Date.UTC(2026, 3, 12, 12),
+"kma_umAccumulationStart": Date.UTC(2026, 2, 31, 12),
+
+"harmonie_euTimelineStart": Date.UTC(2026, 0, 1, 0),
+"harmonie_euTimelineEnd": Date.UTC(2026, 9, 23, 22),
+"harmonie_euUpdated": Date.UTC(2026, 9, 21, 10, 0),
+"harmonie_euAccumulationStart": Date.UTC(2026, 9, 21, 10),
+
+"harmonie_carTimelineStart": Date.UTC(2026, 0, 1, 0),
+"harmonie_carTimelineEnd": Date.UTC(2026, 9, 23, 21),
+"harmonie_carUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"harmonie_carAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"nam_usTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nam_usTimelineEnd": Date.UTC(2026, 9, 23, 18),
+"nam_usUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"nam_usAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"nam_hawaiTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nam_hawaiTimelineEnd": Date.UTC(2026, 9, 23, 18),
+"nam_hawaiUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"nam_hawaiAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"camsTimelineStart": Date.UTC(2025, 4, 15, 0),
+"camsTimelineEnd": Date.UTC(2026, 9, 25, 11),
+"camsUpdated": Date.UTC(2026, 9, 20, 12, 0),
+
+"icon-chTimelineStart": Date.UTC(2025, 5, 25, 0),
+"icon-chTimelineEnd": Date.UTC(2026, 9, 26, 6),
+"icon-chUpdated": Date.UTC(2026, 9, 21, 6, 0),
+
+"icon-itTimelineStart": Date.UTC(2026, 9, 1, 0),
+"icon-itTimelineEnd": Date.UTC(2026, 9, 24, 12),
+"icon-itUpdated": Date.UTC(2026, 9, 21, 12, 0),
+
+  
+  "ukmo-ukUpdated": Date.UTC(2026, 9, 21, 12, 0), //overrides non-radar version
+ 
+  "ecmwfTimelineStart": Date.UTC(1979, 5, 1, 0),
+  "ecmwfTimelineEnd":   Date.UTC(2020, 9, 31, 21),
+  "ecmwfUpdated":       Date.UTC(2021, 0, 29, 0, 0),    
+               
+  "hurricanesUpdated":  Date.UTC(2026, 9, 21, 14, 40),
+  "firesUpdated":  Date.UTC(2026, 9, 21, 14, 54)
+};
+    </script>
+
+    <script src="https://static.ventusky.com/media/script-en.js?1791624780"></script>
+    
+
+        
+        <div id="aside">
+            <div id="aside_inner">
+            <span id="aside_close_btn" onclick="document.getElementById('aside').className='hidden'">
+                <span class="aside_close_btn_ico"></span>
+            </span>
+                <div class="header">
+    <div class="header_background">
+        <h1 data-title="Weather - Los Angeles - 14-Day Forecast & Rain | Ventusky">
+            Los Angeles        </h1>
+
+        <a href="#" id="star" data-add="Save on &#10;map" data-remove="Remove from &#10;map" data-star="34.05;-118.24;Los Angeles;los-angeles"><span></span></a>    </div>
+</div>
+<!--/header-->
+  
+<div class="section pb-0">    
+      
+    <a href="https://www.ventusky.com/forecast" class="maps_link" dest="panel">World</a> / <a href="https://www.ventusky.com/forecast/united-states" dest="panel">United States</a> / <a href="https://www.ventusky.com/forecast/united-states/california" dest="panel">California</a>                
+	<p class="note p-0">
+    34°3'N / 118°14'W / Altitude 94&nbsp;m / 08:00 2026/10/21, America/Los_Angeles (UTC-7)    
+    </p>
+</div>
+<!--/section-->
+
+
+<ul class="menu clearfix">
+                    <li>
+                    <a href="#actual">
+                        Current Weather                    </a>
+                </li>
+            <li>
+        <a href="#forecast">
+            Forecast        </a>
+    </li>
+    <li>
+        <a href="#astro">
+            Sun and Moon        </a>
+    </li>
+</ul>
+
+
+            <div id="actual" class="section clearfix">
+                <div class="info_tables">
+                    <div class="info_table">
+                        <table>
+                            <tr>
+                                                                            <td rowspan="5" class="big_ico_cell">
+                                                <img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="60" height="60">                                            </td>
+                                                                                                            <td class="temperature">
+                                                18&nbsp;&deg;C                                            </td>
+                                                            </tr>
+                            <tr>
+                                <td>
+                                                                    </td>
+                            </tr>
+                                                                    <tr>
+                                            <td>
+                                                <span>
+                                                    Wind speed                                                </span>
+                                                <b class="wind_ico arrow_calm">
+                                                    0&nbsp;km/h                                                </b>
+                                            </td>
+                                        </tr>
+                                                                                </table>
+                    </div>
+                    <!--/info_table-->
+                    <div class="info_table spacer">
+                        &nbsp;
+                    </div>
+                    <!--/info_table-->
+                    <div class="info_table">
+                        <table>
+                                                                                    <!--<tr>
+                    <td>Sunrise and Sunset</td>
+                    <td><b>22:31 - 08:57</b></td>
+                </tr>-->
+                                                                    <tr>
+                                            <td>
+                                                Humidity                                            </td>
+                                            <td>
+                                                <b>
+                                                    84&nbsp;%                                                </b>
+                                            </td>
+                                        </tr>
+                                                                                                <tr>
+                                            <td>
+                                                Air pressure                                            </td>
+                                            <td>
+                                                <b>
+                                                    1009&nbsp;hPa                                                </b>
+                                            </td>
+                                        </tr>
+                                                                                                                            <tr>
+                                            <td>
+                                                Visibility                                            </td>
+                                            <td>
+                                                <b>
+                                                    16&nbsp;km                                                </b>
+                                            </td>
+                                        </tr>
+                                                                                                <tr>
+                                            <td>
+                                                Clouds                                            </td>
+                                            <td>
+                                                <b>
+                                                    0 %
+                                                </b>
+                                            </td>
+                                        </tr>
+                                                                                </table>
+                    </div>
+                    <!--/info_table-->
+                </div>
+                <!--/info_tables-->
+                <p class="note">
+                    Calculated from nearby stations (06:53 2026/10/21)                </p>
+            </div>
+            <!--/section-->
+
+
+<p class="text-center">
+    <a href="https://www.ventusky.com/radar-map" class="btn btn-primary my-3">
+	<span class="radar_promo">Open Radar Map</span></a>
+</p>
+
+<div class="section"><a href="https://www.ventusky.com/los-angeles/warnings" class="warnings-pill"  dest="panel"><span class="warnings-pill-left"><span class="warnings-pill-count">2</span><span class="warnings-pill-title">Warnings</span></span><span class="warnings-pill-right"><div class="warning-summary-icon">
+                <img src="https://static.ventusky.com/images_v2/warning/moderate.svg" width="44" height="40" alt="severe">
+                <img class="warning-summary-icon-img"
+                     src="https://static.ventusky.com/images_v2/warning/type/flood.svg"
+                     width="18" height="18" alt="flood">
+            </div><div class="warning-summary-icon">
+                <img src="https://static.ventusky.com/images_v2/warning/light.svg" width="44" height="40" alt="moderate">
+                <img class="warning-summary-icon-img"
+                     src="https://static.ventusky.com/images_v2/warning/type/generic.svg"
+                     width="18" height="18" alt="other">
+            </div><span class="warnings-pill-chevron"></span></span></a></div>
+
+<div id="forecast_24" class="section section_grey">
+
+    <div class="section_header clearfix">
+        <h2>
+            Weather for the next 24 hours        </h2>
+    </div>
+
+
+    <div class="forecast_block">
+        <table class="mesto-predpoved">
+            <thead>
+                <tr>
+                    <th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th>13:00</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th>19:00</th><th>20:00</th><th>21:00</th><th>22:00</th><th>23:00</th><th>00:00 <span>tomorrow</span></th><th>01:00 <span>tomorrow</span></th><th>02:00 <span>tomorrow</span></th><th>03:00 <span>tomorrow</span></th><th>04:00 <span>tomorrow</span></th><th>05:00 <span>tomorrow</span></th><th>06:00 <span>tomorrow</span></th><th>07:00 <span>tomorrow</span></th><th>08:00 <span>tomorrow</span></th><th>09:00 <span>tomorrow</span></th>                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="50" height="50">                            
+                            <div class="temperature_line temp20">20&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 0 %" class="prob-line">0 %</span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>10&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="50" height="50">                            
+                            <div class="temperature_line temp20">22&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 0 %" class="prob-line">0 %</span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>9&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/3.svg" alt="partly cloudy" title="partly cloudy" width="50" height="50">                            
+                            <div class="temperature_line temp20">23&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 0 %" class="prob-line">0 %</span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="50" height="50">                            
+                            <div class="temperature_line temp25">25&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span class="">10 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>13&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="50" height="50">                            
+                            <div class="temperature_line temp25">25&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 30 %" class="prob-line"><span class="">30 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>15&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp20">24&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 40 %" class="prob-line"><span class="">40 %</span></span><br>
+                            <div class="wind_ico arrow_225">SW</div>
+                            <div>14&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp20">22&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span class="">50 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>18&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/25.svg" alt="overcast with light rain" title="overcast with light rain" width="50" height="50">                            
+                            <div class="temperature_line temp20">21&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">0.2&nbsp;mm</span><br><span title="precipitation-probability 70 %" class="prob-line"><span class="with_ico drop">70 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>3&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp20">21&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 20 %" class="prob-line"><span class="">20 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>12&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/12.svg" alt="overcast with heavy rain" title="overcast with heavy rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">19&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">7&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/12.svg" alt="overcast with heavy rain" title="overcast with heavy rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">18&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">8&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_225">SW</div>
+                            <div>15&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">18&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">1&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span class="with_ico drop">50 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>7&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">17&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">0.8&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span class="with_ico drop">50 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">17&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">0.4&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>14&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">17&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">3&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_180">S</div>
+                            <div>7&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp15">18&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span class="">10 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>6&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp15">16&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 0 %" class="prob-line">0 %</span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp15">16&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span class="">10 %</span></span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">16&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">0.5&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span class="with_ico drop">50 %</span></span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>7&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/25.svg" alt="overcast with light rain" title="overcast with light rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">16&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">0.2&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>9&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">16&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">1&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">15&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">1&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span class="with_ico drop">50 %</span></span><br>
+                            <div class="wind_ico arrow_90">E</div>
+                            <div>11&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/3_night.svg" alt="partly cloudy" title="partly cloudy" width="50" height="50">                            
+                            <div class="temperature_line temp15">15&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span class="">10 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>13&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50">                            
+                            <div class="temperature_line temp15">15&nbsp;&deg;C</div>                                                         
+                            <span>0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span class="">10 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>9&nbsp;km/h</div>
+                            
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50">                            
+                            <div class="temperature_line temp15">15&nbsp;&deg;C</div>                                                         
+                            <span class="with_ico drop">4&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span class="with_ico drop">60 %</span></span><br>
+                            <div class="wind_ico arrow_135">SE</div>
+                            <div>1&nbsp;km/h</div>
+                            
+                        </td>
+                                        </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<custom-forecast data-forecast='{"d_1":{"s":[5,11,11,11,12,1,-1,5],"td":[16,16,15,17,18,17,15,15],"tc":["temp15","temp15","temp15","temp15","temp15","temp15","temp15","temp15"],"sr":[0,1.7,1,4,9,0,0,0],"srd":["0","1.7","1","4","9","0","0","0"],"vsd":[11,11,9,15,13,11,7,7],"vg":[22,22,25,22,22,25,7,14],"vgd":[22,22,25,22,22,25,7,14],"vd45":[90,90,135,135,270,270,135,90],"vdId":["E","E","SE","SE","W","W","SE","E"],"rp":[10,60,50,60,50,10,0,10]},"d_2":{"s":[-3,25,5,3,4,5,-1,-1],"td":[15,15,17,20,23,21,19,17],"tc":["temp15","temp15","temp15","temp20","temp20","temp20","temp15","temp15"],"sr":[0,0.1,0,0,0,0,0,0],"srd":["0","0.1","0","0","0","0","0","0"],"vsd":[7,7,1,1,8,9,3,3],"vg":[14,18,4,11,18,29,11,4],"vgd":[14,18,4,11,18,29,11,4],"vd45":[90,90,45,135,225,270,180,90],"vdId":["E","E","NE","SE","SW","W","S","E"],"rp":[10,60,30,10,0,0,0,0]},"d_3":{"s":[-1,-1,1,1,1,1,-1,-1],"td":[16,15,14,21,25,23,20,18],"tc":["temp15","temp15","temp10","temp20","temp25","temp20","temp20","temp15"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[1,1,1,1,10,12,3,3],"vg":[4,4,4,7,25,29,11,4],"vgd":[4,4,4,7,25,29,11,4],"vd45":[45,45,45,225,225,225,270,90],"vdId":["NE","NE","NE","SW","SW","SW","W","E"],"rp":[10,0,10,10,20,40,50,50]},"d_4":{"s":[-1,-1,1,1,24,1,-3,-1],"td":[17,16,15,23,27,25,21,20],"tc":["temp15","temp15","temp15","temp20","temp25","temp25","temp20","temp20"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[3,3,3,1,8,9,3,1],"vg":[7,4,4,7,18,29,11,4],"vgd":[7,4,4,7,18,29,11,4],"vd45":[90,0,0,225,225,270,270,315],"vdId":["E","N","N","SW","SW","W","W","NW"],"rp":[50,50,20,-1,-1,-1,-1,-1]},"d_5":{"s":[-1,-1,1,1,1,1,-1,-1],"td":[17,16,16,25,30,28,22,21],"tc":["temp15","temp15","temp15","temp25","temp30","temp25","temp20","temp20"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[3,3,3,1,6,9,3,3],"vg":[7,4,4,4,14,22,11,4],"vgd":[7,4,4,4,14,22,11,4],"vd45":[90,0,0,315,225,270,270,90],"vdId":["E","N","N","NW","SW","W","W","E"],"rp":[-1,-1,-1,-1,-1,-1,-1,-1]},"d_6":{"s":[-1,-1,1,24,24,24,-24,-24],"td":[18,18,17,26,31,29,23,21],"tc":["temp15","temp15","temp15","temp25","temp30","temp25","temp20","temp20"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[3,3,3,1,3,10,5,3],"vg":[4,4,4,4,7,22,11,7],"vgd":[4,4,4,4,7,22,11,7],"vd45":[0,0,0,315,270,225,270,180],"vdId":["N","N","N","NW","W","SW","W","S"],"rp":[-1,-1,-1,-1,-1,-1,-1,-1]},"d_7":{"s":[-24,-24,5,3,1,2,-24,-24],"td":[19,19,22,25,27,26,23,22],"tc":["temp15","temp15","temp20","temp25","temp25","temp25","temp20","temp20"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[1,1,1,5,11,14,11,4],"vg":[7,4,0,7,11,7,11,4],"vgd":[7,4,0,7,11,7,11,4],"vd45":[45,315,315,180,180,225,225,225],"vdId":["NE","NW","NW","S","S","SW","SW","SW"],"rp":[-1,-1,-1,-1,-1,-1,-1,-1]},"d_8":{"s":[-24,-24,5,5,5,5,5,5],"td":[21,21,20,23,25,23,21,21],"tc":["temp20","temp20","temp20","temp20","temp25","temp20","temp20","temp20"],"sr":[0,0,0,0,0,0,0,0],"srd":["0","0","0","0","0","0","0","0"],"vsd":[6,4,7,7,9,15,9,7],"vg":[7,4,4,7,7,11,7,7],"vgd":[7,4,4,7,7,11,7,7],"vd45":[135,225,225,135,270,225,270,180],"vdId":["SE","SW","SW","SE","W","SW","W","S"],"rp":[-1,-1,-1,-1,-1,-1,-1,-1]},"units":{"t":"\u00b0C","ws":"mm","sd":"cm","s":"km\/h"},"gustDesc":"Gust","probabDesc":"precipitation-probability","sDesc":{"5":"overcast","11":"overcast with rain","12":"overcast with heavy rain","1":"clear sky","3":"partly cloudy","25":"overcast with light rain","4":"mostly cloudy","24":"high clouds","2":"clear sky with few clouds"},"dc":8}'></custom-forecast>
+<div id="forecast" class="section">
+
+    <div class="section_header clearfix">
+        <h2>
+            Forecast        </h2>
+
+        <div class="round_buttons clearfix">
+            <span class="unroll">
+                <select id="date_selector" onchange="Detail.updateDateSelector(1, 8)">
+                    <option value="1"  selected="selected" >2026/10/22</option><option value="2" >2026/10/23</option><option value="3" >2026/10/24</option><option value="4" >2026/10/25</option><option value="5" >2026/10/26</option><option value="6" >2026/10/27</option><option value="7" >2026/10/28</option><option value="8" >2026/10/29</option>
+
+                </select>
+            </span>
+
+            <span id="arrows">
+                <span class="round_button previous inactive"></span>
+                <a class="round_button next"></a>
+            </span>
+        </div>
+        <!--/round_buttons-->
+    </div>
+
+    <div class="forecast_block">
+        <ul class="menu clearfix">
+            
+                    <li id="d_1" class="active">
+                        <a>
+                            Thu                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="40" height="40" class="mb-2">
+                            <br>
+                            18&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_2" >
+                        <a>
+                            Fri                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/4.svg" alt="mostly cloudy" title="mostly cloudy" width="40" height="40" class="mb-2">
+                            <br>
+                            23&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_3" >
+                        <a>
+                            Sat                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="40" height="40" class="mb-2">
+                            <br>
+                            25&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_4" >
+                        <a>
+                            Sun                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="40" height="40" class="mb-2">
+                            <br>
+                            27&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_5" >
+                        <a>
+                            Mon                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="40" height="40" class="mb-2">
+                            <br>
+                            30&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_6" >
+                        <a>
+                            Tue                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/24.svg" alt="high clouds" title="high clouds" width="40" height="40" class="mb-2">
+                            <br>
+                            31&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_7" >
+                        <a>
+                            Wed                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/3.svg" alt="partly cloudy" title="partly cloudy" width="40" height="40" class="mb-2">
+                            <br>
+                            27&nbsp;&deg;C
+                        </a>
+                    </li>
+                
+                    <li id="d_8" >
+                        <a>
+                            Thu                            
+                            <br>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="40" height="40" class="mb-2">
+                            <br>
+                            25&nbsp;&deg;C
+                        </a>
+                    </li>
+                        </ul>
+    </div>
+        
+    
+    <div class="forecast_mesto">
+        <table class="mesto-predpoved">
+            <thead>
+                <tr>
+                <th>02:00</th><th>05:00</th><th>08:00</th><th>11:00</th><th>14:00</th><th>17:00</th><th>20:00</th><th>23:00</th>                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50" id="s_0">                               
+                            <div id="t_0" class="temperature_line temp15">16&nbsp;&deg;C</div>                            
+                            <span id="sr_0">0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span id="rp_0" class="">10 %</span></span><br>
+                            <div id="v_0" class="wind_ico arrow_90">E</div>
+                            <div id="vs_0">11&nbsp;km/h</div>
+                            <div id="w_0"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50" id="s_3">                               
+                            <div id="t_3" class="temperature_line temp15">16&nbsp;&deg;C</div>                            
+                            <span id="sr_3" class="with_ico drop">1.7&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span id="rp_3" class="with_ico drop">60 %</span></span><br>
+                            <div id="v_3" class="wind_ico arrow_90">E</div>
+                            <div id="vs_3">11&nbsp;km/h</div>
+                            <div id="w_3"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50" id="s_6">                               
+                            <div id="t_6" class="temperature_line temp15">15&nbsp;&deg;C</div>                            
+                            <span id="sr_6" class="with_ico drop">1&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span id="rp_6" class="with_ico drop">50 %</span></span><br>
+                            <div id="v_6" class="wind_ico arrow_135">SE</div>
+                            <div id="vs_6">9&nbsp;km/h</div>
+                            <div id="w_6"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="50" height="50" id="s_9">                               
+                            <div id="t_9" class="temperature_line temp15">17&nbsp;&deg;C</div>                            
+                            <span id="sr_9" class="with_ico drop">4&nbsp;mm</span><br><span title="precipitation-probability 60 %" class="prob-line"><span id="rp_9" class="with_ico drop">60 %</span></span><br>
+                            <div id="v_9" class="wind_ico arrow_135">SE</div>
+                            <div id="vs_9">15&nbsp;km/h</div>
+                            <div id="w_9"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/12.svg" alt="overcast with heavy rain" title="overcast with heavy rain" width="50" height="50" id="s_12">                               
+                            <div id="t_12" class="temperature_line temp15">18&nbsp;&deg;C</div>                            
+                            <span id="sr_12" class="with_ico drop">9&nbsp;mm</span><br><span title="precipitation-probability 50 %" class="prob-line"><span id="rp_12" class="with_ico drop">50 %</span></span><br>
+                            <div id="v_12" class="wind_ico arrow_270">W</div>
+                            <div id="vs_12">13&nbsp;km/h</div>
+                            <div id="w_12"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="50" height="50" id="s_15">                               
+                            <div id="t_15" class="temperature_line temp15">17&nbsp;&deg;C</div>                            
+                            <span id="sr_15">0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span id="rp_15" class="">10 %</span></span><br>
+                            <div id="v_15" class="wind_ico arrow_270">W</div>
+                            <div id="vs_15">11&nbsp;km/h</div>
+                            <div id="w_15"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/1_night.svg" alt="clear sky" title="clear sky" width="50" height="50" id="s_18">                               
+                            <div id="t_18" class="temperature_line temp15">15&nbsp;&deg;C</div>                            
+                            <span id="sr_18">0&nbsp;mm</span><br><span title="precipitation-probability 0 %" class="prob-line"><span id="rp_18">0 %</span></span><br>
+                            <div id="v_18" class="wind_ico arrow_135">SE</div>
+                            <div id="vs_18">7&nbsp;km/h</div>
+                            <div id="w_18"></div>
+                        </td>
+                        
+                        <td>
+                            <img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="50" height="50" id="s_21">                               
+                            <div id="t_21" class="temperature_line temp15">15&nbsp;&deg;C</div>                            
+                            <span id="sr_21">0&nbsp;mm</span><br><span title="precipitation-probability 10 %" class="prob-line"><span id="rp_21" class="">10 %</span></span><br>
+                            <div id="v_21" class="wind_ico arrow_90">E</div>
+                            <div id="vs_21">7&nbsp;km/h</div>
+                            <div id="w_21"></div>
+                        </td>
+                                        </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+<!--/forecast section-->
+
+<div id="meteogram" class="section">
+    <div class="section_header clearfix">
+        <h2>Meteogram</h2>
+    </div>
+
+            <div class="meteogram_block" data-frame="https://www.ventusky.com/aside/forecast/ajax/chart.ajax.php?type={link}">
+            <ul class="menu clearfix">
+    
+    <li id="graph_temperature" class="active">
+        <a data-link="temp&amp;data=16;15;15;14;15;16;17;19;20;20;19;18;21;20:24;18;23;25;27;30;31;27;25;24;23;24;25;25:20.4;15.7;0.1;0;0;0;0;0;0;0;0;0;0;0:25;25;29;29;29;22;22;11;11;11;18;11;14;14:0;0;0;0;0;0;0;0;0;0;0;0;0;0:25;11;4;1;2;1;24;3;5;1;1;3;2;24&amp;time=1792573200&amp;days=14&amp;lat=34.0536909&amp;lon=-118.242766&amp;tz=America%2FLos_Angeles&amp;lang=en&amp;short=Sun%3BMon%3BTue%3BWed%3BThu%3BFri%3BSat;">
+            Temperature <br>(°C)        </a>
+    </li>
+    <li id="graph_rain" >
+        <a data-link="rain&amp;data=16;15;15;14;15;16;17;19;20;20;19;18;21;20:24;18;23;25;27;30;31;27;25;24;23;24;25;25:20.4;15.7;0.1;0;0;0;0;0;0;0;0;0;0;0:25;25;29;29;29;22;22;11;11;11;18;11;14;14:0;0;0;0;0;0;0;0;0;0;0;0;0;0:25;11;4;1;2;1;24;3;5;1;1;3;2;24&amp;time=1792573200&amp;days=14&amp;lat=34.0536909&amp;lon=-118.242766&amp;tz=America%2FLos_Angeles&amp;lang=en&amp;short=Sun%3BMon%3BTue%3BWed%3BThu%3BFri%3BSat;">
+            Precipitation <br>(mm)        </a>
+    </li>
+    <li id="graph_gust" >
+        <a data-link="gust&amp;data=16;15;15;14;15;16;17;19;20;20;19;18;21;20:24;18;23;25;27;30;31;27;25;24;23;24;25;25:20.4;15.7;0.1;0;0;0;0;0;0;0;0;0;0;0:25;25;29;29;29;22;22;11;11;11;18;11;14;14:0;0;0;0;0;0;0;0;0;0;0;0;0;0:25;11;4;1;2;1;24;3;5;1;1;3;2;24&amp;time=1792573200&amp;days=14&amp;lat=34.0536909&amp;lon=-118.242766&amp;tz=America%2FLos_Angeles&amp;lang=en&amp;short=Sun%3BMon%3BTue%3BWed%3BThu%3BFri%3BSat;">
+            Gust <br>(km/h)        </a>
+    </li>
+    
+    <li id="graph_snow" >
+        <a data-link="snow&amp;data=16;15;15;14;15;16;17;19;20;20;19;18;21;20:24;18;23;25;27;30;31;27;25;24;23;24;25;25:20.4;15.7;0.1;0;0;0;0;0;0;0;0;0;0;0:25;25;29;29;29;22;22;11;11;11;18;11;14;14:0;0;0;0;0;0;0;0;0;0;0;0;0;0:25;11;4;1;2;1;24;3;5;1;1;3;2;24&amp;time=1792573200&amp;days=14&amp;lat=34.0536909&amp;lon=-118.242766&amp;tz=America%2FLos_Angeles&amp;lang=en&amp;short=Sun%3BMon%3BTue%3BWed%3BThu%3BFri%3BSat;">
+            New snow <br>(cm)        </a>
+    </li>
+    </ul>
+
+
+<div class="chart"><div class="svg-container"><svg width="100%" height="100%"><defs><pattern id="gr_vert" width="7.14%" height="100%" patternUnits="userSpaceOnUse"><line x1="0%" y1="0%" x2="0%" y2="100%"/></pattern></defs><rect x="3.57%" width="100%" height="100%" fill="url(#gr_vert)" /><g class="line_min"><line x1="3.57%" y1="81.82%" x2="10.71%" y2="86.36%" style="stroke:#3697d1;"/><line x1="10.71%" y1="86.36%" x2="17.85%" y2="86.36%" style="stroke:#3697d1;"/><line x1="17.85%" y1="86.36%" x2="24.99%" y2="90.91%" style="stroke:#3697d1;"/><line x1="24.99%" y1="90.91%" x2="32.13%" y2="86.36%" style="stroke:#3697d1;"/><line x1="32.13%" y1="86.36%" x2="39.27%" y2="81.82%" style="stroke:#3697d1;"/><line x1="39.27%" y1="81.82%" x2="46.41%" y2="77.27%" style="stroke:#3697d1;"/><line x1="46.41%" y1="77.27%" x2="53.55%" y2="68.18%" style="stroke:#3697d1;"/><line x1="53.55%" y1="68.18%" x2="60.69%" y2="63.64%" style="stroke:#3697d1;"/><line x1="60.69%" y1="63.64%" x2="67.83%" y2="63.64%" style="stroke:#3697d1;"/><line x1="67.83%" y1="63.64%" x2="74.97%" y2="68.18%" style="stroke:#3697d1;"/><line x1="74.97%" y1="68.18%" x2="82.11%" y2="72.73%" style="stroke:#3697d1;"/><line x1="82.11%" y1="72.73%" x2="89.25%" y2="59.09%" style="stroke:#3697d1;"/><line x1="89.25%" y1="59.09%" x2="96.39%" y2="63.64%" style="stroke:#3697d1;"/></g><g class="circle_min"><circle cx="3.57%" cy="81.82%" r="14" style="fill: #3697d1"/><circle cx="10.71%" cy="86.36%" r="14" style="fill: #3697d1"/><circle cx="17.85%" cy="86.36%" r="14" style="fill: #3697d1"/><circle cx="24.99%" cy="90.91%" r="14" style="fill: #3697d1"/><circle cx="32.13%" cy="86.36%" r="14" style="fill: #3697d1"/><circle cx="39.27%" cy="81.82%" r="14" style="fill: #3697d1"/><circle cx="46.41%" cy="77.27%" r="14" style="fill: #3697d1"/><circle cx="53.55%" cy="68.18%" r="14" style="fill: #3697d1"/><circle cx="60.69%" cy="63.64%" r="14" style="fill: #3697d1"/><circle cx="67.83%" cy="63.64%" r="14" style="fill: #3697d1"/><circle cx="74.97%" cy="68.18%" r="14" style="fill: #3697d1"/><circle cx="82.11%" cy="72.73%" r="14" style="fill: #3697d1"/><circle cx="89.25%" cy="59.09%" r="14" style="fill: #3697d1"/><circle cx="96.39%" cy="63.64%" r="14" style="fill: #3697d1"/></g><g class="line_number"><text x="3.57%" y="81.82%" dy="5px" >16</text><text x="10.71%" y="86.36%" dy="5px" >15</text><text x="17.85%" y="86.36%" dy="5px" >15</text><text x="24.99%" y="90.91%" dy="5px" >14</text><text x="32.13%" y="86.36%" dy="5px" >15</text><text x="39.27%" y="81.82%" dy="5px" >16</text><text x="46.41%" y="77.27%" dy="5px" >17</text><text x="53.55%" y="68.18%" dy="5px" >19</text><text x="60.69%" y="63.64%" dy="5px" >20</text><text x="67.83%" y="63.64%" dy="5px" >20</text><text x="74.97%" y="68.18%" dy="5px" >19</text><text x="82.11%" y="72.73%" dy="5px" >18</text><text x="89.25%" y="59.09%" dy="5px" >21</text><text x="96.39%" y="63.64%" dy="5px" >20</text></g><g class="line_max"><line x1="3.57%" y1="45.45%" x2="10.71%" y2="72.73%" style="stroke:#d13636;"/><line x1="10.71%" y1="72.73%" x2="17.85%" y2="50%" style="stroke:#d13636;"/><line x1="17.85%" y1="50%" x2="24.99%" y2="40.91%" style="stroke:#d13636;"/><line x1="24.99%" y1="40.91%" x2="32.13%" y2="31.82%" style="stroke:#d13636;"/><line x1="32.13%" y1="31.82%" x2="39.27%" y2="18.18%" style="stroke:#d13636;"/><line x1="39.27%" y1="18.18%" x2="46.41%" y2="13.64%" style="stroke:#d13636;"/><line x1="46.41%" y1="13.64%" x2="53.55%" y2="31.82%" style="stroke:#d13636;"/><line x1="53.55%" y1="31.82%" x2="60.69%" y2="40.91%" style="stroke:#d13636;"/><line x1="60.69%" y1="40.91%" x2="67.83%" y2="45.45%" style="stroke:#d13636;"/><line x1="67.83%" y1="45.45%" x2="74.97%" y2="50%" style="stroke:#d13636;"/><line x1="74.97%" y1="50%" x2="82.11%" y2="45.45%" style="stroke:#d13636;"/><line x1="82.11%" y1="45.45%" x2="89.25%" y2="40.91%" style="stroke:#d13636;"/><line x1="89.25%" y1="40.91%" x2="96.39%" y2="40.91%" style="stroke:#d13636;"/></g><g class="circle_max"><circle cx="3.57%" cy="45.45%" r="14" style="fill: #d13636"/><circle cx="10.71%" cy="72.73%" r="14" style="fill: #d13636"/><circle cx="17.85%" cy="50%" r="14" style="fill: #d13636"/><circle cx="24.99%" cy="40.91%" r="14" style="fill: #d13636"/><circle cx="32.13%" cy="31.82%" r="14" style="fill: #d13636"/><circle cx="39.27%" cy="18.18%" r="14" style="fill: #d13636"/><circle cx="46.41%" cy="13.64%" r="14" style="fill: #d13636"/><circle cx="53.55%" cy="31.82%" r="14" style="fill: #d13636"/><circle cx="60.69%" cy="40.91%" r="14" style="fill: #d13636"/><circle cx="67.83%" cy="45.45%" r="14" style="fill: #d13636"/><circle cx="74.97%" cy="50%" r="14" style="fill: #d13636"/><circle cx="82.11%" cy="45.45%" r="14" style="fill: #d13636"/><circle cx="89.25%" cy="40.91%" r="14" style="fill: #d13636"/><circle cx="96.39%" cy="40.91%" r="14" style="fill: #d13636"/></g><g class="line_number"><text x="3.57%" y="45.45%" dy="5px" >24</text><text x="10.71%" y="72.73%" dy="5px" >18</text><text x="17.85%" y="50%" dy="5px" >23</text><text x="24.99%" y="40.91%" dy="5px" >25</text><text x="32.13%" y="31.82%" dy="5px" >27</text><text x="39.27%" y="18.18%" dy="5px" >30</text><text x="46.41%" y="13.64%" dy="5px" >31</text><text x="53.55%" y="31.82%" dy="5px" >27</text><text x="60.69%" y="40.91%" dy="5px" >25</text><text x="67.83%" y="45.45%" dy="5px" >24</text><text x="74.97%" y="50%" dy="5px" >23</text><text x="82.11%" y="45.45%" dy="5px" >24</text><text x="89.25%" y="40.91%" dy="5px" >25</text><text x="96.39%" y="40.91%" dy="5px" >25</text></g></svg></div><div class="y-container" style="height:150%;"><table><tr><td>34</td></tr><tr><td>23</td></tr><tr><td>12</td></tr></table></div><div class="x-container"><table><tr><td>Wed<br><span>21</span><br><img src="https://static.ventusky.com/images_v2/weather/25.svg" alt="overcast with light rain" title="overcast with light rain" width="30" height="30"></td><td>Thu<br><span>22</span><br><img src="https://static.ventusky.com/images_v2/weather/11.svg" alt="overcast with rain" title="overcast with rain" width="30" height="30"></td><td>Fri<br><span>23</span><br><img src="https://static.ventusky.com/images_v2/weather/4.svg" alt="mostly cloudy" title="mostly cloudy" width="30" height="30"></td><td>Sat<br><span>24</span><br><img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="30" height="30"></td><td>Sun<br><span>25</span><br><img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="30" height="30"></td><td>Mon<br><span>26</span><br><img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="30" height="30"></td><td>Tue<br><span>27</span><br><img src="https://static.ventusky.com/images_v2/weather/24.svg" alt="high clouds" title="high clouds" width="30" height="30"></td><td>Wed<br><span>28</span><br><img src="https://static.ventusky.com/images_v2/weather/3.svg" alt="partly cloudy" title="partly cloudy" width="30" height="30"></td><td>Thu<br><span>29</span><br><img src="https://static.ventusky.com/images_v2/weather/5.svg" alt="overcast" title="overcast" width="30" height="30"></td><td>Fri<br><span>30</span><br><img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="30" height="30"></td><td>Sat<br><span>31</span><br><img src="https://static.ventusky.com/images_v2/weather/1.svg" alt="clear sky" title="clear sky" width="30" height="30"></td><td>Sun<br><span>01</span><br><img src="https://static.ventusky.com/images_v2/weather/3.svg" alt="partly cloudy" title="partly cloudy" width="30" height="30"></td><td>Mon<br><span>02</span><br><img src="https://static.ventusky.com/images_v2/weather/2.svg" alt="clear sky with few clouds" title="clear sky with few clouds" width="30" height="30"></td><td>Tue<br><span>03</span><br><img src="https://static.ventusky.com/images_v2/weather/24.svg" alt="high clouds" title="high clouds" width="30" height="30"></td></tr></table></div></div>        </div>
+        
+</div>
+<!--/meteogram section-->
+
+
+
+    <div id="webcams" class="section" style="display: none;" data-nearwebcams="34.0536909;-118.242766;4;https://www.ventusky.com/webcam-{id}">
+        <div class="section_header clearfix">
+            <h2>
+                Webcams            </h2>
+        </div>
+        <!--/section_header-->
+    </div>
+
+<!--/webcams section-->
+
+
+<div id="aqi_section" class="section">
+    <div class="section_header clearfix">
+        <h2>
+            Air quality (AQI)
+        </h2>
+    </div>
+			
+        <div id="aqi_chart_section" data-aqi="https://www.ventusky.com/aside/forecast/ajax/chart_aqi.ajax.php?lat=34.0536909&lon=-118.242766&tz=America%2FLos_Angeles&lang=en"></div>    
+    <br>
+        <p class="note">            
+            Air quality index (marked as AQI) is developed by Environmental Protection Agency. Values over 300 represents hazardous air quality, between 200-300 very unhealthy, 150-200 unhealthy, 100-150 unhealthy for sensitive groups and below 100 or rather below 50 the air quality is good.        </p>
+       
+
+    <div id="aq_section"  style="display: none;" data-aq="34.0536909;-118.242766">
+        <div class="section_header clearfix">
+            <h3>
+                Weather report from station            </h3>
+            <p class="note">
+                Provided by                <a href="http://www.aqicn.org/" target="_blank">aqicn.org</a>
+            </p>
+        </div>
+        <div class="info_tables">
+            <div class="info_table">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="pie" style="" id="aq_pie"></div>
+                            <div class="pie_inside" id="aq_val">
+                                <br>
+                            </div>
+                            <strong class="quality-text-0" style="display: none;" id="aq_i0">
+                                Good                            </strong>
+                            <strong class="quality-text-1" style="display: none;" id="aq_i1">
+                                Moderate                            </strong>
+                            <strong class="quality-text-2" style="display: none;" id="aq_i2">
+                                Unhealthy for Sensitive Groups                            </strong>
+                            <strong class="quality-text-3" style="display: none;" id="aq_i3">
+                                Unhealthy                            </strong>
+                            <strong class="quality-text-4" style="display: none;" id="aq_i4">
+                                Very Unhealthy                            </strong>
+                            <strong class="quality-text-5" style="display: none;" id="aq_i5">
+                                Hazardous                            </strong>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--/info_table-->
+            <div class="info_table spacer">&nbsp;</div>
+            <div class="info_table">
+                <table id="ai_info_table"></table>
+            </div>
+            <!--/info_table-->
+        </div>
+        <!--/info_tables-->
+        <p class="note">
+            <span id="ai_info">
+                Weather report from station;Distance            </span>
+        </p>
+    </div>
+    <!--/aq_section-->
+
+</div>
+<!--/aqi_section section-->
+
+
+
+
+<div id="astro" class="section" data-astro="34.0536909;-118.242766;1792594820;-480;2">
+    <!-- V atributu data-astro jsou souradnice, pak timestamp, pocet minut posunu oproti UTC, day-light daving type (see PHP above) -->    
+    <div class="section_header clearfix">
+        <h2>
+            Sun and Moon        </h2>
+
+        <div class="round_buttons clearfix">
+
+            <span class="unroll">
+                <select id="astro-date">
+                    <option value="1792594820">2026/10/21</option><option value="1792695600">2026/10/22</option><option value="1792782000">2026/10/23</option><option value="1792868400">2026/10/24</option><option value="1792954800">2026/10/25</option><option value="1793041200">2026/10/26</option>                </select>
+            </span>
+
+            <a href="#" id="astro-date-prev" class="round_button previous inactive"></a>
+            <a href="#" id="astro-date-next" class="round_button next"></a>
+
+        </div>
+
+    </div>
+
+    <div id="astro-sun"></div>
+    <table>
+        <tr>
+            <td class="udaje">
+                Heading:
+                <span id="astro-sun-azimuth"></span>
+            </td>
+            <td class="udaje_r">
+                Time:
+                <span id="astro-sun-date"></span>
+                <span id="astro-sun-time"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="udaje">
+                Phase:
+                <span id="astro-sun-phase"></span>
+            </td>
+            <td class="udaje_r">
+                Altitude:
+                <span id="astro-sun-altitude"></span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <div id="astro-moon"></div>
+    <table>
+        <tr>
+            <td class="udaje">
+                Heading:
+                <span id="astro-moon-azimuth"></span>
+            </td>
+            <td class="udaje_r">
+                Time:
+                <span id="astro-moon-date"></span>
+                <span id="astro-moon-time"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="udaje">
+                Illumination:
+                <span id="astro-moon-fraction"></span>
+            </td>
+            <td class="udaje_r">
+                Altitude:
+                <span id="astro-moon-altitude"></span>
+            </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+
+    <table id="astro-moon-table">
+        <tr>
+            <td>
+                Date            </td>
+            <td>
+                rise            </td>
+            <td>
+                set            </td>
+            <td>
+                rise            </td>
+            <td>
+                Illumination            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <table id="astro-sun-table">
+        <tr>
+            <td>
+                Phase            </td>
+            <td>
+                Time            </td>
+            <td>
+                Length            </td>
+        </tr>
+    </table>
+</div>
+
+
+            </div>
+        </div>    
+     
+ 
+</body>
+</html>

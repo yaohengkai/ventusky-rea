@@ -1,0 +1,10 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+p.on('request', r=>console.log('REQ',r.resourceType(),r.url().slice(0,160)));
+p.on('response', r=>{if(r.status()>=400) console.log('ERR',r.status(),r.url().slice(0,160))});
+p.on('framenavigated', f=>{if(f===p.mainFrame()) console.log('NAV',Date.now(),f.url())});
+await p.goto('http://127.0.0.1:8788/',{waitUntil:'commit',timeout:20000});
+await p.waitForTimeout(3000);
+await b.close();

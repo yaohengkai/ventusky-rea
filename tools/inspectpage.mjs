@@ -1,0 +1,10 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+p.on('response', async r=>{ if(r.request().isNavigationRequest()){ console.log('NAVRES',r.status(),r.headers()); const t=await r.text(); console.log('BODY',t.length, t.slice(0,300)); }});
+await p.goto('http://127.0.0.1:8787/',{waitUntil:'commit',timeout:20000});
+await p.waitForTimeout(1500);
+console.log('HTML', (await p.content()).slice(0,500));
+console.log('META', await p.evaluate(()=>[...document.querySelectorAll('meta')].map(m=>m.outerHTML)));
+await b.close();

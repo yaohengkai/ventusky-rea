@@ -1,0 +1,14 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+const fails=[]; p.on('requestfailed',r=>{if(!r.url().startsWith('data:')){fails.push(r.url()); console.log('FAIL',r.url().slice(0,180))}});
+p.on('console',m=>{if(m.type()==='error') console.log('CONSOLE',m.text().slice(0,200))});
+p.on('response',r=>{if(r.status()>=400) console.log('HTTP',r.status(),r.url().slice(0,180))});
+await p.goto('http://localhost:8787/proxy/my.ventusky.com/login/?map',{waitUntil:'domcontentloaded',timeout:60000});
+await p.waitForTimeout(8000);
+console.log('URL',p.url(),'TITLE',await p.title());
+console.log('BODY',(await p.locator('body').innerText()).slice(0,400).replace(/\n+/g,' | '));
+console.log('FAILS',fails.length);
+await p.screenshot({path:'login3.png'});
+await b.close();

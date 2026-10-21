@@ -1,0 +1,992 @@
+[
+  {
+    "layer": "Temperature",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "Sea surface"
+      },
+      {
+        "j": 1,
+        "txt": "2 in, 5 cm above ground"
+      },
+      {
+        "j": 2,
+        "txt": "7 ft, 2 m above ground"
+      },
+      {
+        "j": 3,
+        "txt": "Anomaly, 7 ft, 2 m"
+      },
+      {
+        "j": 4,
+        "txt": "950 hPa, 1,600 ft"
+      },
+      {
+        "j": 5,
+        "txt": "925 hPa, 2,500 ft"
+      },
+      {
+        "j": 6,
+        "txt": "900 hPa, 3,300 ft"
+      },
+      {
+        "j": 7,
+        "txt": "850 hPa, 5,000 ft"
+      },
+      {
+        "j": 8,
+        "txt": "800 hPa, 6,500 ft"
+      },
+      {
+        "j": 9,
+        "txt": "750 hPa, 8,000 ft"
+      },
+      {
+        "j": 10,
+        "txt": "700 hPa, 10,000 ft"
+      },
+      {
+        "j": 11,
+        "txt": "650 hPa, 12,000 ft"
+      },
+      {
+        "j": 12,
+        "txt": "600 hPa, 14,000 ft"
+      },
+      {
+        "j": 13,
+        "txt": "500 hPa, 18,000 ft"
+      },
+      {
+        "j": 14,
+        "txt": "400 hPa, 23,000 ft"
+      },
+      {
+        "j": 15,
+        "txt": "300 hPa, 30,000 ft"
+      },
+      {
+        "j": 16,
+        "txt": "200 hPa, 40,000 ft"
+      },
+      {
+        "j": 17,
+        "txt": "10 hPa, 100,000 ft"
+      },
+      {
+        "j": 18,
+        "txt": "Freezing level"
+      }
+    ],
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "Sea surface",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "2 in, 5 cm above ground",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "7 ft, 2 m above ground",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "Anomaly, 7 ft, 2 m",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "950 hPa, 1,600 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "925 hPa, 2,500 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "900 hPa, 3,300 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "850 hPa, 5,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "800 hPa, 6,500 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "750 hPa, 8,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "700 hPa, 10,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "650 hPa, 12,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "600 hPa, 14,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "500 hPa, 18,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "400 hPa, 23,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "300 hPa, 30,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "200 hPa, 40,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "10 hPa, 100,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Temperature",
+    "sub": "Freezing level",
+    "urls": []
+  },
+  {
+    "layer": "Feels like temperature",
+    "subs": [],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_teplota_pocit_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_teplota_pocit_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_teplota_pocit_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_teplota_pocit_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_teplota_pocit_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_teplota_pocit_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Precipitation",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "1 hour"
+      },
+      {
+        "j": 1,
+        "txt": "3 hours"
+      },
+      {
+        "j": 2,
+        "txt": "From 10/21 2 PM"
+      },
+      {
+        "j": 3,
+        "txt": "Monthly anomaly"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/eurad/whole_world/hour_15/eurad_srazky_3h_20261021_15.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/eurad/whole_world/hour_15/eurad_srazky_type_3h_20261021_15.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/usrad/whole_world/hour_15/usrad_srazky_3h_20261021_15.jpg?17926002",
+      "https://data.ventusky.com/2026/10/21/usrad/whole_world/hour_15/usrad_srazky_type_3h_20261021_15.jpg?17926002",
+      "https://data.ventusky.com/2026/10/21/earad/whole_world/hour_15/earad_srazky_3h_20261021_15.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/earad/whole_world/hour_15/earad_srazky_type_3h_20261021_15.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_srazky_3h_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_srazky_type_3h_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_srazky_3h_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_srazky_type_3h_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_3h_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_type_3h_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_3h_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_type_3h_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_3h_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_type_3h_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_3h_1_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_srazky_type_3h_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Precipitation",
+    "sub": "1 hour",
+    "urls": []
+  },
+  {
+    "layer": "Precipitation",
+    "sub": "3 hours",
+    "urls": []
+  },
+  {
+    "layer": "Precipitation",
+    "sub": "From 10/21 2 PM",
+    "urls": []
+  },
+  {
+    "layer": "Precipitation",
+    "sub": "Monthly anomaly",
+    "urls": []
+  },
+  {
+    "layer": "Radar",
+    "subs": [],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/eurad_hres/whole_world/hour_15/eurad_hres_srazky_dbz_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/eurad_hres/whole_world/hour_15/eurad_hres_srazky_type_dbz_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/usrad/whole_world/hour_15/usrad_srazky_dbz_20261021_1500.jpg?17926002",
+      "https://data.ventusky.com/2026/10/21/usrad/whole_world/hour_15/usrad_srazky_type_dbz_20261021_1500.jpg?17926002",
+      "https://data.ventusky.com/2026/10/21/earad/whole_world/hour_15/earad_srazky_dbz_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/earad/whole_world/hour_15/earad_srazky_type_dbz_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_srazky_dbz_20261021_1500.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_srazky_type_dbz_20261021_1500.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_de/whole_world/hour_15/icon_de_srazky_dbz_20261021_1500.jpg?1792584",
+      "https://data.ventusky.com/2026/10/21/icon_de/whole_world/hour_15/icon_de_srazky_type_dbz_20261021_1500.jpg?1792584",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_dbz_3_3_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_type_dbz_3_3_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_dbz_3_4_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_type_dbz_3_4_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_dbz_2_3_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_type_dbz_2_3_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_dbz_2_4_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_type_dbz_2_4_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_dbz_2_2_20261021_1500.jpg?17925999",
+      "https://data.ventusky.com/2026/10/21/worad_hres/tilled_world/hour_15/worad_hres_srazky_type_dbz_2_2_20261021_1500.jpg?17925999"
+    ]
+  },
+  {
+    "layer": "Satellite",
+    "subs": [],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_6_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_7_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_8_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_9_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_10_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_11_7_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_6_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_7_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_8_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_9_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_10_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_11_8_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_6_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_7_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_8_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_9_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_10_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_11_9_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_6_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_7_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_8_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_9_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_10_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/goes/tilled_world/hour_14/50/goes_rgba_11_10_20261021_1450.jpg?17925942",
+      "https://data.ventusky.com/2026/10/21/icon/whole_world/hour_14/icon_vitr_u_10_m_20261021_14.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/whole_world/hour_14/icon_vitr_v_10_m_20261021_14.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Clouds",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "Total cloud cover"
+      },
+      {
+        "j": 1,
+        "txt": "Fog"
+      },
+      {
+        "j": 2,
+        "txt": "Low clouds"
+      },
+      {
+        "j": 3,
+        "txt": "Middle clouds"
+      },
+      {
+        "j": 4,
+        "txt": "High clouds"
+      },
+      {
+        "j": 5,
+        "txt": "Cloud base"
+      },
+      {
+        "j": 6,
+        "txt": "Visibility"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_oblacnost_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_oblacnost_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_oblacnost_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_oblacnost_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_oblacnost_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_oblacnost_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Total cloud cover",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Fog",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Low clouds",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Middle clouds",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "High clouds",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Cloud base",
+    "urls": []
+  },
+  {
+    "layer": "Clouds",
+    "sub": "Visibility",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "33 ft, 10 m above ground"
+      },
+      {
+        "j": 1,
+        "txt": "330 ft above ground"
+      },
+      {
+        "j": 2,
+        "txt": "820 ft above ground"
+      },
+      {
+        "j": 3,
+        "txt": "950 hPa, 1,600 ft"
+      },
+      {
+        "j": 4,
+        "txt": "925 hPa, 2,500 ft"
+      },
+      {
+        "j": 5,
+        "txt": "900 hPa, 3,300 ft"
+      },
+      {
+        "j": 6,
+        "txt": "850 hPa, 5,000 ft"
+      },
+      {
+        "j": 7,
+        "txt": "800 hPa, 6,500 ft"
+      },
+      {
+        "j": 8,
+        "txt": "750 hPa, 8,000 ft"
+      },
+      {
+        "j": 9,
+        "txt": "700 hPa, 10,000 ft"
+      },
+      {
+        "j": 10,
+        "txt": "650 hPa, 12,000 ft"
+      },
+      {
+        "j": 11,
+        "txt": "600 hPa, 14,000 ft"
+      },
+      {
+        "j": 12,
+        "txt": "500 hPa, 18,000 ft"
+      },
+      {
+        "j": 13,
+        "txt": "400 hPa, 23,000 ft"
+      },
+      {
+        "j": 14,
+        "txt": "300 hPa, 30,000 ft"
+      },
+      {
+        "j": 15,
+        "txt": "200 hPa, 40,000 ft"
+      },
+      {
+        "j": 16,
+        "txt": "10 hPa, 100,000 ft"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_vitr_u_10_m_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_vitr_v_10_m_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_u_10_m_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_v_10_m_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_u_10_m_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_v_10_m_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_u_10_m_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_v_10_m_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_u_10_m_1_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_v_10_m_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "33 ft, 10 m above ground",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "330 ft above ground",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "820 ft above ground",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "950 hPa, 1,600 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "925 hPa, 2,500 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "900 hPa, 3,300 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "850 hPa, 5,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "800 hPa, 6,500 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "750 hPa, 8,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "700 hPa, 10,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "650 hPa, 12,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "600 hPa, 14,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "500 hPa, 18,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "400 hPa, 23,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "300 hPa, 30,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "200 hPa, 40,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind speed",
+    "sub": "10 hPa, 100,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Wind gusts",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "1 hour"
+      },
+      {
+        "j": 1,
+        "txt": "From 10/21 2 PM"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_vitr_naraz_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_vitr_naraz_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_naraz_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_naraz_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_naraz_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_vitr_naraz_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Wind gusts",
+    "sub": "1 hour",
+    "urls": []
+  },
+  {
+    "layer": "Wind gusts",
+    "sub": "From 10/21 2 PM",
+    "urls": []
+  },
+  {
+    "layer": "Air pressure",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "Sea Level"
+      },
+      {
+        "j": 1,
+        "txt": "Geopotential 850 hPa"
+      },
+      {
+        "j": 2,
+        "txt": "Geopotential 500 hPa"
+      },
+      {
+        "j": 3,
+        "txt": "Geopotential 300 hPa"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_tlak_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_tlak_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_tlak_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_tlak_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_tlak_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_tlak_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Air pressure",
+    "sub": "Sea Level",
+    "urls": []
+  },
+  {
+    "layer": "Air pressure",
+    "sub": "Geopotential 850 hPa",
+    "urls": []
+  },
+  {
+    "layer": "Air pressure",
+    "sub": "Geopotential 500 hPa",
+    "urls": []
+  },
+  {
+    "layer": "Air pressure",
+    "sub": "Geopotential 300 hPa",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "CAPE"
+      },
+      {
+        "j": 1,
+        "txt": "CAPE*SHEAR"
+      },
+      {
+        "j": 2,
+        "txt": "Wind shear"
+      },
+      {
+        "j": 3,
+        "txt": "Hail probability"
+      },
+      {
+        "j": 4,
+        "txt": "CIN"
+      },
+      {
+        "j": 5,
+        "txt": "Lifted index"
+      },
+      {
+        "j": 6,
+        "txt": "Helicity (SRH)"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_cape_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_cape_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_cape_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_cape_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_cape_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_cape_1_1_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "CAPE",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "CAPE*SHEAR",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "Wind shear",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "Hail probability",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "CIN",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "Lifted index",
+    "urls": []
+  },
+  {
+    "layer": "Thunderstorms",
+    "sub": "Helicity (SRH)",
+    "urls": []
+  },
+  {
+    "layer": "Humidity",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "7 ft, 2 m above ground"
+      },
+      {
+        "j": 1,
+        "txt": "900 hPa, 3,300 ft"
+      },
+      {
+        "j": 2,
+        "txt": "850 hPa, 5,000 ft"
+      },
+      {
+        "j": 3,
+        "txt": "700 hPa, 10,000 ft"
+      },
+      {
+        "j": 4,
+        "txt": "Dew point"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/gfs/whole_world/hour_15/gfs_pressure_low_high_20261021_15.json?17925624",
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_vlhkost_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_vlhkost_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/gfs/tilled_world/hour_15/gfs_vlhkost_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/gfs/whole_world/hour_15/gfs_vitr_u_10_m_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/gfs/whole_world/hour_15/gfs_vitr_v_10_m_20261021_15.jpg?17925624"
+    ]
+  },
+  {
+    "layer": "Humidity",
+    "sub": "7 ft, 2 m above ground",
+    "urls": []
+  },
+  {
+    "layer": "Humidity",
+    "sub": "900 hPa, 3,300 ft",
+    "urls": []
+  },
+  {
+    "layer": "Humidity",
+    "sub": "850 hPa, 5,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Humidity",
+    "sub": "700 hPa, 10,000 ft",
+    "urls": []
+  },
+  {
+    "layer": "Humidity",
+    "sub": "Dew point",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "Significant wave height"
+      },
+      {
+        "j": 1,
+        "txt": "Wind wave height"
+      },
+      {
+        "j": 2,
+        "txt": "Wind wave period"
+      },
+      {
+        "j": 3,
+        "txt": "Swell wave height"
+      },
+      {
+        "j": 4,
+        "txt": "Swell wave period"
+      },
+      {
+        "j": 5,
+        "txt": "Currents"
+      },
+      {
+        "j": 6,
+        "txt": "Tidal currents"
+      },
+      {
+        "j": 7,
+        "txt": "Tide (MLLW)"
+      },
+      {
+        "j": 8,
+        "txt": "Tide & Surge (MLLW)"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/icon_eu_water/whole_world/hour_15/icon_eu_water_swh_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/tilled_world/hour_15/mfwam_water_swh_0_1_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/tilled_world/hour_15/mfwam_water_swh_1_1_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/tilled_world/hour_15/mfwam_water_swh_0_0_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/tilled_world/hour_15/mfwam_water_swh_1_0_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/whole_world/hour_15/mfwam_water_shww_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/whole_world/hour_15/mfwam_water_mdww_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/whole_world/hour_15/mfwam_water_shts_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/mfwam_water/whole_world/hour_15/mfwam_water_mdts_20261021_15.jpg?17925516"
+    ]
+  },
+  {
+    "layer": "Sea",
+    "sub": "Significant wave height",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Wind wave height",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Wind wave period",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Swell wave height",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Swell wave period",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Currents",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Tidal currents",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Tide (MLLW)",
+    "urls": []
+  },
+  {
+    "layer": "Sea",
+    "sub": "Tide & Surge (MLLW)",
+    "urls": []
+  },
+  {
+    "layer": "Snow cover",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "Total cover"
+      },
+      {
+        "j": 1,
+        "txt": "New from 10/21 2 PM"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/hrrr/whole_world/hour_15/hrrr_snih_20261021_15.jpg?17925876",
+      "https://data.ventusky.com/2026/10/21/icon_eu/whole_world/hour_15/icon_eu_snih_20261021_15.jpg?17925732",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_snih_0_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_snih_1_0_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_snih_0_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/tilled_world/hour_15/icon_snih_1_1_20261021_15.jpg?17925624",
+      "https://data.ventusky.com/2026/10/21/icon/whole_world/hour_15/icon_pressure_low_high_20261021_15.json?17925624"
+    ]
+  },
+  {
+    "layer": "Snow cover",
+    "sub": "Total cover",
+    "urls": []
+  },
+  {
+    "layer": "Snow cover",
+    "sub": "New from 10/21 2 PM",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "subs": [
+      {
+        "j": 0,
+        "txt": "PM2.5 🏭 🚜"
+      },
+      {
+        "j": 1,
+        "txt": "PM10 🏭 🚜"
+      },
+      {
+        "j": 2,
+        "txt": "NO2 🚗 🚢"
+      },
+      {
+        "j": 3,
+        "txt": "SO2 🏭 🌋"
+      },
+      {
+        "j": 4,
+        "txt": "O3 🌇"
+      },
+      {
+        "j": 5,
+        "txt": "Dust 🌴"
+      },
+      {
+        "j": 6,
+        "txt": "CO 🏭 🔥"
+      },
+      {
+        "j": 7,
+        "txt": "AQI"
+      },
+      {
+        "j": 8,
+        "txt": "UV index ☀️"
+      }
+    ],
+    "urls": [
+      "https://data.ventusky.com/2026/10/21/silam_eu/whole_world/hour_15/silam_eu_pm25_20261021_15.jpg?17925516",
+      "https://data.ventusky.com/2026/10/21/silam/tilled_world/hour_15/silam_pm25_1_1_20261021_15.jpg?17925408",
+      "https://data.ventusky.com/2026/10/21/silam/tilled_world/hour_15/silam_pm25_0_1_20261021_15.jpg?17925408",
+      "https://data.ventusky.com/2026/10/21/silam/tilled_world/hour_15/silam_pm25_1_0_20261021_15.jpg?17925408",
+      "https://data.ventusky.com/2026/10/21/silam/tilled_world/hour_15/silam_pm25_0_0_20261021_15.jpg?17925408"
+    ]
+  },
+  {
+    "layer": "Air quality",
+    "sub": "PM2.5 🏭 🚜",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "PM10 🏭 🚜",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "NO2 🚗 🚢",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "SO2 🏭 🌋",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "O3 🌇",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "Dust 🌴",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "CO 🏭 🔥",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "AQI",
+    "urls": []
+  },
+  {
+    "layer": "Air quality",
+    "sub": "UV index ☀️",
+    "urls": []
+  }
+]

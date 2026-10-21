@@ -1,0 +1,756 @@
+[
+  {
+    "id": "temperature",
+    "kind": "altitude",
+    "o": [
+      {
+        "id": "temperature-water",
+        "Z": 0,
+        "file": "teplota_voda",
+        "label": "sea-surface",
+        "description": "temperature-sea-surface",
+        "H": "currents",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-5cm",
+        "Z": 1,
+        "file": "teplota_surface",
+        "label": "5cm",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-2m",
+        "Z": 2,
+        "file": "teplota_2_m",
+        "label": "2m",
+        "Wi": true,
+        "yj": true,
+        "j": "separated"
+      },
+      {
+        "id": "temperature-anomaly-2m",
+        "Z": 2,
+        "file": "teplota_odchylka_2_m",
+        "label": "anomaly-2m",
+        "description": "temperature-anomaly-2m",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-950hpa",
+        "Z": 5,
+        "file": "teplota_95000_pa",
+        "H": "950hpa",
+        "label": "950hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-925hpa",
+        "Z": 6,
+        "file": "teplota_92500_pa",
+        "H": "925hpa",
+        "label": "925hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-900hpa",
+        "Z": 7,
+        "file": "teplota_90000_pa",
+        "H": "900hpa",
+        "label": "900hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-850hpa",
+        "Z": 8,
+        "file": "teplota_85000_pa",
+        "H": "850hpa",
+        "label": "850hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "temperature-800hpa",
+        "Z": 9,
+        "file": "teplota_80000_pa",
+        "H": "800hpa",
+        "label": "800hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-750hpa",
+        "Z": 10,
+        "file": "teplota_75000_pa",
+        "H": "750hpa",
+        "label": "750hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-700hpa",
+        "Z": 11,
+        "file": "teplota_70000_pa",
+        "H": "700hpa",
+        "label": "700hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "temperature-650hpa",
+        "Z": 12,
+        "file": "teplota_65000_pa",
+        "H": "650hpa",
+        "label": "650hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-600hpa",
+        "Z": 13,
+        "file": "teplota_60000_pa",
+        "H": "600hpa",
+        "label": "600hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-500hpa",
+        "Z": 14,
+        "file": "teplota_50000_pa",
+        "H": "500hpa",
+        "label": "500hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "temperature-400hpa",
+        "Z": 15,
+        "file": "teplota_40000_pa",
+        "H": "400hpa",
+        "label": "400hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-300hpa",
+        "Z": 16,
+        "file": "teplota_30000_pa",
+        "H": "300hpa",
+        "label": "300hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "temperature-200hpa",
+        "Z": 17,
+        "file": "teplota_20000_pa",
+        "H": "200hpa",
+        "label": "200hpa",
+        "j": "separated"
+      },
+      {
+        "id": "temperature-10hpa",
+        "Z": 18,
+        "file": "teplota_1000_pa",
+        "H": "10hpa",
+        "label": "10hpa",
+        "j": "separated"
+      },
+      {
+        "id": "freezing",
+        "Z": 19,
+        "file": "nulova_izoterma",
+        "description": "freezing"
+      }
+    ]
+  },
+  {
+    "id": "feel",
+    "file": "teplota_pocit",
+    "description": "feel"
+  },
+  {
+    "id": "rain",
+    "kind": "accumulation",
+    "o": [
+      {
+        "id": "rain-1h",
+        "file": "srazky_1h",
+        "label": "1h",
+        "$j": {
+          "typed": [
+            "srazky_1h",
+            "srazky_type_1h"
+          ]
+        },
+        "j": "separated"
+      },
+      {
+        "id": "rain-3h",
+        "file": "srazky_3h",
+        "label": "3h",
+        "$j": {
+          "typed": [
+            "srazky_3h",
+            "srazky_type_3h"
+          ]
+        },
+        "yj": true,
+        "j": "separated"
+      },
+      {
+        "id": "rain-ac",
+        "file": "srazky_ac",
+        "label": "ac",
+        "Wl": true,
+        "j": "separated"
+      },
+      {
+        "id": "precipitation-anomaly",
+        "file": "srazky_odchylka",
+        "description": "precipitation-anomaly",
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "radar",
+    "file": "srazky_dbz",
+    "$j": {
+      "typed": [
+        "srazky_dbz",
+        "srazky_type_dbz"
+      ]
+    },
+    "rj": true,
+    "Sj": 1440
+  },
+  {
+    "id": "satellite",
+    "file": "rgba",
+    "ek": true,
+    "rj": true,
+    "Sj": 240
+  },
+  {
+    "id": "clouds",
+    "kind": "clouds",
+    "o": [
+      {
+        "id": "clouds-total",
+        "file": "oblacnost",
+        "yj": true
+      },
+      {
+        "id": "clouds-fog",
+        "file": "srazky_type_1h"
+      },
+      {
+        "id": "clouds-low",
+        "file": "oblacnost_low"
+      },
+      {
+        "id": "clouds-middle",
+        "file": "oblacnost_middle"
+      },
+      {
+        "id": "clouds-high",
+        "file": "oblacnost_high"
+      },
+      {
+        "id": "cloud-base",
+        "file": "cloud_base",
+        "description": "cloud-base"
+      },
+      {
+        "id": "visibility",
+        "file": "visibility",
+        "description": "visibility"
+      }
+    ]
+  },
+  {
+    "id": "wind",
+    "kind": "altitude",
+    "o": [
+      {
+        "id": "wind-10m",
+        "Z": 2,
+        "file": [
+          "vitr_u_10_m",
+          "vitr_v_10_m"
+        ],
+        "label": "10m",
+        "Wi": true,
+        "yj": true,
+        "j": "separated"
+      },
+      {
+        "id": "wind-100m",
+        "Z": 3,
+        "file": [
+          "vitr_u_100_m",
+          "vitr_v_100_m"
+        ],
+        "H": "100m",
+        "label": "100m",
+        "j": "separated"
+      },
+      {
+        "id": "wind-250m",
+        "Z": 4,
+        "file": [
+          "vitr_u_250_m",
+          "vitr_v_250_m"
+        ],
+        "H": "250m",
+        "label": "250m",
+        "j": "separated"
+      },
+      {
+        "id": "wind-950hpa",
+        "Z": 5,
+        "file": [
+          "vitr_u_95000_pa",
+          "vitr_v_95000_pa"
+        ],
+        "H": "950hpa",
+        "label": "950hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-925hpa",
+        "Z": 6,
+        "file": [
+          "vitr_u_92500_pa",
+          "vitr_v_92500_pa"
+        ],
+        "H": "925hpa",
+        "label": "925hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-900hpa",
+        "Z": 7,
+        "file": [
+          "vitr_u_90000_pa",
+          "vitr_v_90000_pa"
+        ],
+        "H": "900hpa",
+        "label": "900hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-850hpa",
+        "Z": 8,
+        "file": [
+          "vitr_u_85000_pa",
+          "vitr_v_85000_pa"
+        ],
+        "H": "850hpa",
+        "label": "850hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "wind-800hpa",
+        "Z": 9,
+        "file": [
+          "vitr_u_80000_pa",
+          "vitr_v_80000_pa"
+        ],
+        "H": "800hpa",
+        "label": "800hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-750hpa",
+        "Z": 10,
+        "file": [
+          "vitr_u_75000_pa",
+          "vitr_v_75000_pa"
+        ],
+        "H": "750hpa",
+        "label": "750hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-700hpa",
+        "Z": 11,
+        "file": [
+          "vitr_u_70000_pa",
+          "vitr_v_70000_pa"
+        ],
+        "H": "700hpa",
+        "label": "700hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "wind-650hpa",
+        "Z": 12,
+        "file": [
+          "vitr_u_65000_pa",
+          "vitr_v_65000_pa"
+        ],
+        "H": "650hpa",
+        "label": "650hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-600hpa",
+        "Z": 13,
+        "file": [
+          "vitr_u_60000_pa",
+          "vitr_v_60000_pa"
+        ],
+        "H": "600hpa",
+        "label": "600hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-500hpa",
+        "Z": 14,
+        "file": [
+          "vitr_u_50000_pa",
+          "vitr_v_50000_pa"
+        ],
+        "H": "500hpa",
+        "label": "500hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "wind-400hpa",
+        "Z": 15,
+        "file": [
+          "vitr_u_40000_pa",
+          "vitr_v_40000_pa"
+        ],
+        "H": "400hpa",
+        "label": "400hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-300hpa",
+        "Z": 16,
+        "file": [
+          "vitr_u_30000_pa",
+          "vitr_v_30000_pa"
+        ],
+        "H": "300hpa",
+        "label": "300hpa",
+        "Wi": true,
+        "j": "separated"
+      },
+      {
+        "id": "wind-200hpa",
+        "Z": 17,
+        "file": [
+          "vitr_u_20000_pa",
+          "vitr_v_20000_pa"
+        ],
+        "H": "200hpa",
+        "label": "200hpa",
+        "j": "separated"
+      },
+      {
+        "id": "wind-10hpa",
+        "Z": 18,
+        "file": [
+          "vitr_u_1000_pa",
+          "vitr_v_1000_pa"
+        ],
+        "H": "10hpa",
+        "label": "10hpa",
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "gust",
+    "kind": "maximum",
+    "o": [
+      {
+        "id": "gust",
+        "file": "vitr_naraz",
+        "label": "1h",
+        "j": "separated"
+      },
+      {
+        "id": "gust-ac",
+        "file": "vitr_naraz_ac",
+        "label": "ac",
+        "Wl": true,
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "pressure",
+    "kind": "altitude",
+    "o": [
+      {
+        "id": "pressure",
+        "Z": 2,
+        "file": "tlak",
+        "yj": true
+      },
+      {
+        "id": "geopotential-850hpa",
+        "Z": 8,
+        "file": "gph_850",
+        "H": "850hpa",
+        "description": "geopotential"
+      },
+      {
+        "id": "geopotential-500hpa",
+        "Z": 14,
+        "file": "gph_500",
+        "H": "500hpa",
+        "description": "geopotential"
+      },
+      {
+        "id": "geopotential-300hpa",
+        "Z": 15,
+        "file": "gph_300",
+        "H": "300hpa",
+        "description": "geopotential"
+      }
+    ]
+  },
+  {
+    "id": "storm",
+    "kind": "storm",
+    "o": [
+      {
+        "id": "cape",
+        "file": "cape",
+        "description": "cape",
+        "j": "separated"
+      },
+      {
+        "id": "cape-shear",
+        "file": "cape_shear",
+        "description": "cape-shear",
+        "j": "separated"
+      },
+      {
+        "id": "shear",
+        "file": "shear",
+        "description": "shear",
+        "j": "separated"
+      },
+      {
+        "id": "hail-probability",
+        "file": "hail_probability",
+        "description": "hail-probability",
+        "j": "separated"
+      },
+      {
+        "id": "cin",
+        "file": "cin",
+        "description": "cin",
+        "j": "separated"
+      },
+      {
+        "id": "li",
+        "file": "li",
+        "description": "li",
+        "j": "separated"
+      },
+      {
+        "id": "helicity",
+        "file": "helicity",
+        "description": "helicity",
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "humidity",
+    "kind": "humidity",
+    "o": [
+      {
+        "id": "humidity-2m",
+        "Z": 2,
+        "file": "vlhkost",
+        "label": "2m",
+        "yj": true,
+        "j": "separated"
+      },
+      {
+        "id": "humidity-900hpa",
+        "Z": 7,
+        "file": "vlhkost_90000_pa",
+        "H": "900hpa",
+        "label": "900hpa",
+        "j": "separated"
+      },
+      {
+        "id": "humidity-850hpa",
+        "Z": 8,
+        "file": "vlhkost_85000_pa",
+        "H": "850hpa",
+        "label": "850hpa",
+        "j": "separated"
+      },
+      {
+        "id": "humidity-700hpa",
+        "Z": 11,
+        "file": "vlhkost_70000_pa",
+        "H": "700hpa",
+        "label": "700hpa",
+        "j": "separated"
+      },
+      {
+        "id": "dew",
+        "file": "dew_point",
+        "description": "dew"
+      }
+    ]
+  },
+  {
+    "id": "sea",
+    "kind": "sea",
+    "o": [
+      {
+        "id": "wave",
+        "file": "swh",
+        "H": "wave-total",
+        "j": "separated"
+      },
+      {
+        "id": "wind-wave",
+        "file": "shww",
+        "H": "wave-wind",
+        "j": "separated"
+      },
+      {
+        "id": "wind-wave-period",
+        "file": "mpww",
+        "H": "wave-wind",
+        "j": "separated"
+      },
+      {
+        "id": "swell",
+        "file": "shts",
+        "H": "wave-swell",
+        "j": "separated"
+      },
+      {
+        "id": "swell-period",
+        "file": "mpts",
+        "H": "wave-swell",
+        "j": "separated"
+      },
+      {
+        "id": "currents",
+        "file": [
+          "proud_u",
+          "proud_v"
+        ],
+        "H": "currents",
+        "description": "currents",
+        "j": "separated"
+      },
+      {
+        "id": "tide-currents",
+        "file": [
+          "tide_proud_u",
+          "tide_proud_v"
+        ],
+        "H": "tide-currents",
+        "description": "tide-currents",
+        "j": "separated"
+      },
+      {
+        "id": "tide",
+        "file": "tide",
+        "H": "tide-currents",
+        "description": "tide",
+        "j": "separated"
+      },
+      {
+        "id": "tide-surge",
+        "file": "tide_surge",
+        "H": "tide-currents",
+        "description": "tide-surge",
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "snow",
+    "kind": "snow",
+    "o": [
+      {
+        "id": "snow",
+        "file": "snih",
+        "j": "separated"
+      },
+      {
+        "id": "snow-new-ac",
+        "file": "novy_snih_ac",
+        "label": "new-ac",
+        "Wl": true,
+        "j": "separated"
+      }
+    ]
+  },
+  {
+    "id": "air",
+    "kind": "air",
+    "o": [
+      {
+        "id": "pm25",
+        "file": "pm25",
+        "description": "pm25",
+        "j": "separated"
+      },
+      {
+        "id": "pm10",
+        "file": "pm10",
+        "description": "pm10",
+        "j": "separated"
+      },
+      {
+        "id": "no2",
+        "file": "no2",
+        "description": "no2",
+        "j": "separated"
+      },
+      {
+        "id": "so2",
+        "file": "so2",
+        "description": "so2",
+        "j": "separated"
+      },
+      {
+        "id": "o3",
+        "file": "o3",
+        "description": "o3",
+        "j": "separated"
+      },
+      {
+        "id": "dust",
+        "file": "dust",
+        "description": "dust",
+        "j": "separated"
+      },
+      {
+        "id": "co",
+        "file": "co",
+        "description": "co",
+        "j": "separated"
+      },
+      {
+        "id": "aqi",
+        "file": "aqi",
+        "description": "aqi",
+        "j": "separated"
+      },
+      {
+        "id": "uv",
+        "file": "uv",
+        "description": "uv"
+      }
+    ]
+  }
+]

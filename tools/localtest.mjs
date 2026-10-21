@@ -1,0 +1,16 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+let errs=[];
+p.on('console', m=>{if(m.type()==='error'){errs.push(m.text().slice(0,300)); console.log('CONSOLE',m.text().slice(0,300))}});
+p.on('pageerror', e=>{errs.push(e.message); console.log('PAGEERROR',e.message.slice(0,300))});
+p.on('requestfailed', r=>{console.log('FAILED',r.url().slice(0,200), r.failure()?.errorText)});
+p.on('response', r=>{if(r.status()>=400) console.log('HTTP',r.status(),r.url().slice(0,200))});
+await p.goto('http://127.0.0.1:8787/',{waitUntil:'domcontentloaded',timeout:60000});
+await p.waitForTimeout(12000);
+console.log('TITLE',await p.title());
+console.log('URL',p.url());
+console.log('ERRORS',errs.length);
+await p.screenshot({path:'local1.png'});
+await b.close();

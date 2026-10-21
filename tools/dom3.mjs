@@ -1,0 +1,11 @@
+import { chromium } from 'playwright-core';
+const browser = await chromium.launch({ executablePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless: true, args:['--no-sandbox'] });
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, locale:'en-US' });
+const page = await ctx.newPage();
+await page.goto('https://www.ventusky.com/', { waitUntil:'domcontentloaded', timeout:60000 });
+await page.waitForTimeout(9000);
+const info = await page.evaluate(() => [...document.body.children].map(el => ({tag:el.tagName,id:el.id,cls:el.className,txt:el.textContent.trim().slice(0,80),n:el.querySelectorAll('*').length})));
+console.log(JSON.stringify(info,null,1));
+const html = await page.evaluate(() => document.querySelector('#menu')?.outerHTML || document.querySelector('.menu')?.outerHTML || 'NONE');
+console.log(html.slice(0,5000));
+await browser.close();

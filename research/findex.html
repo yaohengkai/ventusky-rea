@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="dns-prefetch" href="https://static.ventusky.com">
+	<link rel="dns-prefetch" href="https://data.ventusky.com">
+	<link rel="dns-prefetch" href="https://api.ventusky.com">
+	<link rel="dns-prefetch" href="https://webcams.ventusky.com">
+    <link rel="dns-prefetch" href="https://map.ventusky.com">
+        
+    <link rel=stylesheet href="https://static.ventusky.com/media/style.css?1791624780">
+
+
+    <title>Weather - World | Ventusky</title>
+
+    
+    <meta name="keywords" content="weather, forecast, maps, wind, temperature, precipitation, rain, cloud, pressure, CAPE">
+    <meta name="application-name" content="Ventusky">        
+    <meta name="mobile-web-app-capable" content="yes">    
+    <meta name="theme-color" content="#222e63">
+    <meta name="apple-itunes-app" content="app-id=1280984498">
+    <link rel="manifest" href="https://www.ventusky.com/manifest.json">
+
+    <meta name="description" content="Get the latest World weather forecast including temperature, wind, radar maps, and current conditions for cities and regions across World" />
+<meta property="og:title" content="Weather - World"/>
+<meta property="twitter:title" content="Weather - World"/>
+<meta property="og:description" content="See the weather like never before – live weather maps powered by the most accurate models."/>
+<meta property="twitter:description" content="See the weather like never before – live weather maps powered by the most accurate models."/>
+<meta property="og:image" content="https://static.ventusky.com/images_v2/ventusky-share.jpg"/>
+<meta property="twitter:image" content="https://static.ventusky.com/images_v2/ventusky-share.jpg"/>
+   
+        		       
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Ventuskycom">
+   	 
+    <link rel="canonical" href="https://www.ventusky.com/forecast">	<link rel="shortcut icon" href="https://static.ventusky.com/images_v2/favicon.ico">
+    <link rel="apple-touch-icon" href="https://static.ventusky.com/images_v2/apple-touch-icon-152x152.png">    
+    
+	
+    
+    <!-- usa -->
+
+</head>
+<body>
+    <form id="header">
+        <h1><a href="https://www.ventusky.com/">Ventusky</a></h1>
+        <label>
+            <input name="q">
+        </label>
+        <ul>
+            <li class="progress"></li>
+        </ul>
+    </form>
+	<menu>
+		<li>
+			<a href="https://my.ventusky.com/login/?map" id="menu-login" class="button">Login</a>
+		</li>
+        <li>
+			<a href="https://my.ventusky.com/premium/" id="menu-premium" class="button">Premium</a>
+		</li>
+		<li>
+			<a href="https://my.ventusky.com/" id="menu-my" class="button">myVentusky</a>
+		</li>
+		<li>
+			<a href="https://www.ventusky.com//forecast/" id="menu-forecast" class="button">Forecast</a>
+        </li>
+    </menu>
+
+    <div id="no-js">
+     <ul>
+        <li>Temperature</li>
+	    <li>Feels like temperature</li>
+        <li>Precipitation</li>
+	    <li>Radar</li>
+	    <li>Satellite</li>
+        <li>Wind speed</li>
+        <li>Wind gusts</li>
+        <li>Clouds</li>
+        <li>Air pressure</li>
+        <li>CAPE</li>
+        <li>Snow cover</li>
+        <li>Humidity</li>
+	    <li>Sea</li>
+	    <li>Air quality</li>
+     </ul>
+     
+     Wind Animation <br>
+     ECMWF, GFS, ICON, GEM
+	 
+	 
+	</div>
+	
+	<div id="news" data-news="news-44" style="width: 280px;">
+      <a href="https://my.ventusky.com/guide/news/two-new-high-resolution-weather-models-on-ventusky-rrfs-and-icon-it-84/">
+	    <strong>Two New High-Resolution Weather Models on Ventusky</strong>
+	    <img src="https://static.ventusky.com/images/promo/rrfs.png" alt="Model">        
+      </a>
+    </div>
+
+
+    <script>
+var MapOptions = {
+  "root": "https://www.ventusky.com/",
+  "lang": "en",
+  "lat": 34.0726,
+  "lon": -118.261,
+  "zoom": 5,
+  "model": "auto",
+    "now":               Date.UTC(2026, 9, 21, 15, 13),
+  "camTilesUpdated": 1791911487,
+
+  "icon-deTimelineStart": Date.UTC(2025, 0, 1, 0),
+"icon-deTimelineEnd": Date.UTC(2026, 9, 23, 12),
+"icon-deUpdated": Date.UTC(2026, 9, 21, 12, 0),
+"icon-deAccumulationStart": Date.UTC(2026, 9, 21, 12),
+
+"icon-waterTimelineStart": Date.UTC(2017, 6, 1, 0),
+"icon-waterTimelineEnd": Date.UTC(2024, 4, 30, 0),
+"icon-waterUpdated": Date.UTC(2024, 4, 30, 0, 0),
+
+"icon-eu-waterTimelineStart": Date.UTC(2020, 1, 17, 0),
+"icon-eu-waterTimelineEnd": Date.UTC(2026, 9, 24, 6),
+"icon-eu-waterUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"gfsTimelineStart": Date.UTC(2018, 0, 1, 0),
+"gfsTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"gfsUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"gfsAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"gemTimelineStart": Date.UTC(2026, 0, 1, 0),
+"gemTimelineEnd": Date.UTC(2026, 9, 31, 0),
+"gemUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"gemAccumulationStart": Date.UTC(2026, 9, 21, 3),
+
+"hrrrTimelineStart": Date.UTC(2022, 0, 1, 0),
+"hrrrTimelineEnd": Date.UTC(2026, 9, 23, 12),
+"hrrrUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"hrrrAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"rrfsTimelineStart": Date.UTC(2026, 8, 28, 0),
+"rrfsTimelineEnd": Date.UTC(2026, 9, 24, 18),
+"rrfsUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"rrfsAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"rrfs_hawaiTimelineStart": Date.UTC(2026, 9, 1, 0),
+"rrfs_hawaiTimelineEnd": Date.UTC(2026, 9, 24, 18),
+"rrfs_hawaiUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"rrfs_hawaiAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"nbmTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nbmTimelineEnd": Date.UTC(2026, 9, 23, 0),
+"nbmUpdated": Date.UTC(2026, 9, 21, 13, 0),
+"nbmAccumulationStart": Date.UTC(2026, 9, 21, 13),
+
+"euradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"euradTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"euradUpdated": Date.UTC(2026, 9, 21, 16, 35),
+
+"eurad_hresTimelineStart": Date.UTC(2023, 7, 27, 0),
+"eurad_hresTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"eurad_hresUpdated": Date.UTC(2026, 9, 21, 16, 35),
+
+"usradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"usradTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"usradUpdated": Date.UTC(2026, 9, 21, 16, 40),
+
+"earadTimelineStart": Date.UTC(2024, 4, 5, 0),
+"earadTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"earadUpdated": Date.UTC(2026, 9, 21, 16, 35),
+
+"woradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"woradTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"woradUpdated": Date.UTC(2026, 9, 21, 16, 35),
+
+"worad_hresTimelineStart": Date.UTC(2025, 7, 23, 0),
+"worad_hresTimelineEnd": Date.UTC(2026, 9, 21, 16),
+"worad_hresUpdated": Date.UTC(2026, 9, 21, 16, 35),
+
+"silamTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silamTimelineEnd": Date.UTC(2026, 9, 26, 0),
+"silamUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"silam-euTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silam-euTimelineEnd": Date.UTC(2026, 9, 26, 0),
+"silam-euUpdated": Date.UTC(2026, 9, 21, 3, 0),
+
+"goesTimelineStart": Date.UTC(2023, 0, 1, 0),
+"goesTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"goesUpdated": Date.UTC(2026, 9, 21, 15, 0),
+
+"rtofsTimelineStart": Date.UTC(2021, 5, 28, 0),
+"rtofsTimelineEnd": Date.UTC(2026, 9, 28, 0),
+"rtofsUpdated": Date.UTC(2026, 9, 20, 0, 0),
+
+"ovationTimelineStart": Date.UTC(2021, 3, 1, 0),
+"ovationTimelineEnd": Date.UTC(2026, 9, 21, 15),
+"ovationUpdated": Date.UTC(2026, 9, 21, 15, 0),
+
+"aromeTimelineStart": Date.UTC(2025, 0, 1, 0),
+"aromeTimelineEnd": Date.UTC(2026, 9, 23, 0),
+"aromeUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"aromeAccumulationStart": Date.UTC(2026, 9, 21, 0),
+
+"ukmoTimelineStart": Date.UTC(2026, 0, 1, 0),
+"ukmoTimelineEnd": Date.UTC(2026, 9, 22, 6),
+"ukmoUpdated": Date.UTC(2026, 9, 21, 6, 0),
+
+"ukmo-ukTimelineStart": Date.UTC(2025, 0, 1, 0),
+"ukmo-ukUpdated": Date.UTC(2026, 9, 21, 4, 0),
+"ukmo-uk3hStart": Date.UTC(2026, 9, 23, 9),
+"ukmo-ukTimelineEnd": Date.UTC(2026, 9, 26, 3),
+"ukmo-ukAccumulationStart": Date.UTC(2026, 9, 21, 4),
+
+"iconTimelineStart": Date.UTC(2018, 0, 1, 0),
+"iconUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"icon3hStart": Date.UTC(2026, 9, 24, 12),
+"iconTimelineEnd": Date.UTC(2026, 9, 28, 12),
+"iconAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"icon-euTimelineStart": Date.UTC(2018, 10, 0, 0),
+"icon-euUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"icon-eu3hStart": Date.UTC(2026, 9, 24, 12),
+"icon-euTimelineEnd": Date.UTC(2026, 9, 26, 6),
+"icon-euAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"mepsTimelineStart": Date.UTC(2025, 0, 1, 0),
+"mepsTimelineEnd": Date.UTC(2026, 9, 24, 3),
+"mepsUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"mepsAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"wavewatch-noTimelineStart": Date.UTC(2023, 4, 15, 0),
+"wavewatch-noTimelineEnd": Date.UTC(2026, 9, 24, 0),
+"wavewatch-noUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"stofsTimelineStart": Date.UTC(2016, 4, 1, 12),
+"stofsTimelineEnd": Date.UTC(2026, 9, 28, 12),
+"stofsUpdated": Date.UTC(2026, 9, 20, 19, 0),
+
+"smocTimelineStart": Date.UTC(2016, 4, 1, 12),
+"smocTimelineEnd": Date.UTC(2026, 9, 28, 23),
+"smocUpdated": Date.UTC(2026, 9, 21, 0, 0),
+
+"mfwamTimelineStart": Date.UTC(2024, 3, 14, 0),
+"mfwamTimelineEnd": Date.UTC(2026, 9, 31, 0),
+"mfwamUpdated": Date.UTC(2026, 9, 21, 3, 0),
+
+"ecmwf-mresTimelineStart": Date.UTC(2024, 3, 21, 0),
+"ecmwf-mresUpdated": Date.UTC(2026, 9, 21, 0, 0),
+"ecmwf-mres6hStart": Date.UTC(2026, 9, 27, 0),
+"ecmwf-mresTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"ecmwf-mresAccumulationStart": Date.UTC(2026, 9, 21, 0),
+
+"ecmwf-hresTimelineStart": Date.UTC(2025, 11, 5, 0),
+"ecmwf-hresUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"ecmwf-hres3hStart": Date.UTC(2026, 9, 25, 0),
+"ecmwf-hres6hStart": Date.UTC(2026, 9, 27, 6),
+"ecmwf-hresTimelineEnd": Date.UTC(2026, 10, 4, 6),
+"ecmwf-hresAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"aladinTimelineStart": Date.UTC(2025, 0, 1, 0),
+"aladinTimelineEnd": Date.UTC(2026, 9, 24, 6),
+"aladinUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"aladinAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"kma_umTimelineStart": Date.UTC(2026, 0, 1, 0),
+"kma_umUpdated": Date.UTC(2026, 2, 31, 12, 0),
+"kma_um6hStart": Date.UTC(2026, 3, 4, 0),
+"kma_umTimelineEnd": Date.UTC(2026, 3, 12, 12),
+"kma_umAccumulationStart": Date.UTC(2026, 2, 31, 12),
+
+"harmonie_euTimelineStart": Date.UTC(2026, 0, 1, 0),
+"harmonie_euTimelineEnd": Date.UTC(2026, 9, 24, 0),
+"harmonie_euUpdated": Date.UTC(2026, 9, 21, 12, 0),
+"harmonie_euAccumulationStart": Date.UTC(2026, 9, 21, 12),
+
+"harmonie_carTimelineStart": Date.UTC(2026, 0, 1, 0),
+"harmonie_carTimelineEnd": Date.UTC(2026, 9, 23, 21),
+"harmonie_carUpdated": Date.UTC(2026, 9, 21, 9, 0),
+"harmonie_carAccumulationStart": Date.UTC(2026, 9, 21, 9),
+
+"nam_usTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nam_usTimelineEnd": Date.UTC(2026, 9, 23, 18),
+"nam_usUpdated": Date.UTC(2026, 9, 21, 6, 0),
+"nam_usAccumulationStart": Date.UTC(2026, 9, 21, 6),
+
+"nam_hawaiTimelineStart": Date.UTC(2026, 0, 1, 0),
+"nam_hawaiTimelineEnd": Date.UTC(2026, 9, 24, 0),
+"nam_hawaiUpdated": Date.UTC(2026, 9, 21, 12, 0),
+"nam_hawaiAccumulationStart": Date.UTC(2026, 9, 21, 12),
+
+"camsTimelineStart": Date.UTC(2025, 4, 15, 0),
+"camsTimelineEnd": Date.UTC(2026, 9, 25, 11),
+"camsUpdated": Date.UTC(2026, 9, 20, 12, 0),
+
+"icon-chTimelineStart": Date.UTC(2025, 5, 25, 0),
+"icon-chTimelineEnd": Date.UTC(2026, 9, 26, 6),
+"icon-chUpdated": Date.UTC(2026, 9, 21, 6, 0),
+
+"icon-itTimelineStart": Date.UTC(2026, 9, 1, 0),
+"icon-itTimelineEnd": Date.UTC(2026, 9, 24, 12),
+"icon-itUpdated": Date.UTC(2026, 9, 21, 12, 0),
+
+  
+  "ukmo-ukUpdated": Date.UTC(2026, 9, 21, 12, 0), //overrides non-radar version
+ 
+  "ecmwfTimelineStart": Date.UTC(1979, 5, 1, 0),
+  "ecmwfTimelineEnd":   Date.UTC(2020, 9, 31, 21),
+  "ecmwfUpdated":       Date.UTC(2021, 0, 29, 0, 0),    
+               
+  "hurricanesUpdated":  Date.UTC(2026, 9, 21, 14, 40),
+  "firesUpdated":  Date.UTC(2026, 9, 21, 14, 54)
+};
+    </script>
+
+    <script src="https://static.ventusky.com/media/script-en.js?1791624780"></script>
+    
+
+        
+        <div id="aside">
+            <div id="aside_inner">
+            <span id="aside_close_btn" onclick="document.getElementById('aside').className='hidden'">
+                <span class="aside_close_btn_ico"></span>
+            </span>
+                <div class="header">
+    <div class="header_background">
+        <h1 data-title="Weather - World | Ventusky">
+            Weather        </h1>
+    </div>
+</div>
+<!--/header-->
+
+<div class="section pb-0">
+    On Ventusky, you can find up-to-date weather forecasts for a wide range of locations. You can choose any place by clicking directly on the map, or browse selected locations in this list.</div>
+
+<div class="section">    
+    <div id="star-places">
+        <div class="section_header clearfix">
+            <h2>Your favourite locations</h2>
+        </div>    
+        <ul class="list-cities">
+        </ul>
+    </div>    
+        
+    <div class="section_header clearfix">
+        <h2>List of states</h2>
+    </div>
+
+    <ul class="letters my-4">
+    <li><a href="#anchor_A" data-target="#anchor_A" title="A">A</a></li><li><a href="#anchor_B" data-target="#anchor_B" title="B">B</a></li><li><a href="#anchor_C" data-target="#anchor_C" title="C">C</a></li><li><a href="#anchor_D" data-target="#anchor_D" title="D">D</a></li><li><a href="#anchor_E" data-target="#anchor_E" title="E">E</a></li><li><a href="#anchor_F" data-target="#anchor_F" title="F">F</a></li><li><a href="#anchor_G" data-target="#anchor_G" title="G">G</a></li><li><a href="#anchor_H" data-target="#anchor_H" title="H">H</a></li><li><a href="#anchor_I" data-target="#anchor_I" title="I">I</a></li><li><a href="#anchor_J" data-target="#anchor_J" title="J">J</a></li><li><a href="#anchor_K" data-target="#anchor_K" title="K">K</a></li><li><a href="#anchor_L" data-target="#anchor_L" title="L">L</a></li><li><a href="#anchor_M" data-target="#anchor_M" title="M">M</a></li><li><a href="#anchor_N" data-target="#anchor_N" title="N">N</a></li><li><a href="#anchor_O" data-target="#anchor_O" title="O">O</a></li><li><a href="#anchor_P" data-target="#anchor_P" title="P">P</a></li><li><a href="#anchor_Q" data-target="#anchor_Q" title="Q">Q</a></li><li><a href="#anchor_R" data-target="#anchor_R" title="R">R</a></li><li><a href="#anchor_S" data-target="#anchor_S" title="S">S</a></li><li><a href="#anchor_T" data-target="#anchor_T" title="T">T</a></li><li><a href="#anchor_U" data-target="#anchor_U" title="U">U</a></li><li><a href="#anchor_V" data-target="#anchor_V" title="V">V</a></li><li><a href="#anchor_W" data-target="#anchor_W" title="W">W</a></li><li><a href="#anchor_Y" data-target="#anchor_Y" title="Y">Y</a></li><li><a href="#anchor_Z" data-target="#anchor_Z" title="Z">Z</a></li><li><a href="#anchor_Å" data-target="#anchor_Å" title="Å">Å</a></li>    
+    </ul>
+
+    <div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_A"></span><h2 class="pismeno">A</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/afghanistan" dest="panel">Afghanistan</a></li><li><a href="https://www.ventusky.com/forecast/albania" dest="panel">Albania</a></li><li><a href="https://www.ventusky.com/forecast/algeria" dest="panel">Algeria</a></li><li><a href="https://www.ventusky.com/forecast/american-samoa" dest="panel">American Samoa</a></li><li><a href="https://www.ventusky.com/forecast/andorra" dest="panel">Andorra</a></li><li><a href="https://www.ventusky.com/forecast/angola" dest="panel">Angola</a></li><li><a href="https://www.ventusky.com/forecast/anguilla" dest="panel">Anguilla</a></li><li><a href="https://www.ventusky.com/forecast/antigua-and-barbuda" dest="panel">Antigua & Barbuda</a></li><li><a href="https://www.ventusky.com/forecast/argentina" dest="panel">Argentina</a></li><li><a href="https://www.ventusky.com/forecast/armenia" dest="panel">Armenia</a></li><li><a href="https://www.ventusky.com/forecast/australia" dest="panel">Australia</a></li><li><a href="https://www.ventusky.com/forecast/austria" dest="panel">Austria</a></li><li><a href="https://www.ventusky.com/forecast/azerbaijan" dest="panel">Azerbaijan</a></li><li><a href="https://www.ventusky.com/forecast/akrotiri-and-dhekelia" dest="panel">Akrotiri and Dhekelia</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_B"></span><h2 class="pismeno">B</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/bahamas" dest="panel">Bahamas</a></li><li><a href="https://www.ventusky.com/forecast/bahrain" dest="panel">Bahrain</a></li><li><a href="https://www.ventusky.com/forecast/bangladesh" dest="panel">Bangladesh</a></li><li><a href="https://www.ventusky.com/forecast/barbados" dest="panel">Barbados</a></li><li><a href="https://www.ventusky.com/forecast/belarus" dest="panel">Belarus</a></li><li><a href="https://www.ventusky.com/forecast/belgium" dest="panel">Belgium</a></li><li><a href="https://www.ventusky.com/forecast/belize" dest="panel">Belize</a></li><li><a href="https://www.ventusky.com/forecast/benin" dest="panel">Benin</a></li><li><a href="https://www.ventusky.com/forecast/bermuda" dest="panel">Bermuda</a></li><li><a href="https://www.ventusky.com/forecast/bhutan" dest="panel">Bhutan</a></li><li><a href="https://www.ventusky.com/forecast/bolivia" dest="panel">Bolivia</a></li><li><a href="https://www.ventusky.com/forecast/bosnia-and-herzegovina" dest="panel">Bosnia & Herzegovina</a></li><li><a href="https://www.ventusky.com/forecast/botswana" dest="panel">Botswana</a></li><li><a href="https://www.ventusky.com/forecast/brazil" dest="panel">Brazil</a></li><li><a href="https://www.ventusky.com/forecast/british-virgin-islands" dest="panel">British Virgin Islands</a></li><li><a href="https://www.ventusky.com/forecast/brunei" dest="panel">Brunei</a></li><li><a href="https://www.ventusky.com/forecast/bulgaria" dest="panel">Bulgaria</a></li><li><a href="https://www.ventusky.com/forecast/burkina-faso" dest="panel">Burkina Faso</a></li><li><a href="https://www.ventusky.com/forecast/burundi" dest="panel">Burundi</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_C"></span><h2 class="pismeno">C</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/cambodia" dest="panel">Cambodia</a></li><li><a href="https://www.ventusky.com/forecast/cameroon" dest="panel">Cameroon</a></li><li><a href="https://www.ventusky.com/forecast/canada" dest="panel">Canada</a></li><li><a href="https://www.ventusky.com/forecast/cape-verde" dest="panel">Cape Verde</a></li><li><a href="https://www.ventusky.com/forecast/bonaire-sint-eustatius-and-saba" dest="panel">Caribbean Netherlands</a></li><li><a href="https://www.ventusky.com/forecast/cayman-islands" dest="panel">Cayman Islands</a></li><li><a href="https://www.ventusky.com/forecast/central-african-republic" dest="panel">Central African Republic</a></li><li><a href="https://www.ventusky.com/forecast/chad" dest="panel">Chad</a></li><li><a href="https://www.ventusky.com/forecast/chile" dest="panel">Chile</a></li><li><a href="https://www.ventusky.com/forecast/china" dest="panel">China</a></li><li><a href="https://www.ventusky.com/forecast/colombia" dest="panel">Colombia</a></li><li><a href="https://www.ventusky.com/forecast/comoros" dest="panel">Comoros</a></li><li><a href="https://www.ventusky.com/forecast/republic-of-congo" dest="panel">Congo - Brazzaville</a></li><li><a href="https://www.ventusky.com/forecast/democratic-republic-of-the-congo" dest="panel">Congo - Kinshasa</a></li><li><a href="https://www.ventusky.com/forecast/cook-islands" dest="panel">Cook Islands</a></li><li><a href="https://www.ventusky.com/forecast/costa-rica" dest="panel">Costa Rica</a></li><li><a href="https://www.ventusky.com/forecast/croatia" dest="panel">Croatia</a></li><li><a href="https://www.ventusky.com/forecast/cuba" dest="panel">Cuba</a></li><li><a href="https://www.ventusky.com/forecast/cyprus" dest="panel">Cyprus</a></li><li><a href="https://www.ventusky.com/forecast/czech-republic" dest="panel">Czechia</a></li><li><a href="https://www.ventusky.com/forecast/cote-divoire" dest="panel">Côte d’Ivoire</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_D"></span><h2 class="pismeno">D</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/denmark" dest="panel">Denmark</a></li><li><a href="https://www.ventusky.com/forecast/djibouti" dest="panel">Djibouti</a></li><li><a href="https://www.ventusky.com/forecast/dominica" dest="panel">Dominica</a></li><li><a href="https://www.ventusky.com/forecast/dominican-republic" dest="panel">Dominican Republic</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_E"></span><h2 class="pismeno">E</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/ecuador" dest="panel">Ecuador</a></li><li><a href="https://www.ventusky.com/forecast/egypt" dest="panel">Egypt</a></li><li><a href="https://www.ventusky.com/forecast/el-salvador" dest="panel">El Salvador</a></li><li><a href="https://www.ventusky.com/forecast/equatorial-guinea" dest="panel">Equatorial Guinea</a></li><li><a href="https://www.ventusky.com/forecast/eritrea" dest="panel">Eritrea</a></li><li><a href="https://www.ventusky.com/forecast/estonia" dest="panel">Estonia</a></li><li><a href="https://www.ventusky.com/forecast/swaziland" dest="panel">Eswatini</a></li><li><a href="https://www.ventusky.com/forecast/ethiopia" dest="panel">Ethiopia</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_F"></span><h2 class="pismeno">F</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/faroe-islands" dest="panel">Faroe Islands</a></li><li><a href="https://www.ventusky.com/forecast/fiji" dest="panel">Fiji</a></li><li><a href="https://www.ventusky.com/forecast/finland" dest="panel">Finland</a></li><li><a href="https://www.ventusky.com/forecast/france" dest="panel">France</a></li><li><a href="https://www.ventusky.com/forecast/french-guiana" dest="panel">French Guiana</a></li><li><a href="https://www.ventusky.com/forecast/french-polynesia" dest="panel">French Polynesia</a></li><li><a href="https://www.ventusky.com/forecast/french-southern-territories" dest="panel">French Southern Territories</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_G"></span><h2 class="pismeno">G</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/gabon" dest="panel">Gabon</a></li><li><a href="https://www.ventusky.com/forecast/gambia" dest="panel">Gambia</a></li><li><a href="https://www.ventusky.com/forecast/georgia" dest="panel">Georgia</a></li><li><a href="https://www.ventusky.com/forecast/germany" dest="panel">Germany</a></li><li><a href="https://www.ventusky.com/forecast/ghana" dest="panel">Ghana</a></li><li><a href="https://www.ventusky.com/forecast/greece" dest="panel">Greece</a></li><li><a href="https://www.ventusky.com/forecast/greenland" dest="panel">Greenland</a></li><li><a href="https://www.ventusky.com/forecast/grenada" dest="panel">Grenada</a></li><li><a href="https://www.ventusky.com/forecast/guadeloupe" dest="panel">Guadeloupe</a></li><li><a href="https://www.ventusky.com/forecast/guam" dest="panel">Guam</a></li><li><a href="https://www.ventusky.com/forecast/guatemala" dest="panel">Guatemala</a></li><li><a href="https://www.ventusky.com/forecast/guernsey" dest="panel">Guernsey</a></li><li><a href="https://www.ventusky.com/forecast/guinea" dest="panel">Guinea</a></li><li><a href="https://www.ventusky.com/forecast/guinea-bissau" dest="panel">Guinea-Bissau</a></li><li><a href="https://www.ventusky.com/forecast/guyana" dest="panel">Guyana</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_H"></span><h2 class="pismeno">H</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/haiti" dest="panel">Haiti</a></li><li><a href="https://www.ventusky.com/forecast/honduras" dest="panel">Honduras</a></li><li><a href="https://www.ventusky.com/forecast/hong-kong" dest="panel">Hong Kong SAR China</a></li><li><a href="https://www.ventusky.com/forecast/hungary" dest="panel">Hungary</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_I"></span><h2 class="pismeno">I</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/iceland" dest="panel">Iceland</a></li><li><a href="https://www.ventusky.com/forecast/india" dest="panel">India</a></li><li><a href="https://www.ventusky.com/forecast/indonesia" dest="panel">Indonesia</a></li><li><a href="https://www.ventusky.com/forecast/iran" dest="panel">Iran</a></li><li><a href="https://www.ventusky.com/forecast/iraq" dest="panel">Iraq</a></li><li><a href="https://www.ventusky.com/forecast/ireland" dest="panel">Ireland</a></li><li><a href="https://www.ventusky.com/forecast/isle-of-man" dest="panel">Isle of Man</a></li><li><a href="https://www.ventusky.com/forecast/israel" dest="panel">Israel</a></li><li><a href="https://www.ventusky.com/forecast/italy" dest="panel">Italy</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_J"></span><h2 class="pismeno">J</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/jamaica" dest="panel">Jamaica</a></li><li><a href="https://www.ventusky.com/forecast/japan" dest="panel">Japan</a></li><li><a href="https://www.ventusky.com/forecast/jersey" dest="panel">Jersey</a></li><li><a href="https://www.ventusky.com/forecast/jordan" dest="panel">Jordan</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_K"></span><h2 class="pismeno">K</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/kazakhstan" dest="panel">Kazakhstan</a></li><li><a href="https://www.ventusky.com/forecast/kenya" dest="panel">Kenya</a></li><li><a href="https://www.ventusky.com/forecast/kosovo" dest="panel">Kosovo</a></li><li><a href="https://www.ventusky.com/forecast/kuwait" dest="panel">Kuwait</a></li><li><a href="https://www.ventusky.com/forecast/kyrgyzstan" dest="panel">Kyrgyzstan</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_L"></span><h2 class="pismeno">L</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/laos" dest="panel">Laos</a></li><li><a href="https://www.ventusky.com/forecast/latvia" dest="panel">Latvia</a></li><li><a href="https://www.ventusky.com/forecast/lebanon" dest="panel">Lebanon</a></li><li><a href="https://www.ventusky.com/forecast/lesotho" dest="panel">Lesotho</a></li><li><a href="https://www.ventusky.com/forecast/liberia" dest="panel">Liberia</a></li><li><a href="https://www.ventusky.com/forecast/libya" dest="panel">Libya</a></li><li><a href="https://www.ventusky.com/forecast/liechtenstein" dest="panel">Liechtenstein</a></li><li><a href="https://www.ventusky.com/forecast/lithuania" dest="panel">Lithuania</a></li><li><a href="https://www.ventusky.com/forecast/luxembourg" dest="panel">Luxembourg</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_M"></span><h2 class="pismeno">M</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/macao" dest="panel">Macao SAR China</a></li><li><a href="https://www.ventusky.com/forecast/madagascar" dest="panel">Madagascar</a></li><li><a href="https://www.ventusky.com/forecast/malawi" dest="panel">Malawi</a></li><li><a href="https://www.ventusky.com/forecast/malaysia" dest="panel">Malaysia</a></li><li><a href="https://www.ventusky.com/forecast/mali" dest="panel">Mali</a></li><li><a href="https://www.ventusky.com/forecast/malta" dest="panel">Malta</a></li><li><a href="https://www.ventusky.com/forecast/marshall-islands" dest="panel">Marshall Islands</a></li><li><a href="https://www.ventusky.com/forecast/martinique" dest="panel">Martinique</a></li><li><a href="https://www.ventusky.com/forecast/mauritania" dest="panel">Mauritania</a></li><li><a href="https://www.ventusky.com/forecast/mauritius" dest="panel">Mauritius</a></li><li><a href="https://www.ventusky.com/forecast/mayotte" dest="panel">Mayotte</a></li><li><a href="https://www.ventusky.com/forecast/mexico" dest="panel">Mexico</a></li><li><a href="https://www.ventusky.com/forecast/micronesia" dest="panel">Micronesia</a></li><li><a href="https://www.ventusky.com/forecast/moldova" dest="panel">Moldova</a></li><li><a href="https://www.ventusky.com/forecast/mongolia" dest="panel">Mongolia</a></li><li><a href="https://www.ventusky.com/forecast/montenegro" dest="panel">Montenegro</a></li><li><a href="https://www.ventusky.com/forecast/montserrat" dest="panel">Montserrat</a></li><li><a href="https://www.ventusky.com/forecast/morocco" dest="panel">Morocco</a></li><li><a href="https://www.ventusky.com/forecast/mozambique" dest="panel">Mozambique</a></li><li><a href="https://www.ventusky.com/forecast/myanmar" dest="panel">Myanmar (Burma)</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_N"></span><h2 class="pismeno">N</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/namibia" dest="panel">Namibia</a></li><li><a href="https://www.ventusky.com/forecast/nauru" dest="panel">Nauru</a></li><li><a href="https://www.ventusky.com/forecast/nepal" dest="panel">Nepal</a></li><li><a href="https://www.ventusky.com/forecast/netherlands" dest="panel">Netherlands</a></li><li><a href="https://www.ventusky.com/forecast/new-caledonia" dest="panel">New Caledonia</a></li><li><a href="https://www.ventusky.com/forecast/new-zealand" dest="panel">New Zealand</a></li><li><a href="https://www.ventusky.com/forecast/nicaragua" dest="panel">Nicaragua</a></li><li><a href="https://www.ventusky.com/forecast/niger" dest="panel">Niger</a></li><li><a href="https://www.ventusky.com/forecast/nigeria" dest="panel">Nigeria</a></li><li><a href="https://www.ventusky.com/forecast/north-korea" dest="panel">North Korea</a></li><li><a href="https://www.ventusky.com/forecast/macedonia" dest="panel">North Macedonia</a></li><li><a href="https://www.ventusky.com/forecast/northern-mariana-islands" dest="panel">Northern Mariana Islands</a></li><li><a href="https://www.ventusky.com/forecast/norway" dest="panel">Norway</a></li><li><a href="https://www.ventusky.com/forecast/northern-cyprus" dest="panel">Northern Cyprus</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_O"></span><h2 class="pismeno">O</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/oman" dest="panel">Oman</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_P"></span><h2 class="pismeno">P</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/pakistan" dest="panel">Pakistan</a></li><li><a href="https://www.ventusky.com/forecast/palau" dest="panel">Palau</a></li><li><a href="https://www.ventusky.com/forecast/palestina" dest="panel">Palestinian Territories</a></li><li><a href="https://www.ventusky.com/forecast/panama" dest="panel">Panama</a></li><li><a href="https://www.ventusky.com/forecast/papua-new-guinea" dest="panel">Papua New Guinea</a></li><li><a href="https://www.ventusky.com/forecast/paraguay" dest="panel">Paraguay</a></li><li><a href="https://www.ventusky.com/forecast/peru" dest="panel">Peru</a></li><li><a href="https://www.ventusky.com/forecast/philippines" dest="panel">Philippines</a></li><li><a href="https://www.ventusky.com/forecast/poland" dest="panel">Poland</a></li><li><a href="https://www.ventusky.com/forecast/portugal" dest="panel">Portugal</a></li><li><a href="https://www.ventusky.com/forecast/puerto-rico" dest="panel">Puerto Rico</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_Q"></span><h2 class="pismeno">Q</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/qatar" dest="panel">Qatar</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_R"></span><h2 class="pismeno">R</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/romania" dest="panel">Romania</a></li><li><a href="https://www.ventusky.com/forecast/russia" dest="panel">Russia</a></li><li><a href="https://www.ventusky.com/forecast/rwanda" dest="panel">Rwanda</a></li><li><a href="https://www.ventusky.com/forecast/reunion" dest="panel">Réunion</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_S"></span><h2 class="pismeno">S</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/samoa" dest="panel">Samoa</a></li><li><a href="https://www.ventusky.com/forecast/san-marino" dest="panel">San Marino</a></li><li><a href="https://www.ventusky.com/forecast/saudi-arabia" dest="panel">Saudi Arabia</a></li><li><a href="https://www.ventusky.com/forecast/senegal" dest="panel">Senegal</a></li><li><a href="https://www.ventusky.com/forecast/serbia" dest="panel">Serbia</a></li><li><a href="https://www.ventusky.com/forecast/seychelles" dest="panel">Seychelles</a></li><li><a href="https://www.ventusky.com/forecast/sierra-leone" dest="panel">Sierra Leone</a></li><li><a href="https://www.ventusky.com/forecast/singapore" dest="panel">Singapore</a></li><li><a href="https://www.ventusky.com/forecast/slovakia" dest="panel">Slovakia</a></li><li><a href="https://www.ventusky.com/forecast/slovenia" dest="panel">Slovenia</a></li><li><a href="https://www.ventusky.com/forecast/solomon-islands" dest="panel">Solomon Islands</a></li><li><a href="https://www.ventusky.com/forecast/somalia" dest="panel">Somalia</a></li><li><a href="https://www.ventusky.com/forecast/south-africa" dest="panel">South Africa</a></li><li><a href="https://www.ventusky.com/forecast/south-korea" dest="panel">South Korea</a></li><li><a href="https://www.ventusky.com/forecast/south-sudan" dest="panel">South Sudan</a></li><li><a href="https://www.ventusky.com/forecast/spain" dest="panel">Spain</a></li><li><a href="https://www.ventusky.com/forecast/sri-lanka" dest="panel">Sri Lanka</a></li><li><a href="https://www.ventusky.com/forecast/saint-barthelemy" dest="panel">St. Barthélemy</a></li><li><a href="https://www.ventusky.com/forecast/saint-helena" dest="panel">St. Helena</a></li><li><a href="https://www.ventusky.com/forecast/saint-kitts-and-nevis" dest="panel">St. Kitts & Nevis</a></li><li><a href="https://www.ventusky.com/forecast/saint-lucia" dest="panel">St. Lucia</a></li><li><a href="https://www.ventusky.com/forecast/saint-pierre-and-miquelon" dest="panel">St. Pierre & Miquelon</a></li><li><a href="https://www.ventusky.com/forecast/saint-vincent-and-the-grenadines" dest="panel">St. Vincent & Grenadines</a></li><li><a href="https://www.ventusky.com/forecast/sudan" dest="panel">Sudan</a></li><li><a href="https://www.ventusky.com/forecast/suriname" dest="panel">Suriname</a></li><li><a href="https://www.ventusky.com/forecast/svalbard-and-jan-mayen" dest="panel">Svalbard & Jan Mayen</a></li><li><a href="https://www.ventusky.com/forecast/sweden" dest="panel">Sweden</a></li><li><a href="https://www.ventusky.com/forecast/switzerland" dest="panel">Switzerland</a></li><li><a href="https://www.ventusky.com/forecast/syria" dest="panel">Syria</a></li><li><a href="https://www.ventusky.com/forecast/sao-tome-and-principe" dest="panel">São Tomé & Príncipe</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_T"></span><h2 class="pismeno">T</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/taiwan" dest="panel">Taiwan</a></li><li><a href="https://www.ventusky.com/forecast/tajikistan" dest="panel">Tajikistan</a></li><li><a href="https://www.ventusky.com/forecast/tanzania" dest="panel">Tanzania</a></li><li><a href="https://www.ventusky.com/forecast/thailand" dest="panel">Thailand</a></li><li><a href="https://www.ventusky.com/forecast/timor-leste" dest="panel">Timor-Leste</a></li><li><a href="https://www.ventusky.com/forecast/togo" dest="panel">Togo</a></li><li><a href="https://www.ventusky.com/forecast/tokelau" dest="panel">Tokelau</a></li><li><a href="https://www.ventusky.com/forecast/tonga" dest="panel">Tonga</a></li><li><a href="https://www.ventusky.com/forecast/trinidad-and-tobago" dest="panel">Trinidad & Tobago</a></li><li><a href="https://www.ventusky.com/forecast/tunisia" dest="panel">Tunisia</a></li><li><a href="https://www.ventusky.com/forecast/turkmenistan" dest="panel">Turkmenistan</a></li><li><a href="https://www.ventusky.com/forecast/turks-and-caicos-islands" dest="panel">Turks & Caicos Islands</a></li><li><a href="https://www.ventusky.com/forecast/tuvalu" dest="panel">Tuvalu</a></li><li><a href="https://www.ventusky.com/forecast/turkey" dest="panel">Türkiye</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_U"></span><h2 class="pismeno">U</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/united-states-minor-outlying-islands" dest="panel">U.S. Outlying Islands</a></li><li><a href="https://www.ventusky.com/forecast/virgin-islands-us" dest="panel">U.S. Virgin Islands</a></li><li><a href="https://www.ventusky.com/forecast/uganda" dest="panel">Uganda</a></li><li><a href="https://www.ventusky.com/forecast/ukraine" dest="panel">Ukraine</a></li><li><a href="https://www.ventusky.com/forecast/united-arab-emirates" dest="panel">United Arab Emirates</a></li><li><a href="https://www.ventusky.com/forecast/united-kingdom" dest="panel">United Kingdom</a></li><li><a href="https://www.ventusky.com/forecast/united-states" dest="panel">United States</a></li><li><a href="https://www.ventusky.com/forecast/uruguay" dest="panel">Uruguay</a></li><li><a href="https://www.ventusky.com/forecast/uzbekistan" dest="panel">Uzbekistan</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_V"></span><h2 class="pismeno">V</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/vanuatu" dest="panel">Vanuatu</a></li><li><a href="https://www.ventusky.com/forecast/venezuela" dest="panel">Venezuela</a></li><li><a href="https://www.ventusky.com/forecast/vietnam" dest="panel">Vietnam</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_W"></span><h2 class="pismeno">W</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/wallis-and-futuna" dest="panel">Wallis & Futuna</a></li><li><a href="https://www.ventusky.com/forecast/western-sahara" dest="panel">Western Sahara</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_Y"></span><h2 class="pismeno">Y</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/yemen" dest="panel">Yemen</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_Z"></span><h2 class="pismeno">Z</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/zambia" dest="panel">Zambia</a></li><li><a href="https://www.ventusky.com/forecast/zimbabwe" dest="panel">Zimbabwe</a></li></ul></div></div><div class="row"><div class="col-2 col-md-1"><span class="pismeno_anchor" id="anchor_Å"></span><h2 class="pismeno">Å</h2></div><div class="col-10 col-md-11"><ul class="list-cities"><li><a href="https://www.ventusky.com/forecast/aland" dest="panel">Åland Islands</a></li></ul></div></div> 
+
+    The forecast is regularly updated to most accurately reflect the expected weather development at each location. Our forecasts are based on several numerical models (e.g., ICON EU, ECMWF, GFS, HRRR), which we combine to always provide the most precise information for the given</div>                </div>
+        </div>    
+     
+ 
+</body>
+</html>

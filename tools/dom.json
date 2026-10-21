@@ -1,0 +1,24 @@
+[
+ {
+  "tag": "A",
+  "id": "menu-my",
+  "cls": "button",
+  "txt": "myVentusky",
+  "attrs": [
+   "href=https://my.ventusky.com/",
+   "id=menu-my",
+   "class=button"
+  ]
+ },
+ {
+  "tag": "A",
+  "id": "menu-forecast",
+  "cls": "button",
+  "txt": "Forecast",
+  "attrs": [
+   "href=https://www.ventusky.com//forecast/",
+   "id=menu-forecast",
+   "class=button"
+  ]
+ }
+]

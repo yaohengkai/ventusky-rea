@@ -1,0 +1,15 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox','--lang=en-US'] });
+const c = await b.newContext({viewport:{width:1440,height:900}, locale:'en-US'});
+const p = await c.newPage();
+p.on('request', r=>{const u=r.url(); if(/ventusky|waqi/.test(u) && !/tiles|\.jpg|\.png|\.css|\.js/.test(u)) console.log('REQ',r.method(),u.slice(0,300))});
+p.on('response', r=>{const u=r.url(); if(/ventusky|waqi/.test(u) && !/tiles|\.jpg|\.png|\.css|\.js/.test(u)) console.log('RES',r.status(),u.slice(0,300))});
+await p.goto('https://www.ventusky.com/',{waitUntil:'domcontentloaded',timeout:60000}); await p.waitForTimeout(9000);
+await p.mouse.click(720,450);
+await p.waitForTimeout(6000);
+console.log('URL',p.url());
+console.log('TITLE',await p.title());
+const info=await p.evaluate(()=>({aside:document.querySelector('aside')?.innerText.slice(0,1000), body:document.body.innerText.slice(0,1000), dialogs:[...document.querySelectorAll('[class*=popup],[id*=popup],[class*=window]')].map(x=>x.id+':'+x.className).slice(0,20)}));
+console.log(JSON.stringify(info,null,1).slice(0,4000));
+await p.screenshot({path:'click.png'});
+await b.close();

@@ -1,0 +1,13 @@
+HTTP/2 302 
+date: Wed, 21 Oct 2026 15:00:04 GMT
+content-type: text/html; charset=UTF-8
+location: https://www.ventusky.com
+server: cloudflare
+strict-transport-security: max-age=31536000;
+cf-cache-status: DYNAMIC
+set-cookie: __cflb=02DiuGFR6JcAusbKMyC37LHWYpQnXyeUcJ8nSVGHTAS8c; HttpOnly; SameSite=Lax; Path=/; Expires=Thu, 22 Oct 2026 14:00:04 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MI24VO9m3z4Fp1SBsMB9htnpm8Xm00V4XI5ginMoRiSj9ti604jjQmUa4PhkOjYsPuh%2Fs1e9A0sz6VVabfCQyUFAaJE0NPIHGotgc5HQdPTWhekGrf8oROs1lmtT8Kbg%2F9A%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a4e12138ab668ca5-LAX
+alt-svc: h3=":443"; ma=86400
+

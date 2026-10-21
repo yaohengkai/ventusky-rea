@@ -1,0 +1,157 @@
+{
+  "10m": {
+    "kind": "wind",
+    "yh": 2,
+    "Ch": "vitr_u_10_m",
+    "bh": "vitr_v_10_m"
+  },
+  "100m": {
+    "kind": "wind",
+    "yh": 2,
+    "Ch": "vitr_u_100_m",
+    "bh": "vitr_v_100_m"
+  },
+  "250m": {
+    "kind": "wind",
+    "yh": 2,
+    "Ch": "vitr_u_250_m",
+    "bh": "vitr_v_250_m"
+  },
+  "950hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_95000_pa",
+    "bh": "vitr_v_95000_pa"
+  },
+  "925hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_92500_pa",
+    "bh": "vitr_v_92500_pa"
+  },
+  "900hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_90000_pa",
+    "bh": "vitr_v_90000_pa"
+  },
+  "850hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_85000_pa",
+    "bh": "vitr_v_85000_pa"
+  },
+  "800hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_80000_pa",
+    "bh": "vitr_v_80000_pa"
+  },
+  "750hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_75000_pa",
+    "bh": "vitr_v_75000_pa"
+  },
+  "700hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_70000_pa",
+    "bh": "vitr_v_70000_pa"
+  },
+  "650hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_65000_pa",
+    "bh": "vitr_v_65000_pa"
+  },
+  "600hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_60000_pa",
+    "bh": "vitr_v_60000_pa"
+  },
+  "500hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_50000_pa",
+    "bh": "vitr_v_50000_pa"
+  },
+  "400hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_40000_pa",
+    "bh": "vitr_v_40000_pa"
+  },
+  "300hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_30000_pa",
+    "bh": "vitr_v_30000_pa"
+  },
+  "200hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_20000_pa",
+    "bh": "vitr_v_20000_pa"
+  },
+  "10hpa": {
+    "kind": "wind",
+    "yh": 5,
+    "Ch": "vitr_u_1000_pa",
+    "bh": "vitr_v_1000_pa"
+  },
+  "currents": {
+    "kind": "currents",
+    "yh": 1,
+    "Ch": "proud_u",
+    "bh": "proud_v"
+  },
+  "tide-currents": {
+    "kind": "currents",
+    "yh": 1,
+    "Ch": "tide_proud_u",
+    "bh": "tide_proud_v"
+  },
+  "wave-total": {
+    "kind": "wave",
+    "lk": {},
+    "Zj": "_water",
+    "zl": [],
+    "height": "shww",
+    "direction": "mdww",
+    "threshold": 1,
+    "D": {
+      "height": "shts",
+      "direction": "mdts",
+      "zl": [
+        1,
+        2
+      ],
+      "threshold": 2,
+      "po": true
+    }
+  },
+  "wave-wind": {
+    "kind": "wave",
+    "lk": {},
+    "Zj": "_water",
+    "zl": [],
+    "height": "shww",
+    "direction": "mdww",
+    "threshold": 1
+  },
+  "wave-swell": {
+    "kind": "wave",
+    "lk": {},
+    "Zj": "_water",
+    "zl": [
+      1,
+      2
+    ],
+    "height": "shts",
+    "direction": "mdts",
+    "threshold": 2,
+    "po": true
+  }
+}

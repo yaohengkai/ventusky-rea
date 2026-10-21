@@ -1,0 +1,15 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath:'/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', headless:true, args:['--no-sandbox'] });
+const p = await (await b.newContext({viewport:{width:1280,height:900}})).newPage();
+const errs=[]; p.on('pageerror',e=>{errs.push(e.message);console.log('ERR',e.message)}); p.on('console',m=>{if(m.type()==='error')console.log('CONSOLE',m.text().slice(0,200))});
+await p.goto('http://localhost:8787/__lab/',{waitUntil:'networkidle',timeout:30000});
+await p.waitForTimeout(1000);
+console.log('TITLE',await p.title());
+console.log('STATUS',await p.locator('#status').innerText());
+console.log('MODELS',await p.locator('#model option').count(),'LAYERS',await p.locator('#layer option').count());
+await p.click('#btnImg'); await p.waitForTimeout(4000);
+const imgs=await p.locator('#preview img').count();
+console.log('IMG',imgs, imgs?await p.locator('#preview img').getAttribute('src'):'');
+await p.screenshot({path:'lab.png'});
+console.log('ERRS',errs.length);
+await b.close();

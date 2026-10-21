@@ -1,0 +1,1285 @@
+{
+ "layers": [
+  {
+   "i": 0,
+   "txt": "Temperature",
+   "cls": "p",
+   "opts": [
+    {
+     "v": "temperature-water",
+     "t": "Sea surface"
+    },
+    {
+     "v": "temperature-5cm",
+     "t": "2 in, 5 cm above ground"
+    },
+    {
+     "v": "temperature-2m",
+     "t": "7 ft, 2 m above ground"
+    },
+    {
+     "v": "temperature-anomaly-2m",
+     "t": "Anomaly, 7 ft, 2 m"
+    },
+    {
+     "v": "temperature-950hpa",
+     "t": "950 hPa, 1,600 ft"
+    },
+    {
+     "v": "temperature-925hpa",
+     "t": "925 hPa, 2,500 ft"
+    },
+    {
+     "v": "temperature-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "temperature-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "temperature-800hpa",
+     "t": "800 hPa, 6,500 ft"
+    },
+    {
+     "v": "temperature-750hpa",
+     "t": "750 hPa, 8,000 ft"
+    },
+    {
+     "v": "temperature-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "temperature-650hpa",
+     "t": "650 hPa, 12,000 ft"
+    },
+    {
+     "v": "temperature-600hpa",
+     "t": "600 hPa, 14,000 ft"
+    },
+    {
+     "v": "temperature-500hpa",
+     "t": "500 hPa, 18,000 ft"
+    },
+    {
+     "v": "temperature-400hpa",
+     "t": "400 hPa, 23,000 ft"
+    },
+    {
+     "v": "temperature-300hpa",
+     "t": "300 hPa, 30,000 ft"
+    },
+    {
+     "v": "temperature-200hpa",
+     "t": "200 hPa, 40,000 ft"
+    },
+    {
+     "v": "temperature-10hpa",
+     "t": "10 hPa, 100,000 ft"
+    },
+    {
+     "v": "freezing",
+     "t": "Freezing level"
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "txt": "Feels like temperature",
+   "cls": "",
+   "opts": []
+  },
+  {
+   "i": 2,
+   "txt": "Precipitation",
+   "cls": "",
+   "opts": [
+    {
+     "v": "rain-1h",
+     "t": "1 hour"
+    },
+    {
+     "v": "rain-3h",
+     "t": "3 hours"
+    },
+    {
+     "v": "rain-ac",
+     "t": "From 10/21 2 PM"
+    },
+    {
+     "v": "precipitation-anomaly",
+     "t": "Monthly anomaly"
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "txt": "Radar",
+   "cls": "",
+   "opts": []
+  },
+  {
+   "i": 4,
+   "txt": "Satellite",
+   "cls": "",
+   "opts": []
+  },
+  {
+   "i": 5,
+   "txt": "Clouds",
+   "cls": "",
+   "opts": [
+    {
+     "v": "clouds-total",
+     "t": "Total cloud cover"
+    },
+    {
+     "v": "clouds-fog",
+     "t": "Fog"
+    },
+    {
+     "v": "clouds-low",
+     "t": "Low clouds"
+    },
+    {
+     "v": "clouds-middle",
+     "t": "Middle clouds"
+    },
+    {
+     "v": "clouds-high",
+     "t": "High clouds"
+    },
+    {
+     "v": "cloud-base",
+     "t": "Cloud base"
+    },
+    {
+     "v": "visibility",
+     "t": "Visibility"
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "txt": "Wind speed",
+   "cls": "",
+   "opts": [
+    {
+     "v": "wind-10m",
+     "t": "33 ft, 10 m above ground"
+    },
+    {
+     "v": "wind-100m",
+     "t": "330 ft above ground"
+    },
+    {
+     "v": "wind-250m",
+     "t": "820 ft above ground"
+    },
+    {
+     "v": "wind-950hpa",
+     "t": "950 hPa, 1,600 ft"
+    },
+    {
+     "v": "wind-925hpa",
+     "t": "925 hPa, 2,500 ft"
+    },
+    {
+     "v": "wind-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "wind-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "wind-800hpa",
+     "t": "800 hPa, 6,500 ft"
+    },
+    {
+     "v": "wind-750hpa",
+     "t": "750 hPa, 8,000 ft"
+    },
+    {
+     "v": "wind-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "wind-650hpa",
+     "t": "650 hPa, 12,000 ft"
+    },
+    {
+     "v": "wind-600hpa",
+     "t": "600 hPa, 14,000 ft"
+    },
+    {
+     "v": "wind-500hpa",
+     "t": "500 hPa, 18,000 ft"
+    },
+    {
+     "v": "wind-400hpa",
+     "t": "400 hPa, 23,000 ft"
+    },
+    {
+     "v": "wind-300hpa",
+     "t": "300 hPa, 30,000 ft"
+    },
+    {
+     "v": "wind-200hpa",
+     "t": "200 hPa, 40,000 ft"
+    },
+    {
+     "v": "wind-10hpa",
+     "t": "10 hPa, 100,000 ft"
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "txt": "Wind gusts",
+   "cls": "",
+   "opts": [
+    {
+     "v": "gust",
+     "t": "1 hour"
+    },
+    {
+     "v": "gust-ac",
+     "t": "From 10/21 2 PM"
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "txt": "Air pressure",
+   "cls": "",
+   "opts": [
+    {
+     "v": "pressure",
+     "t": "Sea Level"
+    },
+    {
+     "v": "geopotential-850hpa",
+     "t": "Geopotential 850 hPa"
+    },
+    {
+     "v": "geopotential-500hpa",
+     "t": "Geopotential 500 hPa"
+    },
+    {
+     "v": "geopotential-300hpa",
+     "t": "Geopotential 300 hPa"
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "txt": "Thunderstorms",
+   "cls": "",
+   "opts": [
+    {
+     "v": "cape",
+     "t": "CAPE"
+    },
+    {
+     "v": "cape-shear",
+     "t": "CAPE*SHEAR"
+    },
+    {
+     "v": "shear",
+     "t": "Wind shear"
+    },
+    {
+     "v": "hail-probability",
+     "t": "Hail probability"
+    },
+    {
+     "v": "cin",
+     "t": "CIN"
+    },
+    {
+     "v": "li",
+     "t": "Lifted index"
+    },
+    {
+     "v": "helicity",
+     "t": "Helicity (SRH)"
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "txt": "Humidity",
+   "cls": "",
+   "opts": [
+    {
+     "v": "humidity-2m",
+     "t": "7 ft, 2 m above ground"
+    },
+    {
+     "v": "humidity-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "humidity-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "humidity-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "dew",
+     "t": "Dew point"
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "txt": "Sea",
+   "cls": "",
+   "opts": [
+    {
+     "v": "wave",
+     "t": "Significant wave height"
+    },
+    {
+     "v": "wind-wave",
+     "t": "Wind wave height"
+    },
+    {
+     "v": "wind-wave-period",
+     "t": "Wind wave period"
+    },
+    {
+     "v": "swell",
+     "t": "Swell wave height"
+    },
+    {
+     "v": "swell-period",
+     "t": "Swell wave period"
+    },
+    {
+     "v": "currents",
+     "t": "Currents"
+    },
+    {
+     "v": "tide-currents",
+     "t": "Tidal currents"
+    },
+    {
+     "v": "tide",
+     "t": "Tide (MLLW)"
+    },
+    {
+     "v": "tide-surge",
+     "t": "Tide & Surge (MLLW)"
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "txt": "Snow cover",
+   "cls": "",
+   "opts": [
+    {
+     "v": "snow",
+     "t": "Total cover"
+    },
+    {
+     "v": "snow-new-ac",
+     "t": "New from 10/21 2 PM"
+    }
+   ]
+  },
+  {
+   "i": 13,
+   "txt": "Air quality",
+   "cls": "",
+   "opts": [
+    {
+     "v": "pm25",
+     "t": "PM2.5 🏭 🚜"
+    },
+    {
+     "v": "pm10",
+     "t": "PM10 🏭 🚜"
+    },
+    {
+     "v": "no2",
+     "t": "NO2 🚗 🚢"
+    },
+    {
+     "v": "so2",
+     "t": "SO2 🏭 🌋"
+    },
+    {
+     "v": "o3",
+     "t": "O3 🌇"
+    },
+    {
+     "v": "dust",
+     "t": "Dust 🌴"
+    },
+    {
+     "v": "co",
+     "t": "CO 🏭 🔥"
+    },
+    {
+     "v": "aqi",
+     "t": "AQI"
+    },
+    {
+     "v": "uv",
+     "t": "UV index ☀️"
+    }
+   ]
+  }
+ ],
+ "sels": [
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "temperature-water",
+     "t": "Sea surface"
+    },
+    {
+     "v": "temperature-5cm",
+     "t": "2 in, 5 cm above ground"
+    },
+    {
+     "v": "temperature-2m",
+     "t": "7 ft, 2 m above ground"
+    },
+    {
+     "v": "temperature-anomaly-2m",
+     "t": "Anomaly, 7 ft, 2 m"
+    },
+    {
+     "v": "temperature-950hpa",
+     "t": "950 hPa, 1,600 ft"
+    },
+    {
+     "v": "temperature-925hpa",
+     "t": "925 hPa, 2,500 ft"
+    },
+    {
+     "v": "temperature-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "temperature-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "temperature-800hpa",
+     "t": "800 hPa, 6,500 ft"
+    },
+    {
+     "v": "temperature-750hpa",
+     "t": "750 hPa, 8,000 ft"
+    },
+    {
+     "v": "temperature-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "temperature-650hpa",
+     "t": "650 hPa, 12,000 ft"
+    },
+    {
+     "v": "temperature-600hpa",
+     "t": "600 hPa, 14,000 ft"
+    },
+    {
+     "v": "temperature-500hpa",
+     "t": "500 hPa, 18,000 ft"
+    },
+    {
+     "v": "temperature-400hpa",
+     "t": "400 hPa, 23,000 ft"
+    },
+    {
+     "v": "temperature-300hpa",
+     "t": "300 hPa, 30,000 ft"
+    },
+    {
+     "v": "temperature-200hpa",
+     "t": "200 hPa, 40,000 ft"
+    },
+    {
+     "v": "temperature-10hpa",
+     "t": "10 hPa, 100,000 ft"
+    },
+    {
+     "v": "freezing",
+     "t": "Freezing level"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "rain-1h",
+     "t": "1 hour"
+    },
+    {
+     "v": "rain-3h",
+     "t": "3 hours"
+    },
+    {
+     "v": "rain-ac",
+     "t": "From 10/21 2 PM"
+    },
+    {
+     "v": "precipitation-anomaly",
+     "t": "Monthly anomaly"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "clouds-total",
+     "t": "Total cloud cover"
+    },
+    {
+     "v": "clouds-fog",
+     "t": "Fog"
+    },
+    {
+     "v": "clouds-low",
+     "t": "Low clouds"
+    },
+    {
+     "v": "clouds-middle",
+     "t": "Middle clouds"
+    },
+    {
+     "v": "clouds-high",
+     "t": "High clouds"
+    },
+    {
+     "v": "cloud-base",
+     "t": "Cloud base"
+    },
+    {
+     "v": "visibility",
+     "t": "Visibility"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "wind-10m",
+     "t": "33 ft, 10 m above ground"
+    },
+    {
+     "v": "wind-100m",
+     "t": "330 ft above ground"
+    },
+    {
+     "v": "wind-250m",
+     "t": "820 ft above ground"
+    },
+    {
+     "v": "wind-950hpa",
+     "t": "950 hPa, 1,600 ft"
+    },
+    {
+     "v": "wind-925hpa",
+     "t": "925 hPa, 2,500 ft"
+    },
+    {
+     "v": "wind-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "wind-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "wind-800hpa",
+     "t": "800 hPa, 6,500 ft"
+    },
+    {
+     "v": "wind-750hpa",
+     "t": "750 hPa, 8,000 ft"
+    },
+    {
+     "v": "wind-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "wind-650hpa",
+     "t": "650 hPa, 12,000 ft"
+    },
+    {
+     "v": "wind-600hpa",
+     "t": "600 hPa, 14,000 ft"
+    },
+    {
+     "v": "wind-500hpa",
+     "t": "500 hPa, 18,000 ft"
+    },
+    {
+     "v": "wind-400hpa",
+     "t": "400 hPa, 23,000 ft"
+    },
+    {
+     "v": "wind-300hpa",
+     "t": "300 hPa, 30,000 ft"
+    },
+    {
+     "v": "wind-200hpa",
+     "t": "200 hPa, 40,000 ft"
+    },
+    {
+     "v": "wind-10hpa",
+     "t": "10 hPa, 100,000 ft"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "gust",
+     "t": "1 hour"
+    },
+    {
+     "v": "gust-ac",
+     "t": "From 10/21 2 PM"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "pressure",
+     "t": "Sea Level"
+    },
+    {
+     "v": "geopotential-850hpa",
+     "t": "Geopotential 850 hPa"
+    },
+    {
+     "v": "geopotential-500hpa",
+     "t": "Geopotential 500 hPa"
+    },
+    {
+     "v": "geopotential-300hpa",
+     "t": "Geopotential 300 hPa"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "cape",
+     "t": "CAPE"
+    },
+    {
+     "v": "cape-shear",
+     "t": "CAPE*SHEAR"
+    },
+    {
+     "v": "shear",
+     "t": "Wind shear"
+    },
+    {
+     "v": "hail-probability",
+     "t": "Hail probability"
+    },
+    {
+     "v": "cin",
+     "t": "CIN"
+    },
+    {
+     "v": "li",
+     "t": "Lifted index"
+    },
+    {
+     "v": "helicity",
+     "t": "Helicity (SRH)"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "humidity-2m",
+     "t": "7 ft, 2 m above ground"
+    },
+    {
+     "v": "humidity-900hpa",
+     "t": "900 hPa, 3,300 ft"
+    },
+    {
+     "v": "humidity-850hpa",
+     "t": "850 hPa, 5,000 ft"
+    },
+    {
+     "v": "humidity-700hpa",
+     "t": "700 hPa, 10,000 ft"
+    },
+    {
+     "v": "dew",
+     "t": "Dew point"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "wave",
+     "t": "Significant wave height"
+    },
+    {
+     "v": "wind-wave",
+     "t": "Wind wave height"
+    },
+    {
+     "v": "wind-wave-period",
+     "t": "Wind wave period"
+    },
+    {
+     "v": "swell",
+     "t": "Swell wave height"
+    },
+    {
+     "v": "swell-period",
+     "t": "Swell wave period"
+    },
+    {
+     "v": "currents",
+     "t": "Currents"
+    },
+    {
+     "v": "tide-currents",
+     "t": "Tidal currents"
+    },
+    {
+     "v": "tide",
+     "t": "Tide (MLLW)"
+    },
+    {
+     "v": "tide-surge",
+     "t": "Tide & Surge (MLLW)"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "snow",
+     "t": "Total cover"
+    },
+    {
+     "v": "snow-new-ac",
+     "t": "New from 10/21 2 PM"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "pm25",
+     "t": "PM2.5 🏭 🚜"
+    },
+    {
+     "v": "pm10",
+     "t": "PM10 🏭 🚜"
+    },
+    {
+     "v": "no2",
+     "t": "NO2 🚗 🚢"
+    },
+    {
+     "v": "so2",
+     "t": "SO2 🏭 🌋"
+    },
+    {
+     "v": "o3",
+     "t": "O3 🌇"
+    },
+    {
+     "v": "dust",
+     "t": "Dust 🌴"
+    },
+    {
+     "v": "co",
+     "t": "CO 🏭 🔥"
+    },
+    {
+     "v": "aqi",
+     "t": "AQI"
+    },
+    {
+     "v": "uv",
+     "t": "UV index ☀️"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "temperature",
+     "t": "Temperature"
+    },
+    {
+     "v": "feel",
+     "t": "Feels like temperature"
+    },
+    {
+     "v": "rain",
+     "t": "Precipitation"
+    },
+    {
+     "v": "radar",
+     "t": "Radar"
+    },
+    {
+     "v": "satellite",
+     "t": "Satellite"
+    },
+    {
+     "v": "clouds",
+     "t": "Clouds"
+    },
+    {
+     "v": "wind",
+     "t": "Wind speed"
+    },
+    {
+     "v": "gust",
+     "t": "Wind gusts"
+    },
+    {
+     "v": "pressure",
+     "t": "Air pressure"
+    },
+    {
+     "v": "storm",
+     "t": "Thunderstorms"
+    },
+    {
+     "v": "humidity",
+     "t": "Humidity"
+    },
+    {
+     "v": "sea",
+     "t": "Sea"
+    },
+    {
+     "v": "snow",
+     "t": "Snow cover"
+    },
+    {
+     "v": "air",
+     "t": "Air quality"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "h",
+   "cls": "",
+   "opts": [
+    {
+     "v": "1979",
+     "t": "1979"
+    },
+    {
+     "v": "1980",
+     "t": "1980"
+    },
+    {
+     "v": "1981",
+     "t": "1981"
+    },
+    {
+     "v": "1982",
+     "t": "1982"
+    },
+    {
+     "v": "1983",
+     "t": "1983"
+    },
+    {
+     "v": "1984",
+     "t": "1984"
+    },
+    {
+     "v": "1985",
+     "t": "1985"
+    },
+    {
+     "v": "1986",
+     "t": "1986"
+    },
+    {
+     "v": "1987",
+     "t": "1987"
+    },
+    {
+     "v": "1988",
+     "t": "1988"
+    },
+    {
+     "v": "1989",
+     "t": "1989"
+    },
+    {
+     "v": "1990",
+     "t": "1990"
+    },
+    {
+     "v": "1991",
+     "t": "1991"
+    },
+    {
+     "v": "1992",
+     "t": "1992"
+    },
+    {
+     "v": "1993",
+     "t": "1993"
+    },
+    {
+     "v": "1994",
+     "t": "1994"
+    },
+    {
+     "v": "1995",
+     "t": "1995"
+    },
+    {
+     "v": "1996",
+     "t": "1996"
+    },
+    {
+     "v": "1997",
+     "t": "1997"
+    },
+    {
+     "v": "1998",
+     "t": "1998"
+    },
+    {
+     "v": "1999",
+     "t": "1999"
+    },
+    {
+     "v": "2000",
+     "t": "2000"
+    },
+    {
+     "v": "2001",
+     "t": "2001"
+    },
+    {
+     "v": "2002",
+     "t": "2002"
+    },
+    {
+     "v": "2003",
+     "t": "2003"
+    },
+    {
+     "v": "2004",
+     "t": "2004"
+    },
+    {
+     "v": "2005",
+     "t": "2005"
+    },
+    {
+     "v": "2006",
+     "t": "2006"
+    },
+    {
+     "v": "2007",
+     "t": "2007"
+    },
+    {
+     "v": "2008",
+     "t": "2008"
+    },
+    {
+     "v": "2009",
+     "t": "2009"
+    },
+    {
+     "v": "2010",
+     "t": "2010"
+    },
+    {
+     "v": "2011",
+     "t": "2011"
+    },
+    {
+     "v": "2012",
+     "t": "2012"
+    },
+    {
+     "v": "2013",
+     "t": "2013"
+    },
+    {
+     "v": "2014",
+     "t": "2014"
+    },
+    {
+     "v": "2015",
+     "t": "2015"
+    },
+    {
+     "v": "2016",
+     "t": "2016"
+    },
+    {
+     "v": "2017",
+     "t": "2017"
+    },
+    {
+     "v": "2018",
+     "t": "2018"
+    },
+    {
+     "v": "2019",
+     "t": "2019"
+    },
+    {
+     "v": "2020",
+     "t": "2020"
+    },
+    {
+     "v": "2021",
+     "t": "2021"
+    },
+    {
+     "v": "2022",
+     "t": "2022"
+    },
+    {
+     "v": "2023",
+     "t": "2023"
+    },
+    {
+     "v": "2024",
+     "t": "2024"
+    },
+    {
+     "v": "2025",
+     "t": "2025"
+    },
+    {
+     "v": "2026",
+     "t": "2026"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "z",
+   "cls": "",
+   "opts": [
+    {
+     "v": "0",
+     "t": "January"
+    },
+    {
+     "v": "1",
+     "t": "February"
+    },
+    {
+     "v": "2",
+     "t": "March"
+    },
+    {
+     "v": "3",
+     "t": "April"
+    },
+    {
+     "v": "4",
+     "t": "May"
+    },
+    {
+     "v": "5",
+     "t": "June"
+    },
+    {
+     "v": "6",
+     "t": "July"
+    },
+    {
+     "v": "7",
+     "t": "August"
+    },
+    {
+     "v": "8",
+     "t": "September"
+    },
+    {
+     "v": "9",
+     "t": "October"
+    },
+    {
+     "v": "-1",
+     "t": "Current days"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "auto",
+     "t": "Automatic (HRRR+ICON)"
+    },
+    {
+     "v": "icon",
+     "t": "ICON"
+    },
+    {
+     "v": "gfs",
+     "t": "GFS"
+    },
+    {
+     "v": "ecmwf_hres",
+     "t": "ECMWF"
+    },
+    {
+     "v": "gem",
+     "t": "GEM"
+    },
+    {
+     "v": "icon_eu",
+     "t": "ICON (EU)"
+    },
+    {
+     "v": "harmonie_eu",
+     "t": "HARMONIE (EU)"
+    },
+    {
+     "v": "hrrr",
+     "t": "HRRR (USA)"
+    },
+    {
+     "v": "rrfs",
+     "t": "RRFS (USA)"
+    },
+    {
+     "v": "nbm",
+     "t": "NBM (USA)"
+    },
+    {
+     "v": "ukmo_uk",
+     "t": "UKMO (UK)"
+    },
+    {
+     "v": "icon_de",
+     "t": "ICON (DE)"
+    },
+    {
+     "v": "icon_ch",
+     "t": "ICON (CH)"
+    },
+    {
+     "v": "icon_it",
+     "t": "ICON (IT)"
+    },
+    {
+     "v": "aladin",
+     "t": "Aladin (CE)"
+    },
+    {
+     "v": "arome",
+     "t": "AROME (FR)"
+    },
+    {
+     "v": "meps",
+     "t": "MEPS (NO)"
+    },
+    {
+     "v": "rrfs_hawai",
+     "t": "RRFS (Hawaii)"
+    },
+    {
+     "v": "harmonie_car",
+     "t": "HARMONIE (CAR)"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "id": "",
+   "cls": "",
+   "opts": [
+    {
+     "v": "off",
+     "t": "Off"
+    },
+    {
+     "v": "normal",
+     "t": "Normal"
+    },
+    {
+     "v": "strong",
+     "t": "Strong"
+    },
+    {
+     "v": "soft",
+     "t": "Soft"
+    },
+    {
+     "v": "dark",
+     "t": "Dark"
+    },
+    {
+     "v": "fast",
+     "t": "Fast-motion"
+    }
+   ]
+  }
+ ]
+}

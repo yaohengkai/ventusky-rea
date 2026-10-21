@@ -1,0 +1,15 @@
+{
+  "name": "ventusky-local",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local study mirror and data API for the public Ventusky website",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

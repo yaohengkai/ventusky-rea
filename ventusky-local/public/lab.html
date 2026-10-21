@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventusky Local · API Lab</title>
+<style>
+  :root { --bg:#0f1420; --panel:#182033; --line:#2a3550; --text:#e8eefc; --muted:#93a4c7; --accent:#4da3ff; --accent2:#22d3a6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:linear-gradient(180deg,#0b101a,#0f1420 40%,#0b101a); color:var(--text); font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif; }
+  header { padding:28px 32px 18px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  h1 { margin:0; font-size:22px; letter-spacing:.2px; }
+  h1 span { color:var(--accent); }
+  .tag { font-size:12px; color:var(--muted); border:1px solid var(--line); padding:4px 8px; border-radius:999px; }
+  main { max-width:1280px; margin:0 auto; padding:24px 20px 60px; display:grid; gap:18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 10px 30px rgba(0,0,0,.18); }
+  .card h2 { margin:0 0 6px; font-size:16px; }
+  .card p { margin:0 0 14px; color:var(--muted); font-size:13px; }
+  label { display:block; font-size:12px; color:var(--muted); margin:10px 0 5px; }
+  input, select, button { font:inherit; }
+  input, select { width:100%; background:#0e1524; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:9px 10px; outline:none; }
+  input:focus, select:focus { border-color:var(--accent); }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
+  .actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  button { background:var(--accent); color:#08111f; border:0; border-radius:8px; padding:9px 14px; font-weight:650; cursor:pointer; }
+  button.secondary { background:#22304c; color:var(--text); border:1px solid var(--line); }
+  button:hover { filter:brightness(1.08); }
+  pre { background:#0a101c; border:1px solid var(--line); border-radius:10px; padding:12px; overflow:auto; max-height:420px; font-size:12px; line-height:1.45; }
+  .preview { margin-top:12px; background:#0a101c; border:1px solid var(--line); border-radius:10px; padding:8px; min-height:80px; display:flex; align-items:center; justify-content:center; }
+  .preview img { max-width:100%; border-radius:6px; }
+  .hint { color:var(--muted); font-size:12px; }
+  .links { display:flex; gap:12px; flex-wrap:wrap; }
+  .links a { color:var(--accent); text-decoration:none; }
+  .links a:hover { text-decoration:underline; }
+  .full { grid-column:1/-1; }
+  .stat { display:flex; gap:18px; flex-wrap:wrap; color:var(--muted); font-size:12px; margin-top:6px; }
+  .stat b { color:var(--text); }
+  code { background:#0a101c; border:1px solid var(--line); padding:2px 5px; border-radius:5px; font-size:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ventusky <span>Local</span> · API Lab</h1>
+  <span class="tag">personal study / non-commercial</span>
+  <span class="tag" id="status">loading catalog…</span>
+  <div class="links" style="margin-left:auto">
+    <a href="/">← 打开本地镜像</a>
+    <a href="/__docs/API.md">API 文档</a>
+    <a href="/__docs/DATA.md">数据目录</a>
+    <a href="/__api/catalog">catalog.json</a>
+  </div>
+</header>
+<main>
+  <div class="card full">
+    <h2>快速开始</h2>
+    <p>所有接口都在 <code>/__api</code> 下。先选模型和图层，生成图片 URL 或直接预览。时间使用 UTC ISO 8601；示例日期是抓取日，实际请换成当前时间或先用“看时间序列”。</p>
+    <div class="stat"><span>模型 <b id="mcount">—</b></span><span>图层 <b id="lcount">—</b></span><span>本机 API <b>http://localhost:8787/__api</b></span></div>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>栅格图层 / 瓦片</h2>
+      <p>生成 <code>/__api/tile-url</code>，或直接通过 <code>/__api/tile</code> 预览。</p>
+      <label for="model">模型</label>
+      <select id="model"></select>
+      <label for="layer">图层</label>
+      <select id="layer"></select>
+      <label for="time">时间（UTC）</label>
+      <input id="time" placeholder="2026-10-21T15:00:00Z">
+      <div class="row3">
+        <div><label for="zoom">zoom</label><input id="zoom" type="number" value="5" min="0" max="12"></div>
+        <div><label for="tx">tileX</label><input id="tx" type="number" placeholder="留空 = whole_world"></div>
+        <div><label for="ty">tileY</label><input id="ty" type="number" placeholder="留空"></div>
+      </div>
+      <div class="actions">
+        <button id="btnUrl">生成 URL</button>
+        <button id="btnImg" class="secondary">预览图片</button>
+        <button id="btnTimes" class="secondary">看时间序列</button>
+      </div>
+      <div class="preview" id="preview"><span class="hint">图片预览会显示在这里</span></div>
+      <pre id="tileOut" style="display:none"></pre>
+    </section>
+
+    <section class="card">
+      <h2>点预报</h2>
+      <p>抓取坐标页的 24 小时 + 8 天预报；海上坐标还会带波浪/潮汐图表。</p>
+      <div class="row">
+        <div><label for="lat">纬度</label><input id="lat" value="35"></div>
+        <div><label for="lon">经度</label><input id="lon" value="-140"></div>
+      </div>
+      <label><input type="checkbox" id="water" checked style="width:auto;margin-right:6px"> 同时获取海洋图表</label>
+      <div class="actions">
+        <button id="btnPoint">获取点预报</button>
+        <button id="btnWater" class="secondary">只看海洋图表</button>
+      </div>
+      <pre id="pointOut" style="display:none"></pre>
+    </section>
+
+    <section class="card">
+      <h2>气压 / 锋面 / 等值线</h2>
+      <p>使用当前选中的模型和图层时间。</p>
+      <div class="actions">
+        <button id="btnPressure">高低压中心</button>
+        <button id="btnFronts" class="secondary">锋面</button>
+        <button id="btnIso" class="secondary">等值线</button>
+      </div>
+      <pre id="jsonOut" style="display:none"></pre>
+    </section>
+
+    <section class="card">
+      <h2>其他接口</h2>
+      <p>气旋、火点、摄像头、AQI、地点搜索。</p>
+      <div class="row">
+        <div><label for="q">地点搜索</label><input id="q" value="London"></div>
+        <div><label for="count">摄像头数量</label><input id="count" type="number" value="4" min="1" max="10"></div>
+      </div>
+      <div class="actions">
+        <button id="btnSearch">搜索</button>
+        <button id="btnCams" class="secondary">附近摄像头</button>
+        <button id="btnAqi" class="secondary">AQI</button>
+        <button id="btnCyclones" class="secondary">气旋</button>
+        <button id="btnFires" class="secondary">火点</button>
+      </div>
+      <pre id="otherOut" style="display:none"></pre>
+    </section>
+  </div>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const api = (p, params) => {
+  const u = new URL('/__api/' + p, location.origin);
+  for (const [k,v] of Object.entries(params || {})) if (v !== '' && v != null) u.searchParams.set(k,v);
+  return fetch(u).then(async r => { const j = await r.json().catch(()=>({error:'bad json'})); if(!r.ok) throw new Error(JSON.stringify(j)); return j; });
+};
+const show = (el, obj) => { el.style.display='block'; el.textContent = typeof obj === 'string' ? obj : JSON.stringify(obj,null,2); };
+let catalog;
+(async () => {
+  catalog = await fetch('/__api/catalog').then(r=>r.json());
+  $('#mcount').textContent = Object.keys(catalog.models).length;
+  $('#lcount').textContent = Object.keys(catalog.layers).length;
+  $('#status').textContent = 'catalog ready';
+  const ms = catalog.modelOrder.slice().sort((a,b)=> (catalog.models[b].public?1:0)-(catalog.models[a].public?1:0));
+  $('#model').innerHTML = ms.map(id=>`<option value="${id}">${catalog.models[id].uiName} (${id})${catalog.models[id].public?'':' · auto'}</option>`).join('');
+  if (catalog.models.icon) $('#model').value = 'icon';
+  const now = new Date(); now.setUTCMinutes(0,0,0);
+  $('#time').value = now.toISOString().replace('.000Z','Z');
+  fillLayers();
+  if ([...$('#layer').options].some(o=>o.value==='temperature-2m')) $('#layer').value = 'temperature-2m';
+  $('#model').addEventListener('change', fillLayers);
+  $('#layer').addEventListener('change', () => {});
+})();
+
+function fillLayers(){
+  const m = $('#model').value;
+  const ls = Object.values(catalog.layers).filter(l => l.models.some(x=>x.model===m));
+  $('#layer').innerHTML = ls.map(l=>`<option value="${l.id}">${l.name} (${l.id}) · ${l.unit||''}</option>`).join('');
+  if (!ls.length) $('#layer').innerHTML = '<option value="">该模型没有可用图层</option>';
+}
+function tileParams(){
+  return {
+    model: $('#model').value, layer: $('#layer').value, time: $('#time').value,
+    zoom: $('#zoom').value, tileX: $('#tx').value, tileY: $('#ty').value
+  };
+}
+$('#btnUrl').onclick = async () => {
+  try { show($('#tileOut'), await api('tile-url', tileParams())); } catch(e){ show($('#tileOut'), e.message); }
+};
+$('#btnImg').onclick = () => {
+  const p = new URLSearchParams(tileParams());
+  $('#preview').innerHTML = `<img src="/__api/tile?${p}" alt="tile">`;
+};
+$('#btnTimes').onclick = async () => {
+  try { show($('#tileOut'), await api('times', {model:$('#model').value, layer:$('#layer').value, limit:12})); } catch(e){ show($('#tileOut'), e.message); }
+};
+$('#btnPoint').onclick = async () => {
+  try { show($('#pointOut'), await api('point', {lat:$('#lat').value, lon:$('#lon').value, water:$('#water').checked?1:0})); } catch(e){ show($('#pointOut'), e.message); }
+};
+$('#btnWater').onclick = async () => {
+  try { show($('#pointOut'), await api('water', {lat:$('#lat').value, lon:$('#lon').value})); } catch(e){ show($('#pointOut'), e.message); }
+};
+$('#btnPressure').onclick = async () => {
+  try { show($('#jsonOut'), await api('pressure', {model:$('#model').value, layer:$('#layer').value, time:$('#time').value})); } catch(e){ show($('#jsonOut'), e.message); }
+};
+$('#btnFronts').onclick = async () => {
+  try { show($('#jsonOut'), await api('fronts', {model:$('#model').value, layer:$('#layer').value, time:$('#time').value})); } catch(e){ show($('#jsonOut'), e.message); }
+};
+$('#btnIso').onclick = async () => {
+  try { show($('#jsonOut'), await api('isolines', {model:$('#model').value, layer:$('#layer').value, time:$('#time').value})); } catch(e){ show($('#jsonOut'), e.message); }
+};
+$('#btnSearch').onclick = async () => {
+  try { show($('#otherOut'), await api('search', {q:$('#q').value, lang:'en'})); } catch(e){ show($('#otherOut'), e.message); }
+};
+$('#btnCams').onclick = async () => {
+  try { show($('#otherOut'), await api('webcams', {lat:$('#lat').value, lon:$('#lon').value, count:$('#count').value})); } catch(e){ show($('#otherOut'), e.message); }
+};
+$('#btnAqi').onclick = async () => {
+  try { show($('#otherOut'), await api('aqi', {lat:$('#lat').value, lon:$('#lon').value})); } catch(e){ show($('#otherOut'), e.message); }
+};
+$('#btnCyclones').onclick = async () => {
+  try { show($('#otherOut'), await api('cyclones')); } catch(e){ show($('#otherOut'), e.message); }
+};
+$('#btnFires').onclick = async () => {
+  try { show($('#otherOut'), await api('fires', {z:5, x:5, y:12})); } catch(e){ show($('#otherOut'), e.message); }
+};
+</script>
+</body>
+</html>

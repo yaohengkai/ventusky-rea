@@ -1,0 +1,97 @@
+[
+  {
+    "v": "auto",
+    "t": "Automatic (HRRR+ICON)",
+    "g": ""
+  },
+  {
+    "v": "icon",
+    "t": "ICON",
+    "g": "Global Models"
+  },
+  {
+    "v": "gfs",
+    "t": "GFS",
+    "g": "Global Models"
+  },
+  {
+    "v": "ecmwf_hres",
+    "t": "ECMWF",
+    "g": "Global Models"
+  },
+  {
+    "v": "gem",
+    "t": "GEM",
+    "g": "Global Models"
+  },
+  {
+    "v": "icon_eu",
+    "t": "ICON (EU)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "harmonie_eu",
+    "t": "HARMONIE (EU)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "hrrr",
+    "t": "HRRR (USA)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "rrfs",
+    "t": "RRFS (USA)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "nbm",
+    "t": "NBM (USA)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "ukmo_uk",
+    "t": "UKMO (UK)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "icon_de",
+    "t": "ICON (DE)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "icon_ch",
+    "t": "ICON (CH)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "icon_it",
+    "t": "ICON (IT)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "aladin",
+    "t": "Aladin (CE)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "arome",
+    "t": "AROME (FR)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "meps",
+    "t": "MEPS (NO)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "rrfs_hawai",
+    "t": "RRFS (Hawaii)",
+    "g": "Regional Models"
+  },
+  {
+    "v": "harmonie_car",
+    "t": "HARMONIE (CAR)",
+    "g": "Regional Models"
+  }
+]
