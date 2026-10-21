@@ -56,7 +56,7 @@
   <div class="card full">
     <h2>快速开始</h2>
     <p>所有接口都在 <code>/__api</code> 下。先选模型和图层，生成图片 URL 或直接预览。时间使用 UTC ISO 8601；示例日期是抓取日，实际请换成当前时间或先用“看时间序列”。</p>
-    <div class="stat"><span>模型 <b id="mcount">—</b></span><span>图层 <b id="lcount">—</b></span><span>本机 API <b>http://localhost:8787/__api</b></span></div>
+    <div class="stat"><span>模型 <b id="mcount">—</b></span><span>图层 <b id="lcount">—</b></span><span>API 根路径 <b id="apibase">—</b></span></div>
   </div>
 
   <div class="grid">
@@ -137,6 +137,7 @@ const api = (p, params) => {
 const show = (el, obj) => { el.style.display='block'; el.textContent = typeof obj === 'string' ? obj : JSON.stringify(obj,null,2); };
 let catalog;
 (async () => {
+  $('#apibase').textContent = location.origin + '/__api';
   catalog = await fetch('/__api/catalog').then(r=>r.json());
   $('#mcount').textContent = Object.keys(catalog.models).length;
   $('#lcount').textContent = Object.keys(catalog.layers).length;

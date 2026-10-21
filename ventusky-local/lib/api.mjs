@@ -1,18 +1,8 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { getCatalog, buildTileUrls, listTimes, defaultTime, modelLayer } from './tiles.mjs';
 import { fetchText, fetchJson, fetchBuffer, decodeHtml } from './upstream.mjs';
 import { fetchPoint, fetchWater, normalizeCoord } from './forecast.mjs';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA = path.join(__dirname, '..', 'data');
 const WAQI_TOKEN = process.env.WAQI_TOKEN || '904a1bc6edf77c428347f2fe54cf663bcffaec21';
-let catalog = null;
-function loadCatalog() {
-  if (!catalog) catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'catalog.json'), 'utf8'));
-  return catalog;
-}
 
 function json(res, status, obj, extra = {}) {
   const body = Buffer.from(JSON.stringify(obj, null, 2), 'utf8');
@@ -138,23 +128,23 @@ async function apiJsonData(req, res, url, kind) {
 export async function handleApi(req, res, url) {
   const p = url.pathname.replace(/\/+$/, '');
   try {
-    if (p === '/__api' || p === '/__api/catalog') return json(res, 200, loadCatalog());
+    if (p === '/__api' || p === '/__api/catalog') return json(res, 200, getCatalog());
     if (p === '/__api/models') {
-      const c = loadCatalog();
+      const c = getCatalog();
       return json(res, 200, c.modelOrder.map(id => c.models[id]));
     }
     if (p.startsWith('/__api/models/')) {
       const id = decodeURIComponent(p.split('/').pop());
-      const m = loadCatalog().models[id];
+      const m = getCatalog().models[id];
       return m ? json(res, 200, m) : bad(res, `unknown model: ${id}`, 404);
     }
     if (p === '/__api/layers') {
-      const c = loadCatalog();
+      const c = getCatalog();
       return json(res, 200, Object.values(c.layers));
     }
     if (p.startsWith('/__api/layers/')) {
       const id = decodeURIComponent(p.split('/').pop());
-      const l = loadCatalog().layers[id];
+      const l = getCatalog().layers[id];
       return l ? json(res, 200, l) : bad(res, `unknown layer: ${id}`, 404);
     }
     if (p === '/__api/times') {

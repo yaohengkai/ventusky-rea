@@ -24,6 +24,14 @@ npm start
 - API 实验台：<http://localhost:8787/__lab/>
 - 数据目录：<http://localhost:8787/__api/catalog>
 
+## 一键部署到 Netlify
+
+仓库已内置 Netlify 配置（`netlify.toml` + `netlify/functions/` + 构建脚本），无需改代码：
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yaohengkai/ventusky-rea)
+
+也可以在 Netlify 后台 **Import an existing project** 选择本仓库，构建参数会自动读取；或用 `netlify deploy --build --prod`、GitHub Actions 手动部署。完整的路由表、环境变量和限制见 [DEPLOY.md](DEPLOY.md)。
+
 ## 重要声明
 
 - 仅供个人学习、研究、非商业使用。

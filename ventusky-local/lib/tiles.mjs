@@ -2,11 +2,36 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// `import.meta.url` is not available when a function bundler emits CommonJS;
+// fall back to the working directory so the data path lookup below still works.
+// The local name is not `__dirname`: a CommonJS bundle already provides that
+// identifier, and redeclaring it is a SyntaxError.
+const moduleDir = (() => {
+  try { return path.dirname(fileURLToPath(import.meta.url)); } catch { return process.cwd(); }
+})();
 let catalog;
 
+// Where catalog.json lives. Locally that is ../data next to lib/; on Netlify the
+// file is copied into the function bundle by `included_files`, so the working
+// directory or the bundle root also needs to be checked.
+const DATA_CANDIDATES = [
+  process.env.VENTUSKY_DATA_DIR,
+  path.join(moduleDir, '..', 'data'),
+  path.join(moduleDir, 'ventusky-local', 'data'),
+  path.join(moduleDir, '..', '..', 'ventusky-local', 'data'),
+  path.join(process.cwd(), 'ventusky-local', 'data'),
+  path.join(process.cwd(), 'data'),
+];
+
+export function dataDir() {
+  for (const dir of DATA_CANDIDATES) {
+    if (dir && fs.existsSync(path.join(dir, 'catalog.json'))) return dir;
+  }
+  throw new Error('catalog.json not found; set VENTUSKY_DATA_DIR to the directory that contains it');
+}
+
 export function getCatalog() {
-  if (!catalog) catalog = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog.json'), 'utf8'));
+  if (!catalog) catalog = JSON.parse(fs.readFileSync(path.join(dataDir(), 'catalog.json'), 'utf8'));
   return catalog;
 }
 

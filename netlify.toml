@@ -1,0 +1,97 @@
+# Netlify 一键部署配置
+#
+# 部署形态：
+#   /            -> Netlify Function `proxy`（实时反代 https://www.ventusky.com）
+#   /proxy/<host> -> 同上，反代白名单内的 *.ventusky.com 子域
+#   /__api/*     -> Netlify Function `api`  （数据 API，复用 ventusky-local/lib）
+#   /__health    -> Netlify Function `health`
+#   /__lab/      -> dist/lab.html            （API 实验台）
+#   /__docs/     -> dist/docs/*              （API / DATA / REVERSE 文档）
+#
+# 构建不需要 npm install：项目没有第三方运行时依赖。
+
+[build]
+  command = "node scripts/build-netlify.mjs"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--no-audit --no-fund"
+
+[functions]
+  node_bundler = "esbuild"
+  # catalog.json 不在 lib/ 的相对路径里也能被读到（见 lib/tiles.mjs 的 dataDir()）
+  included_files = ["ventusky-local/data/*.json"]
+
+# --- 路由 ---------------------------------------------------------------
+
+[[redirects]]
+  from = "/__health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+[[redirects]]
+  from = "/__api"
+  to = "/.netlify/functions/api"
+  status = 200
+
+[[redirects]]
+  from = "/__api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/__lab"
+  to = "/lab.html"
+  status = 200
+
+[[redirects]]
+  from = "/__lab/"
+  to = "/lab.html"
+  status = 200
+
+[[redirects]]
+  from = "/__docs"
+  to = "/docs/API.md"
+  status = 302
+
+[[redirects]]
+  from = "/__docs/"
+  to = "/docs/API.md"
+  status = 302
+
+[[redirects]]
+  from = "/__docs/*"
+  to = "/docs/:splat"
+  status = 200
+
+# 其余所有路径都交给反代（静态文件 lab.html / docs / robots.txt 优先命中）。
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
+
+# --- 响应头 -------------------------------------------------------------
+
+[[headers]]
+  for = "/docs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/lab.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# --- 本地 netlify dev ---------------------------------------------------
+
+[dev]
+  framework = "#static"
+  publish = "dist"
+  port = 8888

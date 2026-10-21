@@ -1,0 +1,42 @@
+name: Deploy to Netlify
+
+# 手动一键部署：Actions 页面 → "Run workflow"。
+# 需要先在仓库 Settings → Secrets and variables → Actions 里配置：
+#   NETLIFY_AUTH_TOKEN  个人访问令牌（Netlify: User settings → Applications → Personal access tokens）
+#   NETLIFY_SITE_ID     站点 API ID（Netlify: Site configuration → Site information → Site ID）
+#
+# 站点已通过 Netlify UI 关联本仓库时，也可以把下面的 workflow_dispatch 换成
+# push: branches: [main]，让每次推送自动部署。
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check Netlify credentials
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ] || [ -z "$NETLIFY_SITE_ID" ]; then
+            echo "::error::NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID secrets are not set"
+            exit 1
+          fi
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - name: Build and deploy
+        run: npx --yes netlify-cli@17 deploy --prod --build --message "GitHub Actions ${GITHUB_SHA::7}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_TELEMETRY_DISABLED: '1'

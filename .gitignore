@@ -10,3 +10,6 @@ dist/
 
 # 第三方克隆（rea/）的内层 git 元数据，源码本身按普通文件提交
 rea/.git/
+
+# Netlify 本地 CLI 状态
+.netlify/
