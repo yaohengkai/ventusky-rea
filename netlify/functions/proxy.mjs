@@ -36,6 +36,28 @@ function targetFor(url) {
   return `https://www.ventusky.com${url.pathname}${url.search}`;
 }
 
+// The hostname(s) the browser is actually using (*.netlify.app, a custom
+// domain, localhost under `netlify dev`, ...). The rewritten frontend only
+// runs when location.hostname is in its allow-list; otherwise it navigates to
+// https://www.ventusky.com/ — which this proxy turns into "/" — so the page
+// would reload itself forever. Collect every plausible source because a
+// rewrite can leave the request URL and the proxy headers out of sync.
+function requestHostnames(request, url) {
+  const hosts = new Set();
+  for (const raw of [
+    request.headers.get('x-forwarded-host'),
+    request.headers.get('host'),
+    url.hostname,
+  ]) {
+    if (!raw) continue;
+    for (const part of raw.split(',')) {
+      const host = part.trim().replace(/:\d+$/, '').toLowerCase();
+      if (host) hosts.add(host);
+    }
+  }
+  return [...hosts];
+}
+
 function fail(status, message) {
   return new Response(message, {
     status,
@@ -88,7 +110,7 @@ export default async (request) => {
   for (const cookie of cookies) out.append('set-cookie', sanitizeSetCookie(cookie));
 
   if (isText) {
-    const text = rewriteVentuskyUrls(await upstream.text());
+    const text = rewriteVentuskyUrls(await upstream.text(), requestHostnames(request, url));
     const body = method === 'HEAD' ? null : Buffer.from(text, 'utf8');
     if (body) out.set('content-length', String(body.length));
     return new Response(body, { status: upstream.status, headers: out });

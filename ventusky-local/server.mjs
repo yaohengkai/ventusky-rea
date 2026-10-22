@@ -96,7 +96,7 @@ async function proxy(req, res, url) {
 
   if (isText) {
     let text = await upstream.text();
-    text = rewriteVentuskyUrls(text);
+    text = rewriteVentuskyUrls(text, url.hostname);
     const buf = Buffer.from(text, 'utf8');
     outHeaders['content-length'] = String(buf.length);
     res.writeHead(upstream.status, outHeaders);

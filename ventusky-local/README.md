@@ -91,7 +91,7 @@ Health:       http://127.0.0.1:8787/__health
 - 目录 JSON：<http://localhost:8787/__api/catalog>
 - 健康检查：<http://localhost:8787/__health>
 
-> 推荐用 `localhost`。项目也兼容 `127.0.0.1`（对前端的主机名白名单做了小补丁）。
+> 推荐用 `localhost`。前端 bundle 只允许 `*.ventusky.com` 和 `localhost` 这类主机名运行，否则会跳转/刷新；反代会把**当前请求的主机名**自动加进白名单，所以 `127.0.0.1`、局域网 IP、反向代理域名，以及 Netlify 的 `*.netlify.app` 都能正常启动。
 
 ### 2.3 端口/监听地址
 

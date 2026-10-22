@@ -100,6 +100,30 @@ curl -s "$SITE/" | head -20                                         # 已改写�
 - **访问控制**：站点默认公开。如果只想自己用，可在 Netlify 开启 **Password protection**（付费功能），或在 `netlify.toml` 里给整个站点加 Basic Auth（Edge Function）——当前配置没有做。
 - **构建**：不执行 `npm install`，项目没有第三方运行时依赖；`scripts/build-netlify.mjs` 只拷贝 `lab.html`、`docs/` 并生成 `robots.txt`。
 
+## 故障排查：页面文字错位、自动无限刷新
+
+现象：本地 `localhost:8787` 正常，部署到 Netlify 后页面只剩错位的文字，并且不停自我刷新，地图界面出不来。
+
+原因在 Ventusky 的 `script-en*.js` 里的一段 hostname 白名单：
+
+```js
+/ve(\/)?nt(\\)?us(\/)?ky\.com$|^localhost$/.test(location.hostname)
+  ? remove(document.getElementById("no-js"))   // 启动地图
+  : window.open("https://www.ventusky.com/", "_top")
+```
+
+- 本地访问的主机名是 `localhost` / `127.0.0.1`，命中白名单，正常启动。
+- Netlify 的主机名是 `*.netlify.app`，不命中，于是跳转 `https://www.ventusky.com/`。
+- 反代又把该 URL 改写成 `/`，跳转就变成了“重新加载当前页”，形成死循环。
+- 同时 `#no-js` 兜底节点不会被移除（它没有对应样式），所以看到的是错位的文字列表而不是地图。
+
+修复：`ventusky-local/lib/rewrite.mjs` 的 `rewriteVentuskyUrls(text, hostname)` 会把**当前请求的 hostname** 也加进白名单，`server.mjs` 和 `netlify/functions/proxy.mjs` 都会传入。因此 `*.netlify.app`、deploy preview、自定义域名、`netlify dev`、局域网 IP 都能正常启动。回归测试：
+
+```bash
+cd ventusky-local
+npm test
+```
+
 ## 合规提醒
 
 部署实例会以你的名义对外反代 Ventusky 的公开资源。请保持低频访问、不要公开宣传或用于商业用途，并遵守 Ventusky 的服务条款和当地法律。`dist/robots.txt` 已经禁止搜索引擎抓取，避免镜像被索引。
